@@ -1,0 +1,84 @@
+﻿T2	ORGANIZATION 144 156	пресс-служба
+T3	PROFESSION 157 166	президент
+T4	COUNTRY 167 173	России
+T5	PERSON 175 191	Дмитрий Медведев
+T6	ORGANIZATION 519 522	РБК
+T7	PERSON 580 597	Дмитрию Медведеву
+T8	LAW 612 630	статье 205.1 УК РФ
+T9	DATE 766 780	от 8 до 20 лет
+T10	LAW 1316 1331	ст. 205.1 УК РФ
+T11	DATE 1378 1392	от 5 до 10 лет
+T12	MONEY 1414 1432	до 500 тыс. рублей
+T13	DATE 1459 1472	от 4 до 8 лет
+T14	DATE 1634 1648	от 8 до 15 лет
+T15	MONEY 1670 1697	от 500 тыс. до 1 млн рублей
+T16	DATE 1719 1727	до 5 лет
+T17	MONEY 1739 1757	до 500 тыс. рублей
+T18	NUMBER 1891 1903	не менее 3/4
+T19	ORGANIZATION 1980 1988	Госдумой
+T20	DATE 1989 2008	26 ноября 2010 года
+T21	ORGANIZATION 2019 2036	Советом Федерации
+T22	DATE 2037 2056	1 декабря 2010 года
+T23	PROFESSION 157 173	президент России
+T24	COUNTRY 628 630	РФ
+T25	LAW 625 627	УК
+T26	LAW 1326 1328	УК
+T27	COUNTRY 1329 1331	РФ
+T29	EVENT 2011 2018	одобрен
+T31	LAW 625 630	УК РФ
+T32	LAW 1326 1331	УК РФ
+T1	DATE 37 43	15 лет
+T28	ORDINAL 619 624	205.1
+T33	ORDINAL 1320 1325	205.1
+T34	CRIME 3 34	публичное оправдание терроризма
+T35	IDEOLOGY 24 34	терроризма
+T36	LAW 60 128	закон об ответственности за преступления террористического характера
+T37	IDEOLOGY 101 128	террористического характера
+T39	IDEOLOGY 241 257	террористические
+T38	LAW 201 270	федеральный закон об ответственности за террористические преступления
+T40	IDEOLOGY 481 508	террористического характера
+T41	PENALTY 742 780	лишения свободы на срок от 8 до 20 лет
+T42	CRIME 700 734	пособничество в совершении теракта
+T43	CRIME 1274 1314	содействие террористической деятельности
+T44	IDEOLOGY 1285 1301	террористической
+T45	PENALTY 1396 1432	штрафом в размере до 500 тыс. рублей
+T46	CRIME 1494 1557	публичные призывы к осуществлению террористической деятельности
+T47	CRIME 1562 1593	публичное оправдание терроризма
+T48	IDEOLOGY 1583 1593	терроризма
+T49	IDEOLOGY 1528 1544	террористической
+T50	PENALTY 1652 1697	штрафом в размере от 500 тыс. до 1 млн рублей
+T30	EVENT 1963 1979	Закон был принят
+T51	PENALTY 742 757	лишения свободы
+T52	PENALTY 1353 1392	лишением свободы на срок от 5 до 10 лет
+T53	PENALTY 1353 1369	лишением свободы
+T54	PENALTY 1652 1659	штрафом
+T55	PENALTY 1611 1648	лишать свободы на срок от 8 до 15 лет
+T56	PENALTY 1611 1625	лишать свободы
+T57	PENALTY 1731 1757	штрафом до 500 тыс. рублей
+T58	PENALTY 1731 1738	штрафом
+T59	EVENT 192 218	подписал федеральный закон
+T60	PENALTY 1396 1403	штрафом
+R1	NEGATIVE_TO Arg1:T23 Arg2:T34	
+R2	NEGATIVE_TO Arg1:T19 Arg2:T46	
+R4	NEGATIVE_TO Arg1:T21 Arg2:T46	
+R3	NEGATIVE_TO Arg1:T5 Arg2:T34	
+R5	POSITIVE_TO Arg1:T5 Arg2:T38	
+R6	NEGATIVE_TO Arg1:T5 Arg2:T40	
+R7	NEGATIVE_TO Arg1:T7 Arg2:T42	
+R8	NEGATIVE_TO Arg1:T7 Arg2:T43	
+T2	ARGUMENT_NEG 3 34	публичное оправдание терроризма
+T61	ARGUMENT_NEG 700 734	пособничество в совершении теракта
+T62	ARGUMENT_NEG 1274 1314	содействие террористической деятельности
+T63	ARGUMENT_NEG 1494 1557	публичные призывы к осуществлению террористической деятельности
+T64	ARGUMENT_NEG 1562 1593	публичное оправдание терроризма
+R9	OPINION_BELONGS_TO Arg1:T2 Arg2:T5	
+R10	OPINION_BELONGS_TO Arg1:T61 Arg2:T7	
+R11	OPINION_BELONGS_TO Arg1:T62 Arg2:T7	
+R12	NEGATIVE_TO Arg1:T21 Arg2:T47	
+R13	NEGATIVE_TO Arg1:T19 Arg2:T47	
+R14	OPINION_BELONGS_TO Arg1:T63 Arg2:T19	
+R15	OPINION_BELONGS_TO Arg1:T63 Arg2:T21	
+R16	OPINION_BELONGS_TO Arg1:T64 Arg2:T19	
+R17	OPINION_BELONGS_TO Arg1:T64 Arg2:T21	
+R18	OPINION_BELONGS_TO Arg1:T63 Arg2:T7	
+R19	OPINION_BELONGS_TO Arg1:T64 Arg2:T7	

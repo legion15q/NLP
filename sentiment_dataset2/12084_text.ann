@@ -1,0 +1,40 @@
+T1	FACILITY 21 31	Домодедово
+T2	DATE 33 42	4 декабря
+T3	CITY 76 86	московском
+T4	FACILITY 98 108	Домодедово
+T5	ORGANIZATION 146 168	Дагестанских авиалиний
+T6	NUMBER 195 198	три
+T7	NUMBER 485 488	три
+T8	ORGANIZATION 506 509	МЧС
+T9	NUMBER 519 522	два
+T10	NUMBER 533 549	более пятидесяти
+T12	NUMBER 584 602	более восьмидесяти
+T14	TIME 656 670	через пол часа
+T15	FACILITY 707 714	Внуково
+T16	NUMBER 749 753	трех
+T17	PRODUCT 797 803	Ту-154
+T18	NUMBER 815 818	155
+T20	NUMBER 836 840	семь
+T21	FACILITY 861 871	Домодедово
+T22	NUMBER 916 924	более 20
+T23	PERSON 987 999	Виктор Чайка
+T24	CITY 54 65	московскому
+T25	TIME 33 73	4 декабря в 14.36 по московскому времени
+T11	EVENT 119 136	аварийную посадку
+T13	EVENT 0 17	Аварийная посадка
+T19	STATE_OR_PROVINCE 146 158	Дагестанских
+T26	EVENT 511 531	погибли два человека
+T27	EVENT 533 582	более пятидесяти человек получили тяжелые ранения
+T28	EVENT 631 638	Посадка
+T29	EVENT 258 275	аварийной посадки
+T30	NUMBER 800 803	154
+T31	EFFECT_NEG 146 168	Дагестанских авиалиний
+R1	NEG_EFFECT_FROM Arg1:T31 Arg2:T11	
+T32	EFFECT_NEG 797 803	Ту-154
+R2	NEG_EFFECT_FROM Arg1:T32 Arg2:T29	
+T33	EFFECT_NEG 21 31	Домодедово
+R3	NEG_EFFECT_FROM Arg1:T33 Arg2:T13	
+T34	EFFECT_NEG 98 108	Домодедово
+R4	NEG_EFFECT_FROM Arg1:T34 Arg2:T11	
+T35	STATE_NEG 987 999	Виктор Чайка
+R5	NEG_STATE_FROM Arg1:T35 Arg2:T11	

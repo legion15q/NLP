@@ -1,0 +1,63 @@
+T1	ORDINAL 11 17	первый
+T2	EVENT 40 46	РОТОРВ
+T3	ORDINAL 66 72	первый
+T4	EVENT 111 116	Ротор
+T5	EVENT 119 124	РОТОР
+T6	ORGANIZATION 173 202	союзом интернет-деятелей «ЕЖЕ
+T7	ORGANIZATION 199 202	ЕЖЕ
+T8	DATE 234 245	в 1999 году
+T9	DATE 247 258	в этом году
+T11	ORDINAL 275 279	12-й
+T13	EVENT 410 416	РОТОРа
+T14	ORGANIZATION 456 459	ЕЖЕ
+T15	ORDINAL 544 550	первом
+T16	ORDINAL 703 709	втором
+T17	ORDINAL 719 725	первом
+T18	ORDINAL 867 873	первом
+T19	EVENT 999 1021	Великолепная двадцатка
+T20	ORDINAL 1112 1119	первого
+T21	NUMBER 1138 1144	четыре
+T22	WORK_OF_ART 1156 1170	@KermlinRussia
+T23	PRODUCT 1189 1197	Facebook
+T24	PRODUCT 1222 1228	ivi.ru
+T28	ORGANIZATION 1344 1361	Русская Википедия
+T29	DATE 1400 1411	в 2008 году
+T30	LANGUAGE 1344 1351	Русская
+T31	LANGUAGE 77 91	русскоязычного
+T32	EVENT 66 116	первый тур русскоязычного сетевого конкурса «Ротор
+T33	EVENT 11 46	первый тур сетевого конкурса РОТОРВ
+T34	ORDINAL 205 212	Впервые
+T10	EVENT 213 220	конкурс
+T12	EVENT 292 303	мероприятия
+T35	ORGANIZATION 354 360	Рунета
+T36	EVENT 1246 1253	РИФ+КИБ
+T37	EVENT 1246 1258	РИФ+КИБ 2010
+T38	EVENT 544 555	первом туре
+T39	EVENT 703 714	втором туре
+T40	EVENT 719 730	первом туре
+T41	EVENT 882 896	финальном туре
+T42	EVENT 867 878	первом туре
+T43	LANGUAGE 1084 1092	русского
+T44	PRODUCT 1093 1102	Интернета
+T45	ORGANIZATION 1084 1102	русского Интернета
+T46	EVENT 1112 1124	первого тура
+T25	DATE 1254 1258	2010
+T26	AWARD 1293 1317	интернет-сообщество года
+T27	AWARD 1261 1277	мероприятие года
+T47	AWARD 1231 1244	киносайт года
+T48	AWARD 1200 1220	социальная сеть года
+T49	AWARD 1173 1187	микроблог года
+T50	ORGANIZATION 1352 1361	Википедия
+T51	EVENT 1477 1485	конкурса
+T52	EFFECT_NEG 11 46	первый тур сетевого конкурса РОТОРВ
+T53	EFFECT_NEG 66 116	первый тур русскоязычного сетевого конкурса «Ротор
+T54	EFFECT_POS 1156 1170	@KermlinRussia
+R1	POS_EFFECT_FROM Arg1:T54 Arg2:T49	
+T55	EFFECT_POS 1189 1197	Facebook
+R2	POS_EFFECT_FROM Arg1:T55 Arg2:T48	
+T56	EFFECT_POS 1222 1228	ivi.ru
+R3	POS_EFFECT_FROM Arg1:T56 Arg2:T47	
+T57	EFFECT_POS 1246 1258	РИФ+КИБ 2010
+R4	POS_EFFECT_FROM Arg1:T57 Arg2:T27	
+T58	EFFECT_POS 1344 1361	Русская Википедия
+R5	POS_EFFECT_FROM Arg1:T58 Arg2:T26	

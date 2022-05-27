@@ -1,0 +1,74 @@
+T1	LOCATION 27 46	Мексиканском заливе
+T2	MONEY 56 82	1,4 миллиарда долларов США
+T3	LOCATION 100 119	Мексиканском заливе
+T4	FACILITY 182 199	Deepwater Horizon
+T5	LOCATION 258 277	Мексиканском заливе
+T6	DATE 278 289	в 2010 году
+T7	COUNTRY 359 362	США
+T8	MONEY 373 402	более 1 миллиард долларов США
+T9	ORGANIZATION 474 499	Министерством юстиции США
+T10	DATE 501 510	в четверг
+T11	ORGANIZATION 520 540	Transocean Deepwater
+T14	LAW 777 797	Закона о чистой воде
+T15	ORGANIZATION 801 811	Transocean
+T16	MONEY 821 847	1,4 миллиарда долларов США
+T17	PROFESSION 1135 1155	генеральный прокурор
+T18	DATE 1178 1187	в четверг
+T19	LOCATION 1383 1403	у побережья Луизианы
+T20	STATE_OR_PROVINCE 1395 1403	Луизианы
+T21	DATE 1415 1433	в апреле 2010 года
+T22	NUMBER 1463 1465	11
+T23	DATE 1477 1499	в течение трех месяцев
+T24	LOCATION 1542 1562	Мексиканского залива
+T25	NUMBER 1572 1585	миллионы тонн
+T26	EVENT 11 24	разливе нефти
+T27	COUNTRY 79 82	США
+T28	DATE 120 136	24 мая 2010 года
+T29	EVENT 162 168	пожара
+T30	EVENT 245 255	взорвалась
+T31	EVENT 335 348	разлива нефти
+T32	COUNTRY 399 402	США
+T33	PENALTY 410 417	штрафов
+T34	ORGANIZATION 474 495	Министерством юстиции
+T35	COUNTRY 496 499	США
+T36	CRIME 566 587	преступной халатности
+T12	PRODUCT 652 669	Deepwater Horizon
+T13	CRIME 753 797	нарушении федерального «Закона о чистой воде
+T37	COUNTRY 844 847	США
+T38	PENALTY 875 882	штрафов
+T39	PENALTY 855 872	возмещения ущерба
+T40	EVENT 1026 1039	разлива нефти
+T41	PROFESSION 1147 1155	прокурор
+T42	PERSON 1156 1167	Эрик Холдер
+T43	CRIME 1303 1328	причинении ущерба природе
+T44	EVENT 1404 1414	взорвалась
+T45	EVENT 1448 1454	взрыва
+T46	EVENT 1455 1473	погибли 11 человек
+T47	COUNTRY 27 39	Мексиканском
+T48	COUNTRY 100 112	Мексиканском
+T49	COUNTRY 1542 1555	Мексиканского
+T50	EVENT 1563 1590	вылились миллионы тонн нефт
+T51	EFFECT_NEG 27 46	Мексиканском заливе
+R1	NEG_EFFECT_FROM Arg1:T51 Arg2:T26	
+T52	EFFECT_NEG 182 199	Deepwater Horizon
+R2	NEG_EFFECT_FROM Arg1:T52 Arg2:T29	
+T53	EFFECT_NEG 359 362	США
+R3	NEG_EFFECT_FROM Arg1:T53 Arg2:T31	
+T54	ARGUMENT_NEG 566 587	преступной халатности
+R4	OPINION_RELATES_TO Arg1:T54 Arg2:T11	
+R5	OPINION_BELONGS_TO Arg1:T54 Arg2:T11	
+T55	ARGUMENT_NEG 598 705	не проверила информацию о том, что подводная скважина Deepwater Horizon не была надлежащим образом защищена
+R6	OPINION_RELATES_TO Arg1:T55 Arg2:T11	
+T56	ARGUMENT_NEG 753 797	нарушении федерального «Закона о чистой воде
+R7	OPINION_RELATES_TO Arg1:T56 Arg2:T11	
+R8	NEGATIVE_TO Arg1:T15 Arg2:T39	
+R9	NEGATIVE_TO Arg1:T15 Arg2:T38	
+T57	STATE_NEG 801 811	Transocean
+T58	EFFECT_NEG 801 811	Transocean
+R10	NEG_STATE_FROM Arg1:T57 Arg2:T39	
+R11	NEG_STATE_FROM Arg1:T57 Arg2:T38	
+R12	NEG_EFFECT_FROM Arg1:T58 Arg2:T39	
+R13	NEG_EFFECT_FROM Arg1:T58 Arg2:T38	
+R14	NEGATIVE_TO Arg1:T42 Arg2:T43	
+T59	EFFECT_NEG 1542 1562	Мексиканского залива
+R15	NEG_EFFECT_FROM Arg1:T59 Arg2:T50	

@@ -1,0 +1,71 @@
+T1	WORK_OF_ART 8 26	Мастер и Маргарита
+T2	PERSON 34 47	Иисус Христос
+T3	PROFESSION 76 86	композитор
+T4	WORK_OF_ART 95 99	Cats
+T5	WORK_OF_ART 104 129	Иисус Христоc Суперзвезда
+T6	PERSON 104 117	Иисус Христоc
+T8	PERSON 132 144	Jesus Christ
+T9	ORGANIZATION 195 205	Дэйли Майл
+T10	PERSON 225 244	Эндрю Ллойда Вебера
+T11	PERSON 246 265	Andrew Lloyd Webber
+T12	WORK_OF_ART 306 324	Мастер и Маргарита
+T13	PERSON 351 368	Михаила Булгакова
+T14	PERSON 405 412	Христос
+T15	PERSON 415 427	Понтий Пилат
+T16	PERSON 477 483	Мастер
+T17	PERSON 507 516	Маргарита
+T18	WORK_OF_ART 554 572	Мастер и Маргарита
+T19	DATE 622 629	XX века
+T20	PERSON 672 679	Сталина
+T21	PERSON 682 693	Ллойд Вебер
+T22	WORK_OF_ART 775 790	Женщина в Белом
+T24	WORK_OF_ART 793 811	The Woman in White
+T26	WORK_OF_ART 861 874	Аспекты Любви
+T27	WORK_OF_ART 877 892	Aspects of Love
+T28	WORK_OF_ART 897 909	Фантом Оперы
+T30	WORK_OF_ART 912 936	The Phantom of the Opera
+T31	WORK_OF_ART 950 968	Мастер и Маргарита
+T32	PERSON 997 1003	Сатаны
+T33	CITY 1014 1020	Москвы
+T34	DATE 1038 1056	в конце 20-х годов
+T35	DATE 1121 1132	в 1940 году
+T36	DATE 1205 1218	1967-68 годов
+T37	PERSON 1253 1272	Жан-Клод Ван Италли
+T38	PERSON 1274 1297	Jean-Claude van Itallie
+T39	WORK_OF_ART 1357 1420	Мастер и Маргарита Михаила Булгакова или Дьявол посещает Москву
+T40	PERSON 1376 1393	Михаила Булгакова
+T42	PERSON 1398 1404	Дьявол
+T43	CITY 1414 1420	Москву
+T44	PERSON 1442 1454	Ллойд Веббер
+T45	ORGANIZATION 1492 1500	Би-Би-Си
+T46	PERSON 1503 1515	Ллойд Веббер
+T47	DATE 1536 1546	25 августа
+T48	DATE 1549 1568	После шести месяцев
+T49	PERSON 1736 1753	Михаила Булгакова
+T50	WORK_OF_ART 1755 1773	Мастер и Маргарита
+T51	PERSON 28 31	Кот
+T52	WORK_OF_ART 88 92	Кэтс
+T7	WORK_OF_ART 132 154	Jesus Christ Superstar
+T56	PROFESSION 466 474	писатель
+T57	PERSON 8 14	Мастер
+T58	PERSON 17 26	Маргарита
+T59	PERSON 306 312	Мастер
+T60	PERSON 315 324	Маргарита
+T61	PERSON 554 560	Мастер
+T62	PERSON 563 572	Маргарита
+T63	NATIONALITY 603 610	русской
+T25	PERSON 950 956	Мастер
+T65	PERSON 959 968	Маргарита
+T41	PERSON 1366 1375	Маргарита
+T67	PERSON 1357 1363	Мастер
+T68	PERSON 1755 1761	Мастер
+T69	PERSON 1764 1773	Маргарита
+T23	PERSON 382 388	дьявол
+T29	WORK_OF_ART 1357 1375	Мастер и Маргарита
+R1	POSITIVE_TO Arg1:T10 Arg2:T12	
+T53	OPINION_WORD_POS 584 594	величайшим
+T54	AUTHOR_POS 554 572	Мастер и Маргарита
+R2	POS_AUTHOR_FROM Arg1:T54 Arg2:T53	
+T55	EFFECT_POS 554 572	Мастер и Маргарита
+T64	EFFECT_NEG 672 679	Сталина
+R3	POSITIVE_TO Arg1:T44 Arg2:T45	

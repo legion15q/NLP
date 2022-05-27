@@ -1,0 +1,85 @@
+﻿T1	PERSON 0 16	Джохару Царнаеву
+T2	PERSON 51 67	Джохару Цорнаеву
+T3	CITY 109 116	Бостоне
+T4	PERSON 158 165	Царнаев
+T5	AGE 265 274	19-летнем
+T6	DATE 489 497	в апреле
+T7	CITY 655 661	Бостон
+T8	ORGANIZATION 938 947	Аль-Кайды
+T9	CITY 1055 1062	Бостоне
+T10	CARDINAL 1071 1074	три
+T11	CARDINAL 1085 1094	более 260
+T12	CARDINAL 1095 1097	ти
+T13	PERSON 1138 1155	Джохароа Царнаева
+T14	PERSON 1158 1166	Тамерлан
+T1	PERSON 0 16	Джохару Царнаеву
+T15	EVENT 17 50	предъявлены официальные обвинения
+T16	EVENT 98 106	терактов
+T17	CRIME 86 106	организации терактов
+T18	EVENT 118 151	предъявлены официальные обвинения
+T19	PENALTY 220 243	пожизненному заключению
+T20	PENALTY 248 262	смертной казни
+T21	PERSON 275 283	Царнаеву
+T22	CRIME 300 342	использование оружия массового уничтожения
+T23	CRIME 345 390	организация взрыва бомбы в общественном месте
+T24	EVENT 419 431	гибель людей
+T25	EVENT 357 369	взрыва бомбы
+T26	EVENT 509 519	задержания
+T27	PROFESSION 568 580	полицейского
+T28	CRIME 559 580	убийство полицейского
+T29	CRIME 583 598	угон автомобиля
+T30	FAMILY 600 615	братья Царнаевы
+T31	PERSON 607 615	Царнаевы
+T32	EVENT 616 636	захватили автомобиль
+T33	FAMILY 704 719	братья Царнаевы
+T34	PERSON 711 719	Царнаевы
+T35	IDEOLOGY 824 837	экстремистами
+T36	PERSON 886 895	Царнаевых
+T37	PRODUCT 903 912	Интернет 
+T38	EVENT 1028 1040	взрывов бомб
+T39	EVENT 1044 1052	марафоне
+T40	EVENT 1063 1083	погибли три человека
+T41	NUMBER 1071 1074	три
+T42	NUMBER 1085 1097	более 260-ти
+T43	EVENT 1085 1114	более 260-ти получили ранения
+T44	EVENT 1117 1123	травмы
+T45	EVENT 1174 1178	убит
+T46	EVENT 1181 1203	перестрелке с полицией
+T47	ORGANIZATION 1195 1203	полицией
+T48	EFFECT_NEG 0 16	Джохару Царнаеву
+T49	STATE_NEG 0 16	Джохару Царнаеву
+R1	NEG_STATE_FROM Arg1:T49 Arg2:T15	
+R2	NEGATIVE_TO Arg1:T1 Arg2:T15	
+R3	NEG_EFFECT_FROM Arg1:T48 Arg2:T15	
+T50	EFFECT_NEG 51 67	Джохару Цорнаеву
+T51	STATE_NEG 51 67	Джохару Цорнаеву
+R4	NEG_STATE_FROM Arg1:T51 Arg2:T18	
+R5	NEG_EFFECT_FROM Arg1:T50 Arg2:T18	
+R6	NEGATIVE_TO Arg1:T2 Arg2:T18	
+R8	NEGATIVE_TO Arg1:T4 Arg2:T19	
+R9	NEGATIVE_TO Arg1:T4 Arg2:T20	
+T52	STATE_NEG 158 165	Царнаев
+T53	EFFECT_NEG 158 165	Царнаев
+R10	NEG_STATE_FROM Arg1:T52 Arg2:T19	
+R11	NEG_STATE_FROM Arg1:T52 Arg2:T20	
+R12	NEG_EFFECT_FROM Arg1:T53 Arg2:T19	
+R13	NEG_EFFECT_FROM Arg1:T53 Arg2:T20	
+R15	NEGATIVE_TO Arg1:T21 Arg2:T23	
+T54	EFFECT_NEG 275 283	Царнаеву
+T55	STATE_NEG 275 283	Царнаеву
+R16	NEG_STATE_FROM Arg1:T55 Arg2:T26	
+R17	NEG_EFFECT_FROM Arg1:T54 Arg2:T26	
+R18	NEGATIVE_TO Arg1:T21 Arg2:T26	
+R22	NEGATIVE_TO Arg1:T47 Arg2:T14	
+T56	EFFECT_NEG 1158 1166	Тамерлан
+R21	NEG_EFFECT_FROM Arg1:T56 Arg2:T45	
+T57	ARGUMENT_NEG 86 106	организации терактов
+R7	OPINION_RELATES_TO Arg1:T57 Arg2:T2	
+T58	ARGUMENT_NEG 300 342	использование оружия массового уничтожения
+R14	OPINION_RELATES_TO Arg1:T58 Arg2:T21	
+T59	ARGUMENT_NEG 345 390	организация взрыва бомбы в общественном месте
+R23	OPINION_RELATES_TO Arg1:T59 Arg2:T21	
+T60	ARGUMENT_NEG 559 580	убийство полицейского
+T61	ARGUMENT_NEG 583 598	угон автомобиля
+R19	OPINION_RELATES_TO Arg1:T60 Arg2:T30	
+R20	OPINION_RELATES_TO Arg1:T61 Arg2:T30	

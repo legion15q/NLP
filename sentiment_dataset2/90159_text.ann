@@ -1,0 +1,83 @@
+T1	MONEY 27 41	3 млн долларов
+T2	DATE 77 87	за полгода
+T3	MONEY 125 155	более чем на 2 миллиона фунтов
+T4	MONEY 157 175	3 млн долларов США
+T5	NUMBER 294 308	более 131 тыс.
+T7	NUMBER 320 330	почти 40 %
+T8	AGE 358 367	18-летний
+T9	NATIONALITY 368 378	британский
+T10	PERSON 390 404	Джошуа Броудер
+T11	PERSON 406 420	Joshua Browder
+T12	COUNTRY 488 502	Великобритании
+T13	NUMBER 674 685	три десятка
+T14	DATE 706 726	за несколько месяцев
+T15	DATE 794 813	в августе 2015 года
+T16	PRODUCT 830 838	DoNotPay
+T17	ORDINAL 870 876	Первый
+T18	COUNTRY 879 893	Великобритании
+T19	NUMBER 1018 1020	12
+T20	TIME 1085 1103	не более 30 секунд
+T21	DATE 1112 1125	через полгода
+T22	NUMBER 1149 1164	около ста тысяч
+T25	ORGANIZATION 1339 1347	DoNotPay
+T26	COUNTRY 1581 1595	Великобритании
+T27	MONEY 1634 1663	примерно на миллиард долларов
+T28	PERSON 1672 1678	Джошуа
+T29	AGE 1712 1718	12 лет
+T30	PERSON 1740 1747	Браудер
+T31	AGE 1828 1834	16 лет
+T32	PRODUCT 1857 1863	iPhone
+T33	ORGANIZATION 1868 1881	Freedom House
+T34	COUNTRY 1922 1940	Соединенных Штатах
+T35	PERSON 1943 1950	Браудер
+T36	CITY 2044 2057	вашингтонской
+T6	PROFESSION 6 11	юрист
+T37	PROFESSION 47 53	юриста
+T38	COUNTRY 54 64	Британский
+T39	PROFESSION 71 76	юрист
+T40	COUNTRY 172 175	США
+T41	PROFESSION 379 389	IT-студент
+T42	PROFESSION 531 538	юристов
+T43	PRODUCT 840 854	donotpay.co.uk
+T44	PROFESSION 900 905	юрист
+T45	COUNTRY 914 916	UK
+T46	ORDINAL 919 924	first
+T47	PROFESSION 931 937	lawyer
+T23	DATE 1664 1669	в год
+T24	NUMBER 1498 1509	миллионного
+T48	ARGUMENT_POS 1679 1717	начал программировать в возрасте 12 ле
+T49	ARGUMENT_POS 1748 1805	активно работал на пересечении технологий и прав человека
+T50	ARGUMENT_POS 1957 2006	активно участвует в общественно-политической жизн
+R1	OPINION_RELATES_TO Arg1:T50 Arg2:T35	
+T51	ARGUMENT_POS 2009 2064	пишет статьи о правах человека для вашингтонской газеты
+R2	OPINION_RELATES_TO Arg1:T51 Arg2:T35	
+T52	ARGUMENT_POS 1839 1881	создал приложение iPhone для Freedom House
+R3	OPINION_RELATES_TO Arg1:T49 Arg2:T30	
+R4	OPINION_RELATES_TO Arg1:T52 Arg2:T30	
+R5	OPINION_RELATES_TO Arg1:T48 Arg2:T28	
+T53	ARGUMENT_NEG 444 520	процедура оспаривания штрафов за парковку в Великобритании сложна и запутана
+T54	OPINION_WORD_NEG 503 509	сложна
+T55	OPINION_WORD_NEG 512 520	запутана
+T56	ARGUMENT_NEG 522 575	а услуги юристов почти всегда превышают размер штрафа
+R6	OPINION_BELONGS_TO Arg1:T56 Arg2:T10	
+R7	OPINION_BELONGS_TO Arg1:T53 Arg2:T10	
+T57	ARGUMENT_NEG 659 726	как ему пришло три десятка квитанций на штрафы за несколько месяцев
+T58	EFFECT_NEG 390 403	Джошуа Броуде
+R8	NEG_EFFECT_FROM Arg1:T58 Arg2:T57	
+T59	STATE_NEG 390 404	Джошуа Броудер
+R9	NEG_STATE_FROM Arg1:T59 Arg2:T57	
+T60	ARGUMENT_POS 88 154	помог вернуть автовладельцам штрафов более чем на 2 миллиона фунто
+T61	OPINION_WORD_POS 1307 1320	популярностью
+T62	OPINION_WORD_POS 1273 1280	удивлён
+R10	OPINION_BELONGS_TO Arg1:T62 Arg2:T10	
+R11	OPINION_RELATES_TO Arg1:T62 Arg2:T16	
+R12	OPINION_RELATES_TO Arg1:T61 Arg2:T16	
+R13	OPINION_RELATES_TO Arg1:T60 Arg2:T16	
+T63	ARGUMENT_POS 1480 1517	возвращены штрафы миллионного размера
+R14	OPINION_RELATES_TO Arg1:T63 Arg2:T16	
+R15	OPINION_BELONGS_TO Arg1:T63 Arg2:T10	
+T64	ARGUMENT_NEG 1603 1662	собирают автомобильных штрафов примерно на миллиард долларо
+R16	OPINION_RELATES_TO Arg1:T64 Arg2:T26	
+R17	OPINION_BELONGS_TO Arg1:T64 Arg2:T10	
+R18	OPINION_BELONGS_TO Arg1:T54 Arg2:T10	
+R19	OPINION_BELONGS_TO Arg1:T55 Arg2:T10	

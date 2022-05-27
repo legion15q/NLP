@@ -1,0 +1,104 @@
+﻿T1	PERSON 14 39	Виктор Васильевич Тихонов
+T2	CITY 43 49	Москве
+T3	AGE 97 106	85-м году
+T4	PERSON 169 194	Виктор Васильевич Тихонов
+T5	PERSON 212 228	Виктора Тихонова
+T6	PERSON 279 293	Виктор Тихонов
+T7	CITY 301 307	Москве
+T8	PERSON 328 342	Виктор Тихонов
+T9	PROFESSION 468 476	тренером
+T10	DATE 485 494	27 ноября
+T11	ORGANIZATION 526 530	ЦСКА
+T12	PROFESSION 532 552	Генеральный директор
+T13	ORGANIZATION 582 586	ЦСКА
+T14	PERSON 587 603	Игорь Есмантович
+T15	PERSON 731 739	Тихонова
+T16	PROFESSION 742 751	Президент
+T17	PERSON 760 774	Владимир Путин
+T18	PERSON 822 838	Виктора Тихонова
+T19	PERSON 860 888	Тихоновой Татьяне Васильевне
+T21	PERSON 901 919	Татьяна Васильевна
+T22	PERSON 992 1017	Виктор Васильевич Тихонов
+T23	PROFESSION 1040 1049	наставник
+T24	PERSON 1321 1349	Викторе Васильевиче Тихонове
+T25	EVENT 0 13	Ушёл из жизни
+T26	FACILITY 63 93	Института имени Склифосовского
+T27	EVENT 113 122	скончался
+T28	PROFESSION 141 149	хоккеист
+T29	PROFESSION 152 168	хоккейный тренер
+T30	PROFESSION 162 168	тренер
+T32	DISEASE 235 251	остановка сердца
+T33	PROFESSION 262 278	хоккейный тренер
+T34	PROFESSION 272 278	тренер
+T35	EVENT 294 298	умер
+T36	DATE 310 327	В последнее время
+T37	EVENT 440 454	госпитализации
+T38	EVENT 457 465	Прощание
+T39	FACILITY 497 530	ледовом спортивном комплексе ЦСКА
+T40	PROFESSION 532 586	Генеральный директор московского хоккейного клуба ЦСКА
+T41	CITY 553 564	московского
+T42	EVENT 723 730	похорон
+T43	COUNTRY 752 758	России
+T44	PROFESSION 742 758	Президент России
+T20	EVENT 978 991	Ушёл из жизни
+T45	PROFESSION 1031 1037	тренер
+T46	PROFESSION 1207 1214	игрокам
+T47	NATIONALITY 131 140	советский
+T31	PERSON 79 93	Склифосовского
+T1	PERSON 14 39	Виктор Васильевич Тихонов
+T48	EFFECT_NEG 14 39	Виктор Васильевич Тихонов
+T49	EFFECT_NEG 169 194	Виктор Васильевич Тихонов
+T50	EFFECT_NEG 212 228	Виктора Тихонова
+T51	EFFECT_NEG 279 293	Виктор Тихонов
+T52	STATE_NEG 587 603	Игорь Есмантович
+T53	STATE_NEG 760 774	Владимир Путин
+T54	STATE_NEG 860 888	Тихоновой Татьяне Васильевне
+R1	POSITIVE_TO Arg1:T17 Arg2:T18	
+T55	EFFECT_NEG 992 1017	Виктор Васильевич Тихонов
+T56	AUTHOR_POS 169 194	Виктор Васильевич Тихонов
+T57	AUTHOR_POS 279 293	Виктор Тихонов
+T58	EFFECT_NEG 860 888	Тихоновой Татьяне Васильевне
+R2	NEG_EFFECT_FROM Arg1:T48 Arg2:T25	
+R3	NEG_EFFECT_FROM Arg1:T49 Arg2:T27	
+T59	OPINION_WORD_POS 123 130	великий
+R4	POS_AUTHOR_FROM Arg1:T56 Arg2:T59	
+T60	OPINION_WORD_POS 251 261	Знаменитый
+R5	POS_AUTHOR_FROM Arg1:T57 Arg2:T60	
+R6	NEG_EFFECT_FROM Arg1:T51 Arg2:T35	
+R7	NEG_STATE_FROM Arg1:T52 Arg2:T35	
+R8	NEG_STATE_FROM Arg1:T53 Arg2:T20	
+R10	NEG_STATE_FROM Arg1:T54 Arg2:T20	
+R11	NEG_EFFECT_FROM Arg1:T50 Arg2:T32	
+T61	EMOTION_NEG 640 666	глубочайшие соболезнования
+T62	EMOTION_NEG 652 666	соболезнования
+R12	STATE_BELONGS_TO Arg1:T61 Arg2:T52	
+T63	EMOTION_NEG 790 804	соболезнования
+R13	POSITIVE_TO Arg1:T14 Arg2:T8	
+R14	STATE_BELONGS_TO Arg1:T63 Arg2:T53	
+R15	POSITIVE_TO Arg1:T17 Arg2:T19	
+T64	EMOTION_NEG 940 953	огромное горе
+T65	STATE_NEG 901 919	Татьяна Васильевна
+R16	STATE_BELONGS_TO Arg1:T64 Arg2:T65	
+R17	STATE_BELONGS_TO Arg1:T64 Arg2:T53	
+R9	NEG_EFFECT_FROM Arg1:T55 Arg2:T20	
+T66	OPINION_WORD_POS 1020 1030	выдающийся
+T67	OPINION_WORD_POS 1051 1058	сильный
+T68	OPINION_WORD_POS 1060 1067	волевой
+T69	OPINION_WORD_POS 1069 1076	честный
+T70	OPINION_WORD_POS 1079 1093	принципиальный
+T71	OPINION_WORD_POS 1103 1132	Легенда отечественного хоккея
+T72	OPINION_WORD_POS 1141 1170	бесконечно предан своему делу
+T73	OPINION_WORD_POS 1180 1202	предельно требователен
+T74	ARGUMENT_POS 1266 1280	великие победы
+T75	STATE_NEG 1372 1396	глубокого соболезнования
+R18	OPINION_RELATES_TO Arg1:T66 Arg2:T22	
+R19	OPINION_RELATES_TO Arg1:T67 Arg2:T55	
+R20	OPINION_RELATES_TO Arg1:T67 Arg2:T22	
+R21	OPINION_RELATES_TO Arg1:T68 Arg2:T22	
+R22	OPINION_RELATES_TO Arg1:T69 Arg2:T22	
+R23	OPINION_RELATES_TO Arg1:T70 Arg2:T22	
+R24	OPINION_RELATES_TO Arg1:T71 Arg2:T22	
+R25	OPINION_RELATES_TO Arg1:T72 Arg2:T22	
+R26	OPINION_RELATES_TO Arg1:T73 Arg2:T22	
+T76	OPINION_WORD_POS 1245 1255	самоотдача
+R27	OPINION_RELATES_TO Arg1:T76 Arg2:T22	

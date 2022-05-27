@@ -1,0 +1,73 @@
+T1	COUNTRY 0 14	Великобритания
+T2	COUNTRY 45 48	США
+T3	FACILITY 150 169	тюрьме Сан-Квентина
+T4	STATE_OR_PROVINCE 171 181	Калифорния
+T5	DATE 182 191	В четверг
+T6	COUNTRY 206 220	Великобритании
+T7	COUNTRY 267 270	США
+T8	NUMBER 360 361	3
+T9	PROFESSION 394 429	Секретарь по экономическим вопросам
+T10	PERSON 446 455	Винс Кэбл
+T11	DATE 469 504	в течение ближайших нескольких дней
+T12	PERSON 544 548	Кэбл
+T13	COUNTRY 630 640	Британские
+T14	DATE 708 722	в прошлом году
+T15	ORDINAL 782 788	первой
+T16	COUNTRY 930 933	США
+T17	PERSON 956 960	Кэбл
+T18	ORGANIZATION 1046 1055	Евросоюза
+T19	COUNTRY 1184 1198	Великобритания
+T20	DATE 1236 1244	в ноябре
+T21	ORGANIZATION 1288 1296	Reprieve
+T22	ORGANIZATION 1309 1317	Отсрочка
+T23	ORGANIZATION 1331 1344	правительству
+T24	COUNTRY 1404 1407	США
+T25	ORGANIZATION 1437 1465	Службам исполнения наказаний
+T26	NUMBER 1466 1467	2
+T27	STATE_OR_PROVINCE 1477 1484	Аризоны
+T28	STATE_OR_PROVINCE 1487 1495	Джорджии
+T29	CITY 1537 1544	Лондоне
+T30	COUNTRY 1581 1584	США
+T31	COUNTRY 1668 1671	США
+T32	DATE 1897 1918	в конце прошлого года
+T33	COUNTRY 1943 1946	США
+T34	ORGANIZATION 2033 2066	Центр Информации о Смертной Казни
+T35	ORGANIZATION 2068 2072	ЦИСК
+T36	ORGANIZATION 2081 2113	Death Penalty Information Center
+T38	ORGANIZATION 2116 2120	DPIC
+T39	DATE 2122 2145	в декабре прошлого года
+T40	DATE 2158 2172	в течение 2010
+T41	COUNTRY 2191 2194	США
+T42	DATE 2222 2252	в предшествующие несколько лет
+T43	ORGANIZATION 2254 2258	ЦИСК
+T44	ORGANIZATION 2360 2373	правительство
+T45	COUNTRY 2417 2428	британскими
+T46	ORGANIZATION 2498 2511	Правительство
+T47	LOCATION 157 169	Сан-Квентина
+T48	ORGANIZATION 192 220	правительство Великобритании
+T49	ORGANIZATION 192 205	правительство
+T50	NUMBER 271 272	3
+T51	COUNTRY 430 444	Великобритании
+T52	PROFESSION 394 444	Секретарь по экономическим вопросам Великобритании
+T55	PENALTY 568 582	смертной казни
+T56	PENALTY 318 332	смертной казни
+T57	PENALTY 78 92	смертной казни
+T58	PENALTY 118 132	смертной казни
+T59	PENALTY 1589 1603	смертной казни
+T60	PENALTY 2052 2066	Смертной Казни
+T61	PENALTY 2173 2188	смертных казней
+T62	PENALTY 684 698	смертной казни
+T63	PENALTY 938 952	смертной казни
+T64	EVENT 1345 1348	иск
+T65	DISEASE 1779 1788	эпилепсии
+T66	DISEASE 1806 1821	эпилептического
+T67	PENALTY 1983 1997	смертной казни
+T68	COUNTRY 2374 2388	Великобритании
+T69	ORGANIZATION 2360 2388	правительство Великобритании
+T53	EVENT 1199 1235	прекратила экспорт тиопентала натрия
+R1	NEGATIVE_TO Arg1:T1 Arg2:T57	
+R2	NEGATIVE_TO Arg1:T48 Arg2:T56	
+R3	NEGATIVE_TO Arg1:T12 Arg2:T55	
+R4	NEGATIVE_TO Arg1:T13 Arg2:T62	
+R5	NEGATIVE_TO Arg1:T21 Arg2:T63	
+R6	POSITIVE_TO Arg1:T21 Arg2:T53	

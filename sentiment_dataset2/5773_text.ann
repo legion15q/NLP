@@ -1,0 +1,42 @@
+T1	COUNTRY 2 8	России
+T2	NUMBER 9 25	почти 3 миллиона
+T3	ORGANIZATION 112 131	Минздравсоцразвития
+T4	LAW 150 220	Концепцию государственной политики по снижению масштабов алкоголизации
+T5	EVENT 273 323	форуме «Здоровье нации — основа процветания России
+T6	EVENT 281 323	Здоровье нации — основа процветания России
+T7	COUNTRY 418 424	России
+T8	PERCENT 939 941	2%
+T9	COUNTRY 952 958	России
+T10	PERCENT 1082 1085	76%
+T11	ORGANIZATION 1118 1155	Всемирной организации здравоохранения
+T12	ORGANIZATION 1157 1160	ВОЗ
+T13	NUMBER 1216 1226	2 миллиона
+T14	ORGANIZATION 1262 1277	Роспотребнадзор
+T15	COUNTRY 1322 1328	России
+T16	NUMBER 1329 1345	почти 3 миллиона
+T17	ORGANIZATION 112 138	Минздравсоцразвития России
+T18	COUNTRY 132 138	России
+T19	DATE 222 239	В настоящее время
+T20	COUNTRY 317 323	России
+T22	DISEASE 489 501	алкоголизмом
+T23	DISEASE 839 850	алкоголизма
+T24	DISEASE 1306 1318	алкоголизмом
+R1	NEGATIVE_TO Arg1:T17 Arg2:T22	
+T21	AUTHOR_NEG 839 850	алкоголизма
+T25	ARGUMENT_NEG 830 838;851 903	проблема является очень серьёзной, назрушающей здоровье нации
+R2	NEG_AUTHOR_FROM Arg1:T21 Arg2:T25	
+T26	OPINION_WORD_NEG 866 875	серьёзной
+R3	NEG_AUTHOR_FROM Arg1:T21 Arg2:T26	
+R4	OPINION_RELATES_TO Arg1:T26 Arg2:T23	
+R5	OPINION_RELATES_TO Arg1:T25 Arg2:T23	
+T27	ARGUMENT_NEG 1027 1085	регулярно употребляющая алкогольные напитки составляет 76%
+T28	ARGUMENT_NEG 939 997	2% населения России страдает тяжёлым болезненным пьянством
+R6	NEGATIVE_TO Arg1:T14 Arg2:T24	
+T29	ARGUMENT_POS 1278 1318	разработал меры по борьбе с алкоголизмом
+R7	OPINION_RELATES_TO Arg1:T29 Arg2:T14	
+T30	ARGUMENT_NEG 1166 1234	злоупотребления алкоголем ежегодно в мире умирают 2 миллиона человек
+R8	OPINION_BELONGS_TO Arg1:T30 Arg2:T11	
+R9	POSITIVE_TO Arg1:T17 Arg2:T4	
+R10	OPINION_RELATES_TO Arg1:T27 Arg2:T23	
+R11	OPINION_RELATES_TO Arg1:T28 Arg2:T23	
+R12	OPINION_RELATES_TO Arg1:T30 Arg2:T23	

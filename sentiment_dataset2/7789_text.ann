@@ -1,0 +1,78 @@
+T1	EVENT 13 45	Всероссийский пеший крестный ход
+T2	COUNTRY 59 65	России
+T4	STATE_OR_PROVINCE 188 198	мордовскую
+T5	EVENT 207 219	Крестный ход
+T6	COUNTRY 288 294	России
+T8	DATE 383 392	1 августа
+T9	CITY 395 400	Пензе
+T10	NUMBER 409 433	примерно 2500 километров
+T11	CITY 447 457	Челябинске
+T12	WORK_OF_ART 504 513	Казанская
+T13	ORGANIZATION 518 562	Свято-Тихвинского гуманитарного университета
+T14	CITY 635 647	Владивостока
+T15	CITY 651 657	Москвы
+T16	NUMBER 851 861	20 человек
+T17	NUMBER 975 983	40-50 км
+T18	ORGANIZATION 1165 1172	Орен.Ру
+T19	COUNTRY 1593 1599	России
+T20	PERSON 1636 1655	Серафима Саровского
+T21	COUNTRY 1667 1673	Россия
+T23	EVENT 102 114	крестный ход
+T3	EVENT 130 163	Под покровом Пресвятой Богородицы
+T24	PERSON 143 163	Пресвятой Богородицы
+T25	DATE 166 173	Сегодня
+T7	ORDINAL 305 310	430-й
+T26	EVENT 305 370	430-й годовщине явления чудотворной Казанской иконы Божьей Матери
+T27	EVENT 321 370	явления чудотворной Казанской иконы Божьей Матери
+T28	WORK_OF_ART 341 370	Казанской иконы Божьей Матери
+T29	PERSON 357 370	Божьей Матери
+T30	PERSON 489 502	Божией матери
+T31	WORK_OF_ART 483 513	икона Божией матери "Казанская
+T32	CITY 566 572	Москвы
+T33	RELIGION 591 603	православные
+T34	EVENT 678 691	крестном ходе
+T35	RELIGION 727 739	православное
+T36	PERSON 1081 1093	Божия Матерь
+T37	EVENT 1562 1576	крестных подов
+T38	RELIGION 1580 1592	православной
+T39	EVENT 1683 1699	крестными ходами
+R1	POSITIVE_TO Arg1:T20 Arg2:T39	
+T22	ARGUMENT_POS 1178 1247	Больные разными недугами, в том числе пьянством и курением исцеляются
+T40	ARGUMENT_POS 1249 1278	находятся без вести пропавшие
+T41	ARGUMENT_POS 1280 1314	враждующие между собой примиряются
+T42	ARGUMENT_POS 1346 1394	бесплодные семьи рожают здоровых и крепких детей
+T43	ARGUMENT_POS 1396 1483	терпящие притеснения на работе и дома, и, имеющие материальную нужду, получают просимое
+T44	ARGUMENT_POS 1316 1344	учащиеся - более преуспевают
+R2	OPINION_RELATES_TO Arg1:T22 Arg2:T37	
+R3	OPINION_RELATES_TO Arg1:T40 Arg2:T37	
+R4	OPINION_RELATES_TO Arg1:T41 Arg2:T37	
+R5	OPINION_RELATES_TO Arg1:T44 Arg2:T37	
+R6	OPINION_RELATES_TO Arg1:T42 Arg2:T37	
+R7	OPINION_BELONGS_TO Arg1:T22 Arg2:T18	
+R8	OPINION_BELONGS_TO Arg1:T40 Arg2:T18	
+T45	OPINION_WORD_NEG 1228 1236	курением
+T46	OPINION_WORD_NEG 1216 1225	пьянством
+R9	OPINION_BELONGS_TO Arg1:T41 Arg2:T18	
+R10	OPINION_BELONGS_TO Arg1:T44 Arg2:T18	
+R11	OPINION_BELONGS_TO Arg1:T42 Arg2:T18	
+R12	OPINION_BELONGS_TO Arg1:T43 Arg2:T18	
+T47	OPINION_WORD_NEG 1405 1416	притеснения
+T48	OPINION_WORD_NEG 1194 1202	недугами
+R13	OPINION_BELONGS_TO Arg1:T48 Arg2:T18	
+R14	OPINION_BELONGS_TO Arg1:T47 Arg2:T18	
+R15	OPINION_BELONGS_TO Arg1:T45 Arg2:T18	
+R16	OPINION_BELONGS_TO Arg1:T46 Arg2:T18	
+T49	OPINION_WORD_POS 1370 1378	здоровых
+T50	OPINION_WORD_POS 1381 1388	крепких
+R17	OPINION_BELONGS_TO Arg1:T49 Arg2:T18	
+R18	OPINION_BELONGS_TO Arg1:T50 Arg2:T18	
+R19	POSITIVE_TO Arg1:T33 Arg2:T34	
+R20	POSITIVE_TO Arg1:T16 Arg2:T34	
+R21	POSITIVE_TO Arg1:T16 Arg2:T36	
+T51	AUTHOR_POS 1562 1576	крестных подов
+R22	POS_AUTHOR_FROM Arg1:T51 Arg2:T22	
+R23	POS_AUTHOR_FROM Arg1:T51 Arg2:T40	
+R24	POS_AUTHOR_FROM Arg1:T51 Arg2:T41	
+R25	POS_AUTHOR_FROM Arg1:T51 Arg2:T44	
+R26	POS_AUTHOR_FROM Arg1:T51 Arg2:T42	
+R27	POS_AUTHOR_FROM Arg1:T51 Arg2:T43	

@@ -1,0 +1,45 @@
+T1	PRODUCT 8 17	Fallout 4
+T2	PROFESSION 74 111	фронтмен группы Dion and the Belmonts
+T3	ORGANIZATION 90 111	Dion and the Belmonts
+T4	PROFESSION 113 118	певец
+T5	PROFESSION 121 131	композитор
+T6	PERSON 132 144	Дион Димуччи
+T7	ORGANIZATION 169 182	ZeniMax Media
+T8	WORK_OF_ART 233 245	The Wanderer
+T9	PRODUCT 263 272	Fallout 4
+T10	DATE 288 299	в 2015 году
+T11	ORGANIZATION 839 853	UMG Recordings
+T12	ORGANIZATION 871 878	ZeniMax
+T13	PERSON 909 916	Димуччи
+T14	PERSON 938 942	Дион
+T15	MONEY 1066 1087	один миллион долларов
+T16	ORGANIZATION 1090 1103	ZeniMax Media
+T17	EVENT 145 156	подал в суд
+T18	WORK_OF_ART 249 272	трейлере игры Fallout 4
+T19	PROFESSION 364 376	разработчики
+T24	PROFESSION 1011 1016	Певец
+T25	EVENT 39 53	судебного иска
+T20	EFFECT_NEG 8 17	Fallout 4
+T21	EFFECT_NEG 169 182	ZeniMax Media
+T22	STATE_NEG 169 182	ZeniMax Media
+R1	NEG_STATE_FROM Arg1:T22 Arg2:T17	
+R2	NEG_EFFECT_FROM Arg1:T21 Arg2:T17	
+R3	NEGATIVE_TO Arg1:T6 Arg2:T7	
+R4	NEGATIVE_TO Arg1:T7 Arg2:T6	
+T23	ARGUMENT_NEG 189 272	не понравилось, как используется его песня «The Wanderer» в трейлере игры Fallout 4
+R5	OPINION_BELONGS_TO Arg1:T23 Arg2:T6	
+R6	OPINION_RELATES_TO Arg1:T23 Arg2:T7	
+T26	ARGUMENT_NEG 316 344	подача мелодии отвратительна
+T27	OPINION_WORD_NEG 331 344	отвратительна
+R7	OPINION_BELONGS_TO Arg1:T26 Arg2:T6	
+R8	OPINION_RELATES_TO Arg1:T26 Arg2:T7	
+T28	ARGUMENT_NEG 350 415	звучит, когда разработчики показывают череду беспричинных убийств
+R9	OPINION_RELATES_TO Arg1:T28 Arg2:T7	
+T29	OPINION_WORD_NEG 484 495	нежелателен
+T30	ARGUMENT_NEG 508 608	показывает повторяющиеся убийства в мрачном, дистопическом мире, где насилие прославляется как спорт
+R10	OPINION_RELATES_TO Arg1:T30 Arg2:T18	
+R11	OPINION_BELONGS_TO Arg1:T30 Arg2:T6	
+R12	OPINION_RELATES_TO Arg1:T29 Arg2:T18	
+R13	OPINION_BELONGS_TO Arg1:T28 Arg2:T6	
+T31	EFFECT_NEG 909 916	Димуччи
+T32	STATE_NEG 909 916	Димуччи

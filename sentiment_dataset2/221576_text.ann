@@ -1,0 +1,83 @@
+T1	PERSON 0 5	Путин
+T2	COUNTRY 9 15	России
+T3	FACILITY 36 63	соборе Парижской Богоматери
+T4	PERSON 64 78	Владимир Путин
+T5	PERSON 81 97	Эмманюэль Макрон
+T6	FACILITY 100 107	Версале
+T7	DATE 109 117	2017 год
+T8	PROFESSION 118 127	Президент
+T9	PERSON 135 149	Владимир Путин
+T10	PROFESSION 170 180	президенту
+T11	PERSON 189 206	Эмманюэлю Макрону
+T12	PROFESSION 237 250	лидеру страны
+T13	COUNTRY 259 271	французскому
+T14	FACILITY 310 337	Соборе Парижской Богоматери
+T15	FACILITY 341 350	Нотр-Дам
+T16	COUNTRY 372 379	Франции
+T17	CITY 505 511	Париже
+T18	NATIONALITY 542 549	россиян
+T19	PROFESSION 565 594	глава российского государства
+T20	PERSON 597 602	Путин
+T21	COUNTRY 685 692	Францию
+T22	COUNTRY 700 710	российских
+T23	FACILITY 860 876	Нотр-Дам-де-Пари
+T24	TIME 885 902	вечером 15 апреля
+T25	DATE 893 902	15 апреля
+T26	TIME 937 958	Ближе к утру вторника
+T28	CITY 43 52	Парижской
+T29	COUNTRY 128 134	России
+T30	PROFESSION 118 134	Президент России
+T31	COUNTRY 181 188	Франции
+T32	PROFESSION 170 188	президенту Франции
+T33	EVENT 301 337	пожара в Соборе Парижской Богоматери
+T34	LOCATION 401 412	европейской
+T35	RELIGION 451 463	христианских
+T36	DATE 492 502	этой ночью
+T37	COUNTRY 571 582	российского
+T38	EVENT 852 857	Пожар
+T39	DATE 950 958	вторника
+T40	PROFESSION 997 1005	пожарных
+T41	EVENT 1124 1141	пожар был потушен
+T27	EVENT 26 63	пожаром в соборе Парижской Богоматери
+T42	CITY 317 326	Парижской
+T43	EVENT 150 169	направил телеграмму
+T44	EVENT 26 33	пожаром
+T45	EVENT 301 307	пожара
+T46	EVENT 852 876	Пожар в Нотр-Дам-де-Пари
+T47	EVENT 904 935	обрушились шпиль и крыша собора
+T48	EVENT 959 981	огонь удалось потушить
+T49	TIME 1142 1156	за 15-30 минут
+T50	EFFECT_NEG 9 15	России
+T51	STATE_NEG 9 15	России
+R1	NEG_STATE_FROM Arg1:T51 Arg2:T27	
+R2	NEG_EFFECT_FROM Arg1:T50 Arg2:T27	
+T52	EFFECT_NEG 36 63	соборе Парижской Богоматери
+R3	POSITIVE_TO Arg1:T9 Arg2:T11	
+T53	EFFECT_NEG 189 206	Эмманюэлю Макрону
+T54	STATE_NEG 189 206	Эмманюэлю Макрону
+R4	NEG_STATE_FROM Arg1:T54 Arg2:T33	
+R5	NEG_EFFECT_FROM Arg1:T53 Arg2:T33	
+R6	NEG_EFFECT_FROM Arg1:T52 Arg2:T44	
+T55	EFFECT_NEG 259 271	французскому
+T56	STATE_NEG 259 271	французскому
+R7	NEG_STATE_FROM Arg1:T56 Arg2:T33	
+R8	NEG_EFFECT_FROM Arg1:T55 Arg2:T33	
+T57	EMOTION_NEG 220 230	сочувствия
+R9	STATE_BELONGS_TO Arg1:T57 Arg2:T9	
+R10	POSITIVE_TO Arg1:T9 Arg2:T14	
+T58	ARGUMENT_POS 352 379	исторический символ Франции
+T59	OPINION_WORD_POS 381 390	бесценное
+T60	ARGUMENT_POS 381 431	бесценное сокровище европейской и мировой культуры
+T61	ARGUMENT_POS 433 471	одна из важнейших христианских святынь
+T62	OPINION_WORD_POS 441 450	важнейших
+R11	OPINION_BELONGS_TO Arg1:T58 Arg2:T9	
+R12	OPINION_BELONGS_TO Arg1:T60 Arg2:T9	
+R13	OPINION_BELONGS_TO Arg1:T61 Arg2:T9	
+R14	OPINION_RELATES_TO Arg1:T58 Arg2:T14	
+R15	OPINION_RELATES_TO Arg1:T60 Arg2:T14	
+R16	OPINION_RELATES_TO Arg1:T61 Arg2:T14	
+T63	EMOTION_NEG 526 531	болью
+R17	STATE_BELONGS_TO Arg1:T63 Arg2:T18	
+T64	EFFECT_NEG 860 876	Нотр-Дам-де-Пари
+R18	NEG_EFFECT_FROM Arg1:T64 Arg2:T38	
+R19	NEG_EFFECT_FROM Arg1:T64 Arg2:T47	

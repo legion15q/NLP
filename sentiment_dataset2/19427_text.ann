@@ -1,0 +1,38 @@
+T1	PERSON 0 16	Лэнса Армстронга
+T2	EVENT 39 51	Тур де Франс
+T4	ORGANIZATION 55 83	Антидопинговое агентство США
+T5	ORGANIZATION 85 90	USADA
+T6	PERSON 122 138	Лэнса Армстронга
+T7	ORGANIZATION 201 206	USADA
+T8	DATE 224 233	в четверг
+T9	PERSON 250 259	Армстронг
+T10	ORGANIZATION 386 401	федеральный суд
+T11	DATE 437 455	С 1999 по 2005 год
+T12	EVENT 505 517	Тур де Франс
+T13	ORGANIZATION 740 745	USADA
+T14	PERSON 762 771	Армстронг
+T15	DATE 772 792	в течение многих лет
+T16	AGE 860 869	40-летний
+T17	PERSON 870 879	Армстронг
+T18	DATE 913 927	в прошлом году
+T19	PERSON 1021 1030	Армстронг
+T3	COUNTRY 80 83	США
+T20	PROFESSION 110 121	велогонщика
+T21	EVENT 185 198	соревнованиях
+T22	PROFESSION 341 350	Спортсмен
+T23	PERSON 456 465	Армстронг
+T24	NUMBER 466 470	семь
+T25	PROFESSION 539 549	велогонщик
+T26	DISEASE 996 1007	раком яичка
+T27	DISEASE 996 1001	раком
+T28	DISEASE 1056 1061	раком
+T29	STATE_NEG 0 16	Лэнса Армстронга
+T30	EFFECT_NEG 0 16	Лэнса Армстронга
+R1	NEGATIVE_TO Arg1:T4 Arg2:T6	
+R2	NEGATIVE_TO Arg1:T6 Arg2:T4	
+T31	EFFECT_NEG 122 138	Лэнса Армстронга
+T32	STATE_NEG 122 138	Лэнса Армстронга
+T33	ARGUMENT_NEG 566 647	«нет никаких физических свидетельств», которые подкрепляли бы обвинения в допинге
+R3	OPINION_RELATES_TO Arg1:T33 Arg2:T4	
+R4	OPINION_BELONGS_TO Arg1:T33 Arg2:T6	
+R5	NEGATIVE_TO Arg1:T17 Arg2:T26	

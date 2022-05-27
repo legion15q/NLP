@@ -1,0 +1,69 @@
+T1	COUNTRY 7 17	российской
+T2	EVENT 38 75	Чемпионат Мира по настольному футболу
+T3	DATE 83 91	4 января
+T4	COUNTRY 100 110	Российской
+T5	EVENT 134 171	Чемпионат Мира по настольному футболу
+T6	COUNTRY 175 182	Францию
+T7	CITY 187 191	Нант
+T8	DATE 197 214	третий год подряд
+T9	COUNTRY 339 345	России
+T10	DATE 497 508	В 2012 году
+T11	CITY 576 580	Нант
+T12	COUNTRY 582 589	Франция
+T13	DATE 591 638	во время Новогодних праздников: с 5 по 9 января
+T16	DATE 640 652	На 3 декабря
+T17	ORGANIZATION 664 692	Федерации Спортивного Кикера
+T18	NUMBER 721 731	тринадцать
+T19	NUMBER 777 782	двоих
+T20	PERSON 850 867	Рябчиковом Антоне
+T21	DATE 891 904	не первый год
+T22	DATE 1010 1029	На сегодняшний день
+T23	EVENT 1126 1146	финальном чемпионате
+T24	ORGANIZATION 1194 1230	Реабилитационном Центре "Преодоление
+T25	DATE 1232 1251	12 ноября 2011 года
+T26	PERSON 1257 1267	Александра
+T27	PERSON 1270 1275	Антон
+T28	EVENT 1346 1360	Чемпионат Мира
+T29	ORGANIZATION 1390 1403	Независимость
+T30	COUNTRY 1676 1682	России
+T31	PERSON 1847 1863	Громов Александр
+T32	DATE 1871 1884	4 января 2012
+T33	TIME 1864 1890	22:18, 4 января 2012 (UTC)
+T34	PROFESSION 1081 1093	футболистами
+T35	AWARD 1283 1295	первое место
+T36	PERSON 825 847	Косоруковой Александре
+T37	EVENT 509 523	Чемпионат Мира
+T14	ORGANIZATION 100 118	Российской сборной
+T15	ORGANIZATION 7 25	российской команды
+T38	EVENT 600 621	Новогодних праздников
+T39	EVENT 600 610	Новогодних
+T40	ORGANIZATION 1219 1230	Преодоление
+T41	EVENT 1335 1360	поездку на Чемпионат Мира
+T42	EFFECT_NEG 7 25	российской команды
+T43	STATE_NEG 7 25	российской команды
+R1	POSITIVE_TO Arg1:T15 Arg2:T2	
+R2	POSITIVE_TO Arg1:T14 Arg2:T5	
+T44	EFFECT_POS 509 523	Чемпионат Мира
+T45	AUTHOR_POS 825 847	Косоруковой Александре
+T46	AUTHOR_POS 850 867	Рябчиковом Антоне
+T47	ARGUMENT_POS 905 939	активно играют в настольный футбол
+T48	ARGUMENT_POS 942 1008	принимали участие во множестве соревнований, причем весьма успешно
+R3	POS_AUTHOR_FROM Arg1:T46 Arg2:T47	
+R4	POS_AUTHOR_FROM Arg1:T46 Arg2:T48	
+R5	POS_AUTHOR_FROM Arg1:T45 Arg2:T47	
+R6	POS_AUTHOR_FROM Arg1:T45 Arg2:T48	
+T49	ARGUMENT_POS 1063 1093	наиболее сильными футболистами
+R7	POS_AUTHOR_FROM Arg1:T46 Arg2:T49	
+R8	POS_AUTHOR_FROM Arg1:T45 Arg2:T49	
+T50	EFFECT_POS 1257 1267	Александра
+T51	EFFECT_POS 1270 1275	Антон
+T52	STATE_POS 1257 1267	Александра
+T53	STATE_POS 1270 1275	Антон
+R9	POS_STATE_FROM Arg1:T52 Arg2:T35	
+R10	POS_STATE_FROM Arg1:T53 Arg2:T35	
+R11	POS_EFFECT_FROM Arg1:T50 Arg2:T35	
+R12	POS_EFFECT_FROM Arg1:T51 Arg2:T35	
+R13	POSITIVE_TO Arg1:T27 Arg2:T35	
+R14	POSITIVE_TO Arg1:T26 Arg2:T35	
+R15	POSITIVE_TO Arg1:T26 Arg2:T41	
+R16	POSITIVE_TO Arg1:T27 Arg2:T41	

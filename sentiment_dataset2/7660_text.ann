@@ -1,0 +1,47 @@
+T1	STATE_OR_PROVINCE 12 22	Калифорнии
+T2	STATE_OR_PROVINCE 45 59	Калифорнийском
+T3	CITY 67 74	Окланде
+T4	STATE_OR_PROVINCE 273 283	Калифорнии
+T5	MONEY 395 406	1,2 доллара
+T6	MONEY 417 430	1000 долларов
+T7	MONEY 442 453	18 долларов
+T8	MONEY 522 542	83 миллиона долларов
+T9	MONEY 585 607	до 1 миллиона долларов
+T10	EVENT 938 949	референдуме
+T11	CITY 952 959	Окланде
+T12	PERSON 1053 1063	Джэнис Хан
+T13	PROFESSION 1066 1103	члена городского совета Лос-Анджелеса
+T14	CITY 1090 1103	Лос-Анджелеса
+T15	STATE_OR_PROVINCE 1164 1174	Калифорнии
+T16	ORGANIZATION 1225 1249	законодательное собрание
+T18	PROFESSION 1392 1399	депутат
+T19	PROFESSION 1576 1586	президенте
+T20	ORGANIZATION 1692 1721	Комиссия штата по Уравниванию
+T21	ORGANIZATION 1723 1744	Board of Equalization
+T22	MONEY 1849 1875	около 1 миллиарда долларов
+T23	MONEY 1935 1948	250 миллионов
+T24	PROFESSION 1950 1957	Адвокат
+T25	DATE 2290 2298	в апреле
+T26	DATE 75 85	во вторник
+T27	EVENT 94 104	референдум
+T28	DATE 284 302	около 10 лет назад
+T30	STATE_OR_PROVINCE 1009 1019	Калифорнии
+T31	ORGANIZATION 1072 1103	городского совета Лос-Анджелеса
+T17	PERSON 1400 1410	Том Амиано
+T32	ORGANIZATION 1545 1571	федерального правительства
+T33	ORGANIZATION 1558 1571	правительства
+T34	PERSON 1587 1592	Обаме
+T35	PROFESSION 1626 1635	политиков
+T36	PERSON 1958 1969	Брюс Мёркин
+T37	PROFESSION 2076 2088	законодатели
+T38	PERCENT 2299 2303	56 %
+T29	EVENT 2249 2276	опроса общественного мнения
+T39	ARGUMENT_NEG 2130 2165	слишком боятся общественного мнения
+R1	OPINION_RELATES_TO Arg1:T39 Arg2:T37	
+R2	OPINION_BELONGS_TO Arg1:T39 Arg2:T36	
+T40	EFFECT_POS 1692 1721	Комиссия штата по Уравниванию
+R3	POS_EFFECT_FROM Arg1:T40 Arg2:T22	
+T41	EFFECT_POS 67 74	Окланде
+R4	POS_EFFECT_FROM Arg1:T41 Arg2:T9	
+T42	OPINION_WORD_POS 2224 2236	одобрительно
+R5	OPINION_BELONGS_TO Arg1:T42 Arg2:T38	

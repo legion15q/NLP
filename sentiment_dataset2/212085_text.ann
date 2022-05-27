@@ -1,0 +1,75 @@
+T1	ORGANIZATION 0 12	Первый канал
+T2	PERSON 21 25	Бера
+T3	PERSON 42 47	Друзя
+T4	WORK_OF_ART 84 112	Кто хочет стать миллионером?
+T5	WORK_OF_ART 117 133	Что? Где? Когда?
+T6	PROFESSION 146 164	главного редактора
+T7	PERSON 165 174	Илью Бера
+T8	PERSON 185 201	Александра Друзя
+T9	DATE 246 277	в пятницу, 15 февраля 2019 года
+T11	WORK_OF_ART 328 344	Что? Где? Когда?
+T12	ORGANIZATION 348 362	Первому каналу
+T13	ORGANIZATION 405 419	Первого канала
+T14	PERSON 480 489	Ильи Бера
+T15	PERSON 492 508	Александра Друзя
+T16	WORK_OF_ART 546 574	Кто хочет стать миллионером?
+T17	WORK_OF_ART 579 595	Что? Где? Когда?
+T18	ORGANIZATION 625 640	Красный Квадрат
+T19	PROFESSION 698 710	гендиректора
+T20	WORK_OF_ART 873 883	Миллионера
+T21	PERSON 927 936	Ильи Бера
+T22	PERSON 1026 1034	Илья Бер
+T23	ORGANIZATION 1310 1322	Первый канал
+T24	WORK_OF_ART 1358 1386	Кто хочет стать миллионером?
+T25	PERSON 1399 1415	Александра Друзя
+T26	PERSON 1418 1433	Виктора Сиднева
+T27	ORGANIZATION 49 61	Первый канал
+T28	ORDINAL 49 55	Первый
+T29	ORDINAL 0 6	Первый
+T30	PROFESSION 177 184	знатока
+T10	WORK_OF_ART 658 686	Кто хочет стать миллионером?
+T31	PERSON 711 726	Илью Кривицкого
+T32	ORGANIZATION 598 640	Пресс-служба телекомпании «Красный Квадрат
+T33	EVENT 13 20	наказал
+T34	EVENT 135 145	отстранили
+T35	EFFECT_NEG 21 25	Бера
+T36	STATE_NEG 21 25	Бера
+R1	NEG_STATE_FROM Arg1:T36 Arg2:T33	
+R2	NEG_EFFECT_FROM Arg1:T35 Arg2:T33	
+R3	NEGATIVE_TO Arg1:T1 Arg2:T2	
+R4	NEGATIVE_TO Arg1:T2 Arg2:T1	
+T37	EFFECT_NEG 165 174	Илью Бера
+T38	STATE_NEG 165 174	Илью Бера
+R5	NEG_STATE_FROM Arg1:T38 Arg2:T34	
+R6	NEG_EFFECT_FROM Arg1:T37 Arg2:T34	
+T39	EFFECT_NEG 185 201	Александра Друзя
+T40	STATE_NEG 185 201	Александра Друзя
+R7	NEG_STATE_FROM Arg1:T40 Arg2:T34	
+R8	NEG_EFFECT_FROM Arg1:T39 Arg2:T34	
+R9	NEGATIVE_TO Arg1:T8 Arg2:T34	
+R10	NEGATIVE_TO Arg1:T7 Arg2:T34	
+R11	NEGATIVE_TO Arg1:T27 Arg2:T7	
+R12	NEGATIVE_TO Arg1:T7 Arg2:T27	
+R13	NEGATIVE_TO Arg1:T27 Arg2:T8	
+R14	NEGATIVE_TO Arg1:T8 Arg2:T27	
+T41	EFFECT_NEG 328 344	Что? Где? Когда?
+T42	EFFECT_NEG 348 362	Первому каналу
+R15	NEGATIVE_TO Arg1:T13 Arg2:T14	
+R16	NEGATIVE_TO Arg1:T13 Arg2:T15	
+R17	NEGATIVE_TO Arg1:T14 Arg2:T13	
+R18	NEGATIVE_TO Arg1:T15 Arg2:T13	
+T43	EFFECT_NEG 480 489	Ильи Бера
+T44	STATE_NEG 480 489	Ильи Бера
+T45	EFFECT_NEG 492 508	Александра Друзя
+T46	STATE_NEG 492 508	Александра Друзя
+T47	ARGUMENT_NEG 749 842	подвела вещателя, программу, всех, кто на ней работает, и наших ни в чем не повинных зрителей
+R19	OPINION_RELATES_TO Arg1:T47 Arg2:T14	
+R20	OPINION_RELATES_TO Arg1:T47 Arg2:T15	
+R21	OPINION_BELONGS_TO Arg1:T47 Arg2:T31	
+T48	ARGUMENT_NEG 1039 1087	не вправе устраивать «следственные эксперименты»
+R22	OPINION_RELATES_TO Arg1:T48 Arg2:T22	
+R23	OPINION_BELONGS_TO Arg1:T48 Arg2:T31	
+T49	EFFECT_NEG 1399 1415	Александра Друзя
+T50	STATE_NEG 1399 1415	Александра Друзя
+T51	STATE_NEG 1418 1433	Виктора Сиднева
+T52	EFFECT_NEG 1418 1433	Виктора Сиднева

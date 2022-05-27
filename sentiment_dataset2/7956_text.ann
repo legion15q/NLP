@@ -1,0 +1,36 @@
+T1	COUNTRY 2 8	Японии
+T3	ORGANIZATION 81 114	Либерально-демократической партии
+T4	COUNTRY 117 123	Японии
+T5	DATE 129 139	30 августа
+T6	EVENT 154 174	парламентские выборы
+T7	NUMBER 255 260	двумя
+T8	ORGANIZATION 313 335	Демократическую партию
+T9	PERCENT 354 358	40 %
+T10	ORGANIZATION 394 420	Либерально-демократическую
+T11	PERCENT 428 431	21%
+T12	DATE 466 482	с начала августа
+T13	DATE 548 557	за 50 лет
+T14	ORGANIZATION 9 18	оппозиция
+T2	FACILITY 67 114	Штаб-квартира Либерально-демократической партии
+T15	IDEOLOGY 81 107	Либерально-демократической
+T16	IDEOLOGY 81 91	Либерально
+T17	IDEOLOGY 92 107	демократической
+T18	EVENT 168 174	выборы
+T19	ORGANIZATION 224 233	оппозиция
+T20	COUNTRY 261 270	японскими
+T21	IDEOLOGY 299 312	оппозиционную
+T22	IDEOLOGY 394 404	Либерально
+T23	IDEOLOGY 405 420	демократическую
+T24	IDEOLOGY 394 420	Либерально-демократическую
+T25	ORGANIZATION 489 498	оппозиция
+T26	ORDINAL 540 547	впервые
+T27	ORGANIZATION 703 712	Оппозиция
+T28	IDEOLOGY 313 328	Демократическую
+T29	ARGUMENT_NEG 656 682	плохое состояние экономики
+T30	OPINION_WORD_NEG 656 662	плохое
+T31	OPINION_WORD_NEG 685 701	рост безработицы
+R1	OPINION_RELATES_TO Arg1:T29 Arg2:T10	
+R2	OPINION_RELATES_TO Arg1:T30 Arg2:T10	
+R3	OPINION_RELATES_TO Arg1:T31 Arg2:T10	
+T32	ARGUMENT_POS 716 773	обещает уделять больше внимания интересам простых граждан
+R4	OPINION_RELATES_TO Arg1:T32 Arg2:T27	

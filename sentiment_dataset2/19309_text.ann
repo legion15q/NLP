@@ -1,0 +1,95 @@
+T1	STATE_OR_PROVINCE 5 16	Массачусетс
+T5	ORGANIZATION 75 128	Палата представителей американского штата Массачусетс
+T6	STATE_OR_PROVINCE 117 128	Массачусетс
+T7	DATE 137 146	6 августа
+T8	PROFESSION 178 188	президента
+T9	ORGANIZATION 195 203	Конгресс
+T10	STATE_OR_PROVINCE 263 281	Нагорного Карабаха
+T12	ORGANIZATION 291 306	PanARMENIAN.Net
+T13	ORGANIZATION 316 364	представительство Нагорно-Карабахской республики
+T15	COUNTRY 373 376	США
+T16	PROFESSION 405 444	член Палаты представителей Массачусетса
+T17	PERSON 445 458	Джонатан Хечт
+T18	CITY 496 504	Сумгаите
+T19	CITY 506 516	Кировабаде
+T20	CITY 518 522	Баку
+T21	COUNTRY 568 579	Азербайджан
+T22	STATE_OR_PROVINCE 650 668	Нагорного Карабаха
+T24	COUNTRY 702 713	Азербайджан
+T25	STATE_OR_PROVINCE 773 791	Нагорного Карабаха
+T27	DATE 864 884	10 декабря 1991 года
+T28	STATE_OR_PROVINCE 1008 1026	Нагорным Карабахом
+T30	DATE 1114 1121	19 июля
+T31	STATE_OR_PROVINCE 1145 1148	НКР
+T32	ORGANIZATION 1164 1203	Палате представителей штата Массачусетс
+T33	STATE_OR_PROVINCE 1256 1262	Арцаха
+T34	PROFESSION 1405 1439	постоянный представитель НКР в США
+T35	PERSON 1440 1455	Роберт Аветисян
+T36	PERSON 1458 1466	Аветисян
+T37	PROFESSION 1533 1545	конгрессмена
+T38	PERSON 1561 1577	Джеймса Галстяна
+T39	PROFESSION 1580 1597	шерифа Мидлесекса
+T40	PERSON 1598 1615	Питера Кутунджяна
+T41	COUNTRY 1641 1644	США
+T42	STATE_OR_PROVINCE 1655 1661	Арцаха
+T2	COUNTRY 97 110	американского
+T3	COUNTRY 189 192	США
+T43	ORGANIZATION 410 444	Палаты представителей Массачусетса
+T44	STATE_OR_PROVINCE 432 444	Массачусетса
+T45	PERSON 1546 1551	Хетча
+T29	IDEOLOGY 1055 1065	демократии
+T46	IDEOLOGY 954 964	демократию
+T47	EVENT 1122 1142	президентские выборы
+T4	STATE_OR_PROVINCE 43 72	Нагорно-Карабахской Респулики
+T48	PROFESSION 178 192	президента США
+T11	STATE_OR_PROVINCE 366 369	НКР
+T14	STATE_OR_PROVINCE 334 364	Нагорно-Карабахской республики
+T49	IDEOLOGY 233 248	демократическую
+T23	STATE_OR_PROVINCE 1299 1311	Массачусетса
+T26	STATE_OR_PROVINCE 1192 1203	Массачусетс
+T50	CITY 1587 1597	Мидлесекса
+T51	STATE_OR_PROVINCE 1430 1433	НКР
+T52	COUNTRY 1436 1439	США
+T53	NATIONALITY 488 493	армян
+T54	EVENT 888 911	всенародном референдуме
+T56	LAW 386 395	резолюции
+T57	LAW 461 470	Резолюция
+T58	LAW 966 975	Резолюция
+T59	LAW 795 804	резолюции
+T60	LAW 1216 1262	резолюции, поддерживающей независимость Арцаха
+T61	LAW 1275 1284	резолюцию
+T62	LAW 1511 1520	резолюции
+T63	LAW 1395 1404	резолюции
+T64	PROFESSION 1580 1586	шерифа
+T65	EVENT 129 136;147 156	приняла резолюцию
+T55	EVENT 480 493	погромы армян
+T66	EVENT 480 487	погромы
+T67	LAW 147 156	резолюцию
+T68	EVENT 1385 1404	принятием резолюции
+T69	PROFESSION 1286 1311	законодатели Массачусетса
+R1	POSITIVE_TO Arg1:T1 Arg2:T4	
+R2	POSITIVE_TO Arg1:T5 Arg2:T67	
+T70	EFFECT_POS 147 156	резолюцию
+R3	POSITIVE_TO Arg1:T5 Arg2:T10	
+R4	NEGATIVE_TO Arg1:T5 Arg2:T55	
+R5	NEGATIVE_TO Arg1:T5 Arg2:T24	
+T71	ARGUMENT_NEG 714 791	своими враждебными шагами продолжает угрожать безопасности Нагорного Карабаха
+R6	OPINION_RELATES_TO Arg1:T71 Arg2:T24	
+R7	OPINION_BELONGS_TO Arg1:T71 Arg2:T5	
+R8	POSITIVE_TO Arg1:T35 Arg2:T32	
+R9	POSITIVE_TO Arg1:T35 Arg2:T60	
+T72	ARGUMENT_POS 1207 1263	принятие резолюции, поддерживающей независимость Арцаха.
+R10	OPINION_RELATES_TO Arg1:T72 Arg2:T32	
+R11	OPINION_BELONGS_TO Arg1:T72 Arg2:T35	
+T73	ARGUMENT_POS 1312 1363	поддержали всеобщие ценности прав и свобод человека
+R12	POSITIVE_TO Arg1:T73 Arg2:T32	
+R13	OPINION_RELATES_TO Arg1:T73 Arg2:T32	
+R14	OPINION_BELONGS_TO Arg1:T73 Arg2:T35	
+R15	POSITIVE_TO Arg1:T36 Arg2:T45	
+R16	POSITIVE_TO Arg1:T36 Arg2:T38	
+R17	POSITIVE_TO Arg1:T36 Arg2:T40	
+T74	ARGUMENT_POS 1622 1661	усилия по защите в США интересов Арцаха
+R18	OPINION_RELATES_TO Arg1:T74 Arg2:T40	
+R19	OPINION_RELATES_TO Arg1:T74 Arg2:T38	
+R20	OPINION_RELATES_TO Arg1:T74 Arg2:T45	
+R21	OPINION_BELONGS_TO Arg1:T74 Arg2:T36	

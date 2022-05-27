@@ -1,0 +1,79 @@
+T1	COUNTRY 2 14	Азербайджане
+T2	EVENT 73 94	парламентских выборов
+T3	COUNTRY 111 123	Азербайджане
+T4	ORGANIZATION 177 194	Новый Азербайджан
+T5	PROFESSION 196 206	президента
+T6	PERSON 214 228	Ильхама Алиева
+T7	COUNTRY 231 246	Азербайджанская
+T8	ORGANIZATION 326 343	Новый Азербайджан
+T9	PROFESSION 345 355	президента
+T10	LOCATION 491 496	Запад
+T11	COUNTRY 505 516	Азербайджан
+T12	COUNTRY 572 584	американской
+T13	COUNTRY 608 618	Афганистан
+T14	LOCATION 632 637	Запад
+T15	COUNTRY 656 667	Азербайджан
+T16	LOCATION 716 722	Европы
+T17	ORGANIZATION 769 773	ОБСЕ
+T18	ORGANIZATION 865 878	Центризбирком
+T19	NUMBER 1065 1068	125
+T20	NUMBER 1085 1087	75
+T21	CITY 1117 1121	Баку
+T22	DATE 1190 1203	в понедельник
+T23	CITY 1230 1240	Вашингтоне
+T24	EVENT 1261 1282	парламентских выборов
+T25	EVENT 22 40	выборы в парламент
+T26	ORGANIZATION 31 40	парламент
+T27	ORGANIZATION 73 86	парламентских
+T28	PROFESSION 196 213	президента страны
+T29	ORGANIZATION 231 256	Азербайджанская оппозиция
+T30	EVENT 281 288	выборов
+T31	PERSON 356 370	Ильхама Алиева
+T32	ORGANIZATION 385 403	властные структуры
+T33	IDEOLOGY 423 438	демократические
+T34	LOCATION 473 481	западной
+T35	ORGANIZATION 865 891	Центризбирком Азербайджана
+T36	COUNTRY 879 891	Азербайджана
+T37	EVENT 947 958	голосования
+T38	PROFESSION 960 969	Аналитики
+T39	ORGANIZATION 995 1008	партии власти
+T40	ORGANIZATION 1051 1061	парламенте
+T41	ORGANIZATION 1100 1114	посольства США
+T42	COUNTRY 1111 1114	США
+T43	PROFESSION 1088 1114	сотрудников посольства США
+T44	EVENT 1151 1162	голосования
+T45	ORGANIZATION 1204 1218	госдепартамент
+T46	ORGANIZATION 1261 1274	парламентских
+T48	COUNTRY 183 194	Азербайджан
+T49	COUNTRY 332 343	Азербайджан
+T50	EVENT 1219 1227	выступит
+T47	EFFECT_POS 22 40	выборы в парламент
+T51	EFFECT_POS 73 94	парламентских выборов
+T52	EFFECT_POS 177 194	Новый Азербайджан
+T53	STATE_POS 177 194	Новый Азербайджан
+T54	STATE_NEG 231 256	Азербайджанская оппозиция
+T55	ARGUMENT_NEG 294 305	подтасованы
+R1	OPINION_RELATES_TO Arg1:T55 Arg2:T30	
+R2	NEGATIVE_TO Arg1:T29 Arg2:T30	
+T56	EFFECT_NEG 231 256	Азербайджанская оппозиция
+R3	OPINION_BELONGS_TO Arg1:T55 Arg2:T29	
+T57	ARGUMENT_NEG 385 446	властные структуры подавляют в стране демократические свободы
+R4	OPINION_RELATES_TO Arg1:T57 Arg2:T8	
+R5	OPINION_BELONGS_TO Arg1:T57 Arg2:T29	
+R6	NEGATIVE_TO Arg1:T29 Arg2:T32	
+R7	NEGATIVE_TO Arg1:T29 Arg2:T8	
+R8	NEGATIVE_TO Arg1:T8 Arg2:T29	
+R9	NEGATIVE_TO Arg1:T32 Arg2:T29	
+R10	POSITIVE_TO Arg1:T10 Arg2:T11	
+T58	ARGUMENT_POS 517 618	стратегически важным транзитным пунктом для переброски американской живой силы и техники в Афганистан
+R11	OPINION_BELONGS_TO Arg1:T58 Arg2:T10	
+R12	OPINION_RELATES_TO Arg1:T58 Arg2:T11	
+R13	POSITIVE_TO Arg1:T14 Arg2:T15	
+T59	STATE_POS 632 637	Запад
+T60	EFFECT_POS 656 667	Азербайджан
+T61	ARGUMENT_POS 668 738	может стать альтернативным источников снабжения Европы природным газом
+R14	OPINION_RELATES_TO Arg1:T61 Arg2:T15	
+R15	OPINION_BELONGS_TO Arg1:T61 Arg2:T14	
+R16	POSITIVE_TO Arg1:T35 Arg2:T37	
+T62	EFFECT_POS 995 1008	партии власти
+T63	STATE_POS 995 1008	партии власти

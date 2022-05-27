@@ -1,0 +1,97 @@
+T1	AGE 0 9	300-летие
+T3	WORK_OF_ART 59 76	Балыкинская икона
+T4	ORGANIZATION 80 107	Свято-Введенского монастыря
+T5	CITY 110 114	Орле
+T6	AGE 138 145	300 лет
+T8	DATE 213 224	В этот день
+T9	COUNTRY 235 245	российских
+T10	COUNTRY 248 258	украинских
+T11	ORGANIZATION 361 395	Свято-Введенском женском монастыре
+T12	CITY 396 400	Орла
+T13	DATE 406 417	с 1712 года
+T14	DATE 476 506	в самом конце ноября 2008 года
+T15	CITY 530 536	Москву
+T16	PROFESSION 571 580	патриарха
+T17	DATE 593 601	В те дни
+T18	DATE 694 705	с 1709 года
+T19	EVENT 716 732	Полтавской битвы
+T20	CITY 738 747	Стародуба
+T22	PERSON 818 826	Дульский
+T23	ORDINAL 936 943	первому
+T24	FACILITY 987 1007	храм в селе Балыкино
+T25	CITY 999 1007	Балыкино
+T26	STATE_OR_PROVINCE 1018 1039	Черниговской губернии
+T27	DATE 1077 1088	в 1711 году
+T29	CITY 1621 1629	Балыкино
+T30	DISTRICT 1630 1664	Погарского района Брянской области
+T31	STATE_OR_PROVINCE 1648 1664	Брянской области
+T33	CITY 1724 1728	Орле
+T34	ORDINAL 1732 1738	третий
+T35	CITY 1756 1762	Глухов
+T36	STATE_OR_PROVINCE 1763 1778	Сумской области
+T37	COUNTRY 1782 1789	Украине
+T39	PERSON 1976 1986	Богородица
+T40	PROFESSION 2081 2093	Председатель
+T41	PERSON 2188 2198	Богородица
+T42	DATE 2219 2231	в годы войны
+T43	PROFESSION 2239 2251	председатель
+T44	DATE 2368 2378	В наши дни
+T2	WORK_OF_ART 10 53	Балыкинской чудотворной иконы Божией Матери
+T45	EVENT 0 53	300-летие Балыкинской чудотворной иконы Божией Матери
+T46	PERSON 40 53	Божией Матери
+T47	DATE 118 125	13 июня
+T48	WORK_OF_ART 168 187	иконы Божией Матери
+T49	PERSON 174 187	Божией Матери
+T50	RELIGION 259 271	православных
+T51	EVENT 287 308	престольные праздники
+T52	PERSON 581 591	Алексия II
+T53	ORDINAL 589 591	II
+T54	NUMBER 641 647	тысячи
+T55	CITY 648 657	москвичей
+T56	DATE 707 715	Накануне
+T57	NATIONALITY 798 804	шведов
+T21	PERSON 850 860	Богородицы
+T58	NUMBER 1113 1119	дважды
+T59	PERSON 1137 1147	Богородицу
+T60	PERSON 1236 1248	Божия Матерь
+T61	ORDINAL 1307 1313	первое
+T62	PERSON 1344 1352	Юлианией
+T63	FACILITY 1578 1613	церкви святителя Николая Чудотворца
+T28	PERSON 1595 1613	Николая Чудотворца
+T64	CITY 10 21	Балыкинской
+T65	CITY 59 70	Балыкинская
+T66	CITY 200 211	Балыкинской
+T7	EVENT 1837 1846	революции
+T32	EVENT 1849 1866	гражданской войны
+T67	PROFESSION 1942 1962	председателю колхоза
+T68	PERSON 2452 2462	Богородицы
+T69	DISTRICT 1630 1647	Погарского района
+R1	POSITIVE_TO Arg1:T52 Arg2:T48	
+T38	EFFECT_POS 361 395	Свято-Введенском женском монастыре
+R2	POS_EFFECT_FROM Arg1:T38 Arg2:T51	
+R3	POSITIVE_TO Arg1:T11 Arg2:T48	
+R4	POSITIVE_TO Arg1:T50 Arg2:T48	
+R5	POSITIVE_TO Arg1:T55 Arg2:T48	
+T70	ARGUMENT_NEG 1180 1206	неисполнение святого обета
+R6	OPINION_BELONGS_TO Arg1:T70 Arg2:T59	
+R7	OPINION_BELONGS_TO Arg1:T70 Arg2:T22	
+R8	POSITIVE_TO Arg1:T60 Arg2:T48	
+T71	OPINION_WORD_POS 1314 1323	исцеление
+R9	OPINION_RELATES_TO Arg1:T71 Arg2:T48	
+T72	ARGUMENT_POS 1381 1436	Вместе с исцелениями ширилась и слава чудотворной иконы
+R10	OPINION_RELATES_TO Arg1:T72 Arg2:T48	
+T73	ARGUMENT_POS 1495 1554	сам первоисточник и копии с иконы сохранились до наших дней
+T74	OPINION_WORD_POS 1473 1484	Удивительно
+R11	OPINION_RELATES_TO Arg1:T73 Arg2:T48	
+R12	OPINION_RELATES_TO Arg1:T74 Arg2:T48	
+T75	AUTHOR_POS 168 187	иконы Божией Матери
+R13	POS_AUTHOR_FROM Arg1:T75 Arg2:T74	
+R14	POS_AUTHOR_FROM Arg1:T75 Arg2:T73	
+T76	ARGUMENT_POS 2342 2365	само по себе было чудом
+R15	OPINION_RELATES_TO Arg1:T76 Arg2:T41	
+T77	AUTHOR_POS 2188 2198	Богородица
+R16	POS_AUTHOR_FROM Arg1:T77 Arg2:T76	
+T78	EFFECT_NEG 1578 1613	церкви святителя Николая Чудотворца
+R17	NEG_EFFECT_FROM Arg1:T78 Arg2:T7	
+R18	NEG_EFFECT_FROM Arg1:T78 Arg2:T32	
+R19	POSITIVE_TO Arg1:T39 Arg2:T63	

@@ -1,0 +1,152 @@
+T1	COUNTRY 0 3	США
+T2	ORGANIZATION 13 16	ГРУ
+T3	COUNTRY 37 43	Грузии
+T4	COUNTRY 89 95	России
+T5	DATE 121 140	в октябре 2019 года
+T6	COUNTRY 164 170	Грузии
+T7	COUNTRY 172 182	Российский
+T8	ORGANIZATION 208 268	Подразделение специального назначения Вооружённых cил России
+T9	ORGANIZATION 246 268	Вооружённых cил России
+T10	COUNTRY 317 327	грузинских
+T11	NUMBER 401 405	двух
+T12	PROFESSION 428 444	Госсекретарь США
+T13	PERSON 445 456	Майк Помпео
+T14	ORGANIZATION 469 536	Главное разведывательное управление Генштаба вооружённых сил России
+T15	ORGANIZATION 514 536	вооружённых сил России
+T16	COUNTRY 572 578	Грузию
+T17	COUNTRY 671 677	России
+T18	ORGANIZATION 829 832	ГРУ
+T19	PERSON 866 872	Помпео
+T20	COUNTRY 1018 1024	Грузии
+T21	COUNTRY 1258 1264	Грузии
+T22	PROFESSION 1367 1379	госсекретарь
+T23	COUNTRY 1412 1418	Грузия
+T24	COUNTRY 1421 1435	Великобритания
+T25	COUNTRY 1449 1460	британского
+T26	ORGANIZATION 1500 1538	Национального центра кибербезопасности
+T27	ORGANIZATION 1540 1544	NCSC
+T28	ORGANIZATION 1584 1587	ГРУ
+T29	ORGANIZATION 1617 1625	Sandworm
+T30	ORGANIZATION 1627 1644	BlackEnergy Group
+T31	ORGANIZATION 1646 1654	Telebots
+T32	ORGANIZATION 1657 1667	VoodooBear
+T35	COUNTRY 1717 1727	британская
+T36	PROFESSION 1738 1765	Замглавы российского МИД РФ
+T37	ORGANIZATION 1759 1765	МИД РФ
+T38	PERSON 1766 1780	Андрей Руденко
+T39	COUNTRY 1790 1796	Россия
+T40	COUNTRY 1873 1879	Грузии
+T41	COUNTRY 1923 1933	грузинских
+T42	DATE 1961 1981	28 октября 2019 года
+T43	PROFESSION 2029 2039	президента
+T44	PERSON 2047 2065	Михаила Саакашвили
+T45	COUNTRY 44 47	США
+T46	ORGANIZATION 183 186	МИД
+T47	COUNTRY 262 268	России
+T48	COUNTRY 270 273	США
+T49	COUNTRY 441 444	США
+T50	COUNTRY 530 536	России
+T51	ORGANIZATION 505 536	Генштаба вооружённых сил России
+T52	LANGUAGE 2080 2090	английском
+T53	COUNTRY 1763 1765	РФ
+T54	COUNTRY 1747 1758	российского
+T55	EVENT 1903 1913	Серия атак
+T56	PROFESSION 1596 1603	хакеров
+T33	ORGANIZATION 1680 1704	войсковой частью № 74455
+T34	IDEOLOGY 960 975	демократических
+T57	PRODUCT 356 364	интернет
+T58	DATE 48 57	в четверг
+T59	EVENT 141 156	серии кибератак
+T60	EVENT 19 29	кибератаке
+T61	EVENT 1547 1557	кибератаку
+T62	ORGANIZATION 246 261	Вооружённых cил
+T63	ORGANIZATION 1759 1762	МИД
+T64	ORGANIZATION 1449 1474	британского правительства
+T65	ORGANIZATION 514 529	вооружённых сил
+T66	ORGANIZATION 505 513	Генштаба
+T67	ORGANIZATION 469 504	Главное разведывательное управление
+T68	PROFESSION 428 440	Госсекретарь
+T69	NUMBER 1699 1704	74455
+T70	ORGANIZATION 172 186	Российский МИД
+T71	EVENT 558 568	кибератаку
+R1	NEGATIVE_TO Arg1:T1 Arg2:T2	
+R2	NEGATIVE_TO Arg1:T1 Arg2:T60	
+R3	NEGATIVE_TO Arg1:T2 Arg2:T3	
+R4	NEGATIVE_TO Arg1:T45 Arg2:T4	
+T72	OPINION_WORD_NEG 97 104	обвинив
+T73	OPINION_WORD_NEG 4 12	обвинили
+T74	OPINION_WORD_NEG 19 29	кибератаке
+T75	OPINION_WORD_NEG 147 156	кибератак
+T76	OPINION_WORD_NEG 70 80	осуждением
+R5	NEGATIVE_TO Arg1:T4 Arg2:T6	
+R6	POSITIVE_TO Arg1:T2 Arg2:T60	
+R7	POSITIVE_TO Arg1:T4 Arg2:T59	
+T77	OPINION_WORD_NEG 196 205	обвинения
+T78	ARGUMENT_NEG 301 425	нарушили работу грузинских правительственных и частных интернет-ресурсов, а также, по меньшей мере, двух крупных телестанций
+R8	OPINION_RELATES_TO Arg1:T78 Arg2:T59	
+R9	OPINION_BELONGS_TO Arg1:T78 Arg2:T48	
+T79	ARGUMENT_NEG 537 637	совершило масштабную кибератаку на Грузию, в результате которой напрямую пострадало население страны
+R10	OPINION_RELATES_TO Arg1:T79 Arg2:T14	
+R11	OPINION_BELONGS_TO Arg1:T79 Arg2:T13	
+R12	NEGATIVE_TO Arg1:T13 Arg2:T14	
+R13	NEGATIVE_TO Arg1:T13 Arg2:T71	
+R14	POSITIVE_TO Arg1:T14 Arg2:T71	
+R15	NEGATIVE_TO Arg1:T14 Arg2:T16	
+T80	OPINION_WORD_NEG 558 568	кибератаку
+T81	OPINION_WORD_NEG 610 620	пострадало
+T82	OPINION_WORD_NEG 301 309	нарушили
+T83	OPINION_WORD_NEG 649 661	противоречит
+T84	OPINION_WORD_NEG 953 959	подрыв
+T85	OPINION_WORD_NEG 936 950	нестабильности
+T86	OPINION_WORD_NEG 913 925	противоречий
+T87	OPINION_WORD_NEG 787 803	безответственных
+T88	OPINION_WORD_NEG 1089 1105	недобросовестным
+T89	OPINION_WORD_POS 1042 1052	укреплении
+T90	OPINION_WORD_POS 707 720	ответственным
+T91	OPINION_WORD_POS 1008 1017	поддержку
+T92	OPINION_WORD_POS 1000 1007	обещаем
+T93	OPINION_WORD_POS 1170 1176	помощь
+T94	OPINION_WORD_POS 1210 1218	развития
+T95	OPINION_WORD_POS 1265 1273	укрепить
+T96	OPINION_WORD_POS 1323 1333	защищаться
+T97	OPINION_WORD_NEG 1384 1395	обвинениями
+T98	OPINION_WORD_NEG 1547 1557	кибератаку
+T99	ARGUMENT_NEG 752 855	демонстрирует повторяющуюся модель безответственных киберопераций со стороны ГРУ в отношении ряда стран
+R16	OPINION_BELONGS_TO Arg1:T99 Arg2:T19	
+R17	OPINION_RELATES_TO Arg1:T99 Arg2:T71	
+T100	ARGUMENT_NEG 876 986	Эти операции нацелены на возбуждение противоречий, создание нестабильности и подрыв демократических институтов
+R18	OPINION_BELONGS_TO Arg1:T100 Arg2:T19	
+R19	OPINION_RELATES_TO Arg1:T100 Arg2:T71	
+T101	ARGUMENT_NEG 649 748	противоречит попыткам России утверждать, что она является ответственным игроком в киберпространстве
+R20	OPINION_BELONGS_TO Arg1:T101 Arg2:T19	
+R21	OPINION_RELATES_TO Arg1:T101 Arg2:T71	
+T102	ARGUMENT_POS 1000 1017;1040 1134	обещаем поддержку в укреплении кибербезопасности и противодействии недобросовестным деятелям в киберпространстве
+R22	OPINION_RELATES_TO Arg1:T102 Arg2:T20	
+R23	OPINION_BELONGS_TO Arg1:T102 Arg2:T19	
+T103	ARGUMENT_POS 1145 1243	предложим дополнительную помощь в сфере наращивания потенциала и развития технических возможностей
+R24	OPINION_BELONGS_TO Arg1:T103 Arg2:T19	
+R25	OPINION_RELATES_TO Arg1:T103 Arg2:T21	
+R26	NEGATIVE_TO Arg1:T23 Arg2:T71	
+R27	NEGATIVE_TO Arg1:T24 Arg2:T71	
+R28	NEGATIVE_TO Arg1:T23 Arg2:T17	
+R29	NEGATIVE_TO Arg1:T24 Arg2:T17	
+R30	NEGATIVE_TO Arg1:T23 Arg2:T18	
+R31	NEGATIVE_TO Arg1:T24 Arg2:T18	
+R32	NEGATIVE_TO Arg1:T26 Arg2:T61	
+R33	NEGATIVE_TO Arg1:T26 Arg2:T28	
+R34	NEGATIVE_TO Arg1:T64 Arg2:T61	
+R35	NEGATIVE_TO Arg1:T64 Arg2:T28	
+R36	POSITIVE_TO Arg1:T64 Arg2:T26	
+R37	NEGATIVE_TO Arg1:T35 Arg2:T33	
+R38	NEGATIVE_TO Arg1:T35 Arg2:T32	
+R39	NEGATIVE_TO Arg1:T35 Arg2:T31	
+R40	NEGATIVE_TO Arg1:T35 Arg2:T30	
+R41	NEGATIVE_TO Arg1:T35 Arg2:T29	
+R42	NEGATIVE_TO Arg1:T35 Arg2:T56	
+R43	POSITIVE_TO Arg1:T38 Arg2:T39	
+T104	ARGUMENT_POS 1797 1899	не собиралась и не собирается никоим образом вмешиваться во внутренние дела Грузии в том или ином виде
+R44	OPINION_RELATES_TO Arg1:T104 Arg2:T39	
+R45	OPINION_BELONGS_TO Arg1:T104 Arg2:T38	
+T105	OPINION_WORD_NEG 1842 1853	вмешиваться
+R46	NEGATIVE_TO Arg1:T41 Arg2:T55	
+R47	NEGATIVE_TO Arg1:T41 Arg2:T44	

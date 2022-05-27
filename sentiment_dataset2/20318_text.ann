@@ -1,0 +1,56 @@
+T1	DATE 49 69	19 октября 2012 года
+T2	CITY 72 80	Харькове
+T3	EVENT 90 113	День Московского района
+T4	AGE 136 142	75 лет
+T5	EVENT 145 153	Праздник
+T6	DISTRICT 166 174	Салтовки
+T7	ORGANIZATION 194 202	Пересвет
+T9	EVENT 291 300	ДС-Фактор
+T11	EVENT 759 768	ДС-Фактор
+T12	PERSON 786 803	Дмитрием Святашем
+T14	ORDINAL 829 835	первый
+T15	DATE 861 891	с сентября 2011 по апрель 2012
+T16	DATE 913 938	в сентябре — октябре 2012
+T17	NUMBER 1038 1044	одному
+T18	NUMBER 1144 1148	трёх
+T19	PROFESSION 1422 1432	вокалистка
+T20	PERSON 1433 1452	Вероника Карнаухова
+T21	NUMBER 1480 1482	11
+T22	DISTRICT 1555 1563	Салтовки
+T23	PERSON 1580 1594	Дмитрий Святаш
+T24	ORGANIZATION 1633 1641	Пересвет
+T25	PROFESSION 1897 1904	депутат
+T26	DATE 2014 2026	раз в 2 года
+T27	CITY 0 10	Харьковчан
+T28	DISTRICT 95 113	Московского района
+T29	ORGANIZATION 218 250	администрации Московского района
+T30	DISTRICT 232 250	Московского района
+T8	DISTRICT 332 341	салтовчан
+T31	EVENT 671 682	мероприятие
+T10	EVENT 804 811	конкурс
+T32	EVENT 829 851	первый отборочный этап
+T33	EVENT 893 902	полуфинал
+T34	EVENT 905 910	финал
+T35	PROFESSION 977 986	школьники
+T36	EVENT 1525 1532	конкурс
+T37	ORGANIZATION 1608 1621	администрации
+T38	EVENT 1907 1914	Конкурс
+T41	EVENT 2040 2048	праздник
+T39	EVENT 274 300	финала конкурса «ДС-Фактор
+T40	EVENT 253 262	Торжества
+T42	EVENT 694 703	концертом
+T13	DATE 819 827	два года
+T43	AWARD 1404 1412	Гран-при
+T44	EFFECT_POS 166 174	Салтовки
+R1	POS_EFFECT_FROM Arg1:T44 Arg2:T5	
+T45	EFFECT_POS 332 341	салтовчан
+T46	EFFECT_POS 1433 1452	Вероника Карнаухова
+T47	STATE_POS 1433 1452	Вероника Карнаухова
+R2	POS_STATE_FROM Arg1:T47 Arg2:T43	
+R3	POS_EFFECT_FROM Arg1:T46 Arg2:T43	
+R4	POSITIVE_TO Arg1:T20 Arg2:T43	
+T48	OPINION_WORD_POS 2049 2061	великолепным
+R5	POSITIVE_TO Arg1:T25 Arg2:T38	
+T49	ARGUMENT_POS 1670 1809	в школьном возрасте необходимо начинать достигать определенных успехов для того, чтоб быть более уверенным в себе в более взрослом возрасте
+R6	OPINION_BELONGS_TO Arg1:T49 Arg2:T25	
+R7	OPINION_RELATES_TO Arg1:T49 Arg2:T38	

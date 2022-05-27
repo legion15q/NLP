@@ -1,0 +1,47 @@
+T1	DATE 54 67	В воскресенье
+T2	CITY 70 76	Москве
+T4	EVENT 99 111	Белое кольцо
+T6	NUMBER 158 165	Десятки
+T7	FACILITY 221 236	Садовому кольцу
+T9	PRODUCT 531 538	Twitter
+T10	PROFESSION 571 600	главный редактор «Эхо Москвы»
+T11	ORGANIZATION 589 599	Эхо Москвы
+T12	PERSON 601 619	Алексей Венедиктов
+T14	PERSON 648 665	Алексей Навальный
+T15	ORGANIZATION 677 682	Ридус
+T16	EVENT 725 735	Автопробег
+T17	ORGANIZATION 749 766	Лигой избирателей
+T18	ORGANIZATION 770 796	сообществом автомобилистов
+T20	NUMBER 850 873	по меньшей мере 5 тысяч
+T21	NUMBER 946 954	Около 20
+T22	EVENT 981 992	автопробеге
+T23	FACILITY 996 1011	Садовому кольцу
+T24	CITY 1014 1020	Москве
+T25	ORGANIZATION 1112 1124	РИА «Новости
+T26	ORGANIZATION 1265 1270	Ридус
+T3	EVENT 17 29	автопробегом
+T5	CITY 0 8	Москвичи
+T27	DATE 1021 1034	в воскресенье
+T28	ORGANIZATION 1050 1096	пресс-службе главного управления МВД по Москве
+T29	ORGANIZATION 1063 1096	главного управления МВД по Москве
+T30	ORGANIZATION 1083 1086	МВД
+T31	CITY 1090 1096	Москве
+T32	PROFESSION 1097 1111	корреспонденту
+T13	IDEOLOGY 638 647	оппозиции
+T8	EVENT 1275 1280	акции
+T19	EVENT 1212 1217	акция
+T33	EVENT 828 833	акции
+T34	EVENT 551 556	акции
+T35	EVENT 717 722	акции
+T36	EVENT 269 274	Акция
+T37	PROFESSION 579 587	редактор
+T38	ORGANIZATION 798 801	ФАР
+T39	EFFECT_POS 99 111	Белое кольцо
+T40	EFFECT_POS 269 274	Акция
+R1	POSITIVE_TO Arg1:T17 Arg2:T16	
+R2	POSITIVE_TO Arg1:T18 Arg2:T16	
+T41	EFFECT_POS 725 735	Автопробег
+R3	POSITIVE_TO Arg1:T12 Arg2:T34	
+R4	POSITIVE_TO Arg1:T14 Arg2:T34	
+T42	ARGUMENT_POS 1223 1248	достаточно многочисленной
+R5	OPINION_RELATES_TO Arg1:T42 Arg2:T19	

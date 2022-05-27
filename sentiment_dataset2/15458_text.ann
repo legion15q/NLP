@@ -1,0 +1,103 @@
+T1	COUNTRY 0 10	Британские
+T2	COUNTRY 24 30	Россию
+T3	ORGANIZATION 48 52	ФИФА
+T5	EVENT 79 81	ЧМ
+T6	COUNTRY 98 108	Британская
+T7	CITY 173 180	Лондона
+T8	COUNTRY 298 309	российскими
+T9	ORGANIZATION 346 391	Международной федерации футбольных ассоциаций
+T10	ORGANIZATION 393 397	ФИФА
+T11	ORGANIZATION 470 480	NEWSru.com
+T12	PROFESSION 520 554	член исполнительного комитета ФИФА
+T13	COUNTRY 573 584	российского
+T14	DATE 645 662	На прошлой неделе
+T15	PERSON 663 676	Мишель Д’Хоге
+T16	PROFESSION 678 723	член исполнительного комитета ФИФА от Бельгии
+T17	COUNTRY 716 723	Бельгии
+T18	DATE 738 758	за восемь месяцев до
+T19	PERSON 771 788	Вячеслав Колосков
+T20	PROFESSION 790 838	советник президента Олимпийского комитета России
+T21	CITY 867 873	Брюгге
+T22	PERSON 912 920	Колосков
+T23	DATE 936 954	в апреле 2010 года
+T24	COUNTRY 1017 1023	Россию
+T25	PERSON 1025 1033	Колосков
+T26	LANGUAGE 1111 1118	русской
+T28	PERSON 1129 1135	Д’Хоге
+T29	ORDINAL 1151 1157	втором
+T30	DATE 1271 1285	двадцатилетней
+T32	PERSON 1306 1312	Д’Хоге
+T33	COUNTRY 1348 1354	Россию
+T34	PROFESSION 1366 1398	специалист по русскому искусству
+T35	COUNTRY 1490 1500	британских
+T36	ORGANIZATION 1508 1512	ФИФА
+T37	COUNTRY 1542 1552	английской
+T38	ORGANIZATION 1591 1600	федерации
+T39	PROFESSION 1607 1617	президента
+T40	PERSON 1618 1632	Зеппа Блаттера
+T42	DATE 1690 1701	десятилетия
+T41	COUNTRY 1640 1658	Туманного Альбиона
+T27	COUNTRY 1380 1388	русскому
+T31	ORGANIZATION 708 712	ФИФА
+T43	ORGANIZATION 683 712	исполнительного комитета ФИФА
+T44	ORGANIZATION 810 838	Олимпийского комитета России
+T45	COUNTRY 832 838	России
+T46	PROFESSION 799 838	президента Олимпийского комитета России
+T47	DATE 82 86	2018
+T48	EVENT 217 243	чемпионата мира по футболу
+T49	DATE 244 253	2018 года
+T4	PROFESSION 310 321	чиновниками
+T50	EVENT 79 97	ЧМ-2018 по футболу
+T52	EVENT 79 86	ЧМ-2018
+T51	EVENT 184 253	выборах принимающего государства чемпионата мира по футболу 2018 года
+T53	EVENT 163 172	поражение
+T54	ORDINAL 263 269	первое
+T55	ORGANIZATION 550 554	ФИФА
+T56	ORGANIZATION 525 554	исполнительного комитета ФИФА
+T57	EVENT 609 633	чемпиона мира по футболу
+T58	DATE 634 643	2018 года
+T59	PROFESSION 585 643	советника по проведению чемпиона мира по футболу 2018 года
+T60	EVENT 609 643	чемпиона мира по футболу 2018 года
+T61	EVENT 217 253	чемпионата мира по футболу 2018 года
+T62	EVENT 555 569	принял картину
+T63	EVENT 759 770	голосования
+T64	ORGANIZATION 810 831	Олимпийского комитета
+T65	PROFESSION 799 809	президента
+T66	EVENT 876 895	подарил ему картину
+R1	NEGATIVE_TO Arg1:T1 Arg2:T2	
+R2	NEGATIVE_TO Arg1:T2 Arg2:T1	
+T67	EFFECT_NEG 24 30	Россию
+T68	STATE_NEG 24 30	Россию
+T69	EMOTION_NEG 128 151	болезненно переживающая
+R3	STATE_BELONGS_TO Arg1:T69 Arg2:T6	
+T70	EFFECT_NEG 173 180	Лондона
+T71	STATE_NEG 173 180	Лондона
+R4	NEG_STATE_FROM Arg1:T71 Arg2:T53	
+R5	NEG_EFFECT_FROM Arg1:T70 Arg2:T53	
+R6	NEGATIVE_TO Arg1:T7 Arg2:T53	
+R7	POSITIVE_TO Arg1:T7 Arg2:T61	
+R8	NEGATIVE_TO Arg1:T6 Arg2:T8	
+T72	ARGUMENT_NEG 33 52	подкупе членов ФИФА
+R9	OPINION_BELONGS_TO Arg1:T72 Arg2:T1	
+R10	OPINION_RELATES_TO Arg1:T72 Arg2:T2	
+T73	ARGUMENT_NEG 322 391	дорогих подарков членам Международной федерации футбольных ассоциаций
+R11	OPINION_BELONGS_TO Arg1:T73 Arg2:T6	
+R12	OPINION_RELATES_TO Arg1:T73 Arg2:T8	
+R13	NEGATIVE_TO Arg1:T11 Arg2:T12	
+T74	ARGUMENT_NEG 555 643	принял картину от российского советника по проведению чемпиона мира по футболу 2018 года
+R14	OPINION_BELONGS_TO Arg1:T74 Arg2:T11	
+R15	OPINION_RELATES_TO Arg1:T74 Arg2:T12	
+R16	POSITIVE_TO Arg1:T15 Arg2:T66	
+T75	EFFECT_POS 663 676	Мишель Д’Хоге
+T76	STATE_POS 663 676	Мишель Д’Хоге
+R17	POS_STATE_FROM Arg1:T76 Arg2:T66	
+R18	POS_EFFECT_FROM Arg1:T75 Arg2:T66	
+R19	POSITIVE_TO Arg1:T15 Arg2:T19	
+R20	POSITIVE_TO Arg1:T19 Arg2:T15	
+R21	POSITIVE_TO Arg1:T19 Arg2:T66	
+T77	EFFECT_NEG 1618 1632	Зеппа Блаттера
+T78	STATE_NEG 1618 1632	Зеппа Блаттера
+R22	NEGATIVE_TO Arg1:T41 Arg2:T40	
+T79	OPINION_WORD_NEG 1682 1689	злодеем
+R23	OPINION_BELONGS_TO Arg1:T79 Arg2:T41	
+R24	OPINION_BELONGS_TO Arg1:T79 Arg2:T40	

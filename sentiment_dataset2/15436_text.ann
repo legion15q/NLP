@@ -1,0 +1,65 @@
+T1	COUNTRY 0 11	Итальянское
+T2	PROFESSION 82 108	глава правительства Италии
+T3	COUNTRY 102 108	Италии
+T4	PERSON 109 127	Сильвио Берлускони
+T5	LOCATION 277 288	европейских
+T6	DATE 325 345	в субботу 13 августа
+T7	PERSON 347 357	Берлускони
+T8	PROFESSION 385 394	канцлером
+T9	PERSON 404 419	Ангелой Меркель
+T10	PROFESSION 422 433	президентом
+T11	PERSON 460 476	Жан-Клодом Трише
+T12	DATE 504 522	В минувшую пятницу
+T13	MONEY 599 620	63 миллиарда долларов
+T14	MONEY 623 636	28 миллиардов
+T15	DATE 637 648	в 2012 году
+T16	MONEY 651 664	35 миллиардов
+T17	DATE 667 675	в 2013-м
+T18	DATE 755 766	к 2013 году
+T19	ORGANIZATION 797 815	Европейского банка
+T20	ORGANIZATION 818 831	Правительство
+T21	COUNTRY 923 929	Италия
+T22	LOCATION 955 967	европейского
+T23	ORGANIZATION 0 25	Итальянское правительство
+T24	ORGANIZATION 88 108	правительства Италии
+T25	PROFESSION 312 324	журналистами
+T26	PROFESSION 385 403	канцлером Германии
+T27	COUNTRY 395 403	Германии
+T28	PROFESSION 422 459	президентом Центрального банка Европы
+T29	ORGANIZATION 434 459	Центрального банка Европы
+T30	LOCATION 453 459	Европы
+T31	ORGANIZATION 523 541	кабинет Берлускони
+T32	PERSON 531 541	Берлускони
+T33	ORGANIZATION 700 713	правительства
+T34	ORGANIZATION 12 25	правительство
+T35	ORGANIZATION 88 101	правительства
+T36	ORGANIZATION 434 452	Центрального банка
+T37	ORGANIZATION 818 838	Правительство Италии
+T38	COUNTRY 832 838	Италии
+T39	LOCATION 797 809	Европейского
+T40	EVENT 297 305	Выступая
+T41	EMOTION_NEG 46 59	встревоженных
+T42	EFFECT_POS 109 127	Сильвио Берлускони
+T43	STATE_POS 109 127	Сильвио Берлускони
+R1	POSITIVE_TO Arg1:T9 Arg2:T7	
+T44	EFFECT_POS 347 357	Берлускони
+T45	STATE_POS 347 357	Берлускони
+R2	POSITIVE_TO Arg1:T7 Arg2:T9	
+R3	POSITIVE_TO Arg1:T11 Arg2:T7	
+R4	POSITIVE_TO Arg1:T7 Arg2:T11	
+T46	OPINION_WORD_POS 491 501	поддержкой
+T47	OPINION_WORD_POS 246 255	одобрение
+T48	ARGUMENT_POS 724 754	поможет стабилизировать бюджет
+T49	ARGUMENT_POS 36 70	успокоить встревоженных инвесторов
+R5	OPINION_BELONGS_TO Arg1:T49 Arg2:T23	
+R6	OPINION_BELONGS_TO Arg1:T48 Arg2:T33	
+T50	OPINION_WORD_NEG 947 954	жертвой
+T51	ARGUMENT_POS 853 904	меры жесткой экономии позволят успокоить инвесторов
+R7	OPINION_BELONGS_TO Arg1:T51 Arg2:T37	
+T52	EVENT 955 985	европейского долгового кризиса
+T53	EFFECT_NEG 923 929	Италия
+R8	NEG_EFFECT_FROM Arg1:T53 Arg2:T52	
+T54	EFFECT_NEG 955 967	европейского
+R9	NEG_EFFECT_FROM Arg1:T54 Arg2:T52	
+T55	OPINION_WORD_POS 724 731	поможет
+T56	EMOTION_NEG 906 917	опасающихся

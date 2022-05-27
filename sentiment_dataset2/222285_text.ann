@@ -1,0 +1,84 @@
+T1	PERSON 0 12	Вася Обломов
+T2	ORDINAL 22 29	седьмой
+T3	WORK_OF_ART 39 58	Этот прекрасный мир
+T4	PERSON 59 71	Вася Обломов
+T5	DATE 72 91	19 апреля 2019 года
+T6	PERSON 112 128	Василий Гончаров
+T7	PERSON 151 163	Вася Обломов
+T8	ORDINAL 175 178	7-й
+T9	WORK_OF_ART 191 210	Этот прекрасный мир
+T10	ORDINAL 218 224	шестой
+T11	NUMBER 248 250	13
+T13	ORDINAL 453 459	Первый
+T14	WORK_OF_ART 492 510	Жизнь налаживается
+T15	DATE 512 533	1 марта прошлого года
+T16	DATE 536 545	10 апреля
+T17	WORK_OF_ART 567 583	Добро пожаловать
+T18	PERSON 586 593	Обломов
+T19	ORGANIZATION 633 645	Новой газете
+T20	WORK_OF_ART 698 717	Этот прекрасный мир
+T21	DATE 740 749	19 апреля
+T22	PERSON 871 885	Михаил Горевой
+T23	WORK_OF_ART 914 929	Шпионском мосте
+T24	PERSON 933 942	Спилберга
+T25	DATE 990 1009	Летом прошлого года
+T26	PERSON 1121 1133	Вася Обломов
+T27	PERSON 1538 1557	Андреем Макаревичем
+T28	PERSON 1617 1623	Ренуар
+T29	WORK_OF_ART 1709 1722	Жизнь сложная
+T30	PERSON 1739 1755	Андрей Макаревич
+T31	WORK_OF_ART 1764 1777	Жизнь сложная
+T32	PERSON 1810 1820	Макаревича
+T33	DATE 1821 1830	из 1990-х
+T34	PERSON 2064 2078	Дмитрий Павлов
+T35	ORDINAL 2091 2094	5-й
+T37	ORDINAL 2097 2101	10-й
+T38	PERSON 2109 2121	Ася Соршнева
+T39	NUMBER 2134 2135	7
+T40	PERSON 2141 2154	Петр Дольский
+T42	NUMBER 2162 2164	13
+T43	PERSON 2167 2186	Дмитрий Севастьянов
+T45	NUMBER 2199 2201	13
+T46	PERSON 2204 2218	Денис Юровский
+T47	PERSON 2235 2251	Сергей Большаков
+T48	COUNTRY 2412 2419	Украине
+T49	LOCATION 2422 2430	Донбассе
+T50	NATIONALITY 2465 2472	россиян
+T51	DATE 2475 2480	8 мая
+T52	FACILITY 2490 2497	16 тонн
+T53	COUNTRY 92 102	российский
+T54	PROFESSION 103 111	музыкант
+T55	WORK_OF_ART 259 275	Добро пожаловать
+T56	WORK_OF_ART 276 293	Двери закрываются
+T57	WORK_OF_ART 294 307	Жизнь сложная
+T58	WORK_OF_ART 308 317	Недоросль
+T12	WORK_OF_ART 445 450	Вальс
+T59	WORK_OF_ART 424 444	Самый последний день
+T60	WORK_OF_ART 403 423	Старикам здесь место
+T61	WORK_OF_ART 393 402	Диги диги
+T62	WORK_OF_ART 375 392	Беги дружище беги
+T63	WORK_OF_ART 364 374	Работа дом
+T64	WORK_OF_ART 345 363	Жизнь налаживается
+T65	WORK_OF_ART 318 334	Иногда здесь так
+T66	WORK_OF_ART 335 344	Город Зад
+T67	PROFESSION 647 655	музыкант
+T68	WORK_OF_ART 1832 1858	Меня очень не любят эстеты
+T69	NUMBER 2136 2138	13
+T41	NUMBER 2231 2232	7
+T44	PROFESSION 2298 2306	Музыкант
+T70	EVENT 2509 2520	презентация
+T36	EVENT 13 21	выпустил
+T71	EVENT 166 174	выпустил
+T72	EVENT 546 556	вышел клип
+T73	EVENT 453 481	Первый клип из альбома вышел
+T74	EVENT 1637 1643	смерти
+T75	EFFECT_POS 39 58	Этот прекрасный мир
+R1	POS_EFFECT_FROM Arg1:T75 Arg2:T36	
+T76	EFFECT_POS 191 210	Этот прекрасный мир
+R2	POS_EFFECT_FROM Arg1:T76 Arg2:T71	
+R3	POSITIVE_TO Arg1:T6 Arg2:T9	
+T77	EFFECT_POS 492 510	Жизнь налаживается
+R4	POS_EFFECT_FROM Arg1:T77 Arg2:T73	
+T78	EFFECT_POS 567 583	Добро пожаловать
+R5	POS_EFFECT_FROM Arg1:T78 Arg2:T72	
+R6	POSITIVE_TO Arg1:T44 Arg2:T50	

@@ -1,0 +1,50 @@
+T2	WORK_OF_ART 1 15	Интимные места
+T3	PERSON 83 100	Наташи Меркуловой
+T4	PERSON 103 117	Алексея Чупова
+T5	WORK_OF_ART 119 133	Интимные места
+T6	ORGANIZATION 192 203	Минкультуры
+T7	DATE 300 321	12 сентября 2013 года
+T8	ORGANIZATION 332 345	РИА «Новости»
+T9	ORGANIZATION 389 406	Люксор Дистрибюшн
+T10	NUMBER 454 457	ста
+T11	PROFESSION 587 607	генеральный директор
+T12	PERSON 617 632	Элеонора Комина
+T13	WORK_OF_ART 642 656	Интимные места
+T14	DATE 675 686	в этом году
+T15	EVENT 714 723	Кинотавре
+T16	CITY 774 780	Москве
+T18	COUNTRY 1074 1089	Советском Союзе
+T19	AGE 1118 1126	до 16-ти
+T20	PROFESSION 1164 1172	режиссер
+T21	ORGANIZATION 1253 1279	Комитета по нравственности
+T22	ORGANIZATION 1314 1318	Думу
+T23	PROFESSION 1415 1422	актриса
+T24	PERSON 1423 1431	Юлия Ауг
+T25	EVENT 1445 1454	Кинотавре
+T26	PERSON 1511 1529	Юрий Колокольников
+T27	PERSON 1532 1550	Олеся Судзиловская
+T28	MONEY 1577 1599	1 миллион долларов США
+T1	DISTRICT 62 68	Митино
+T29	AWARD 693 708	За лучший дебют
+T30	EVENT 284 299	выйдет в прокат
+T17	PERSON 1185 1198	Алексей Чупов
+T31	PROFESSION 1175 1184	сценарист
+T32	WORK_OF_ART 1219 1232	Интимных мест
+T33	AWARD 1462 1484	За лучшую женскую роль
+T34	COUNTRY 1596 1599	США
+T35	EFFECT_POS 1 15	Интимные места
+R1	NEGATIVE_TO Arg1:T6 Arg2:T5	
+T36	ARGUMENT_NEG 210 249	откровенных сцен эротического характера
+T37	ARGUMENT_NEG 252 273	ненормативной лексики
+T38	EFFECT_NEG 119 133	Интимные места
+R2	OPINION_BELONGS_TO Arg1:T36 Arg2:T6	
+R3	OPINION_BELONGS_TO Arg1:T37 Arg2:T6	
+R4	OPINION_RELATES_TO Arg1:T36 Arg2:T5	
+R5	OPINION_RELATES_TO Arg1:T37 Arg2:T5	
+T39	EFFECT_POS 642 656	Интимные места
+R6	POS_EFFECT_FROM Arg1:T39 Arg2:T29	
+T40	EFFECT_POS 1423 1431	Юлия Ауг
+T41	STATE_POS 1423 1431	Юлия Ауг
+R7	POS_STATE_FROM Arg1:T41 Arg2:T33	
+R8	POSITIVE_TO Arg1:T24 Arg2:T33	
+R9	POS_EFFECT_FROM Arg1:T40 Arg2:T33	

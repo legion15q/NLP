@@ -1,0 +1,104 @@
+T1	ORGANIZATION 0 7	Walmart
+T2	ORGANIZATION 16 20	Visa
+T3	MONEY 28 52	пять миллиардов долларов
+T4	ORGANIZATION 70 77	Walmart
+T5	ORGANIZATION 115 119	VISA
+T6	ORGANIZATION 152 159	Walmart
+T7	ORGANIZATION 208 212	VISA
+T8	MONEY 213 241	пять миллиардов долларов США
+T9	ORGANIZATION 266 273	Walmart
+T10	ORGANIZATION 287 300	суд Арканзаса
+T11	ORGANIZATION 371 375	Visa
+T12	DATE 376 404	на протяжении нескольких лет
+T13	ORGANIZATION 708 712	Visa
+T14	ORGANIZATION 744 751	Walmart
+T15	ORGANIZATION 852 856	Visa
+T16	ORGANIZATION 949 953	Visa
+T17	DATE 963 982	с 2004 по 2012 годы
+T18	MONEY 1003 1022	5 млрд долларов США
+T19	ORGANIZATION 1036 1040	Visa
+T20	COUNTRY 1118 1131	американскими
+T21	ORGANIZATION 1157 1164	Walmart
+T22	ORGANIZATION 1166 1172	Amazon
+T23	ORGANIZATION 1174 1182	Best Buy
+T24	ORGANIZATION 1185 1191	Target
+T25	ORGANIZATION 1224 1228	Visa
+T26	ORGANIZATION 1231 1241	MasterCard
+T27	DATE 1265 1271	10 лет
+T28	DATE 1274 1290	В июле 2012 года
+T29	NUMBER 1297 1302	8 млн
+T30	DATE 1421 1432	в 2005 году
+T31	MONEY 1473 1494	7,2 млрд долларов США
+T32	NUMBER 1503 1515	около 8 тыс.
+T33	ORGANIZATION 1536 1543	Walmart
+T34	DATE 1685 1696	в 2009 году
+T35	ORGANIZATION 1715 1719	Visa
+T36	MONEY 1754 1775	2,4 млрд долларов США
+T37	MONEY 1790 1811	6,9 млрд долларов США
+T38	ORGANIZATION 1813 1821	Wallmart
+T39	DATE 1822 1833	в 2008 году
+T40	MONEY 1859 1881	13,4 млрд долларов США
+T41	DATE 1899 1910	в 2010 году
+T42	MONEY 1920 1943	408,1 млрд долларов США
+T43	COUNTRY 238 241	США
+T44	EVENT 8 24	подал к Visa иск
+T45	STATE_OR_PROVINCE 291 300	Арканзаса
+T46	EVENT 274 284	подала иск
+T47	COUNTRY 1491 1494	США
+T48	ORGANIZATION 983 990	Walmart
+T49	COUNTRY 1019 1022	США
+T50	COUNTRY 1772 1775	США
+T51	COUNTRY 1808 1811	США
+T52	COUNTRY 1940 1943	США
+T53	COUNTRY 1878 1881	США
+T54	EVENT 1406 1410	иску
+T55	CRIME 245 263	завышение комиссий
+T56	CRIME 405 436	завышала межбанковскую комиссию
+T57	OPINION_WORD_NEG 179 187	взыскать
+T58	OPINION_WORD_NEG 245 254	завышение
+T59	OPINION_WORD_NEG 405 413	завышала
+T60	OPINION_WORD_NEG 479 487	обвиняет
+T61	OPINION_WORD_POS 589 595	защиты
+T62	OPINION_WORD_NEG 599 612	мошенничества
+T63	OPINION_WORD_NEG 617 622	кражи
+T64	OPINION_WORD_NEG 674 680	убытки
+T65	OPINION_WORD_NEG 684 697	мошенничества
+T66	OPINION_WORD_POS 781 791	крупнейшей
+T67	OPINION_WORD_NEG 889 901	неприемлемое
+T68	OPINION_WORD_NEG 921 926	Ущерб
+T69	OPINION_WORD_POS 1392 1402	соглашения
+T70	OPINION_WORD_NEG 1614 1627	недостаточным
+R1	NEGATIVE_TO Arg1:T1 Arg2:T2	
+R2	POSITIVE_TO Arg1:T1 Arg2:T44	
+R3	POSITIVE_TO Arg1:T1 Arg2:T3	
+T71	ARGUMENT_POS 160 241	пытается через суд взыскать с платёжной системы VISA пять миллиардов долларов США
+R4	POSITIVE_TO Arg1:T9 Arg2:T46	
+T72	ARGUMENT_NEG 376 470	на протяжении нескольких лет завышала межбанковскую комиссию при расчётах по банковским картам
+R5	OPINION_RELATES_TO Arg1:T72 Arg2:T11	
+R6	OPINION_RELATES_TO Arg1:T71 Arg2:T6	
+R7	NEGATIVE_TO Arg1:T6 Arg2:T7	
+R8	OPINION_BELONGS_TO Arg1:T72 Arg2:T9	
+T73	ARGUMENT_NEG 245 263	завышение комиссий
+R9	OPINION_RELATES_TO Arg1:T73 Arg2:T7	
+R10	OPINION_BELONGS_TO Arg1:T73 Arg2:T6	
+T74	ARGUMENT_NEG 473 622	Истец обвиняет также платёжную систему в использовании технологии магнитной полосы, которая не обеспечивает должной защиты от мошенничества или кражи
+R11	OPINION_BELONGS_TO Arg1:T74 Arg2:T9	
+R12	OPINION_RELATES_TO Arg1:T74 Arg2:T11	
+T75	ARGUMENT_NEG 624 706;713 741	При этом, пользуясь своим монопольным положениям, убытки от мошенничества с картам перекаладывает на ритейлеров
+R13	OPINION_RELATES_TO Arg1:T75 Arg2:T13	
+R14	OPINION_BELONGS_TO Arg1:T75 Arg2:T9	
+T76	ARGUMENT_NEG 768 918	даже обладая крупнейшей в мире торговой сетью, компания не может отказаться от карт Visa, так как «это повлечёт за собой неприемлемое снижение продаж»
+R15	OPINION_RELATES_TO Arg1:T76 Arg2:T14	
+R16	OPINION_BELONGS_TO Arg1:T76 Arg2:T14	
+T77	ARGUMENT_NEG 921 982;991 1022	Ущерб от «сотрудничества» с Visa в период с 2004 по 2012 годы оценивает в 5 млрд долларов США
+R17	OPINION_RELATES_TO Arg1:T77 Arg2:T48	
+R18	OPINION_BELONGS_TO Arg1:T77 Arg2:T48	
+T78	ARGUMENT_NEG 1551 1627	отказались от этой договоренности, посчитав размер компенсации недостаточным
+T79	ARGUMENT_POS 1630 1669	сохранили возможность подать новые иски
+R19	OPINION_RELATES_TO Arg1:T78 Arg2:T33	
+R20	OPINION_RELATES_TO Arg1:T79 Arg2:T33	
+T80	ARGUMENT_POS 1274 1494	В июле 2012 года около 8 млн магазинов розничной торговли и объединяющие их торговые ассоциации достигли внесудебного соглашения по иску поданному в 2005 году, которое предусматривало выплату истцам 7,2 млрд долларов США
+T81	ARGUMENT_POS 1685 1696;1720 1811	в 2009 году получила чистую прибыль в размере 2,4 млрд долларов США при обороте в 6,9 млрд долларов США
+R21	OPINION_RELATES_TO Arg1:T81 Arg2:T35	
+T82	ARGUMENT_POS 1822 1943	в 2008 году получил чистую прибыль в 13,4 млрд долларов США, оборот компании в 2010 году составил 408,1 млрд долларов США
+R22	OPINION_RELATES_TO Arg1:T82 Arg2:T38	

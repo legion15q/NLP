@@ -1,0 +1,119 @@
+﻿T1	PERSON 0 15	Уэнтуорт Миллер
+T2	CITY 28 47	санкт-петербургский
+T4	PERSON 62 77	Уэнтуорт Миллер
+T5	PROFESSION 99 108	сценарист
+T6	PERSON 109 124	Уэнтуорт Миллер
+T7	EVENT 148 195	Санкт-Петербургском международном кинофестивале
+T8	COUNTRY 325 331	России
+T10	AGE 363 372	41-летний
+T11	PERSON 420 426	Миллер
+T12	COUNTRY 515 525	российских
+T13	DATE 536 542	В июне
+T14	COUNTRY 553 559	России
+T15	PERSON 560 574	Владимир Путин
+T16	DATE 1044 1058	до двух недель
+T17	EVENT 1333 1368	зимней Олимпиады в Сочи в 2014 году
+T18	CITY 1352 1356	Сочи
+T19	PERSON 1545 1551	Миллер
+T20	PERSON 1653 1660	Миллера
+T21	WORK_OF_ART 1715 1727	Другого мира
+T22	WORK_OF_ART 1730 1740	Underworld
+T23	PERSON 1764 1779	Вентворт Миллер
+T24	COUNTRY 1814 1820	России
+T25	PROFESSION 1875 1886	телеведущая
+T26	PERSON 1887 1903	Эллен Дедженерес
+T27	PERSON 1907 1922	Вентворт Миллер
+T28	PROFESSION 1951 1956	актер
+T29	PROFESSION 1958 1966	продюсер
+T30	PERSON 1978 1996	Нейл Патрик Харрис
+T31	WORK_OF_ART 2034 2052	Доктор Дуги Хаузер
+T34	NATIONALITY 2204 2216	американский
+T35	ORGANIZATION 2237 2242	Bravo
+T36	PERSON 2243 2252	Энди Коэн
+T37	EVENT 2282 2296	Мисс Вселенная
+T39	EVENT 2313 2327	Мисс Вселенная
+T40	COUNTRY 2340 2346	России
+T41	PERSON 2351 2355	Коэн
+T42	ORGANIZATION 2393 2400	E! News
+T43	COUNTRY 2479 2485	России
+T44	PERSON 2603 2608	Коэна
+T45	COUNTRY 2677 2683	Россию
+T46	NATIONALITY 78 90	Американский
+T47	PROFESSION 91 96	актёр
+T48	CITY 148 167	Санкт-Петербургском
+T49	LAW 238 282	закона о запрете «пропаганды гомосексуализма
+T50	PROFESSION 343 362	директору фестиваля
+T51	WORK_OF_ART 388 393	Побег
+T52	WORK_OF_ART 396 408	Prison Break
+T53	ORGANIZATION 515 533	российских властей
+T54	PROFESSION 543 559	президент России
+T55	PROFESSION 543 552	президент
+T56	LAW 584 682	закон, запрещающий публичное проявление гомосексуальных отношений в присутствии несовершеннолетних
+T60	PENALTY 1017 1027	задержание
+T61	PENALTY 1030 1035	арест
+T62	PENALTY 1030 1081	арест на срок до двух недель с последующей высылкой
+T63	PENALTY 1030 1058	арест на срок до двух недель
+T67	EVENT 1414 1423	фестивале
+T68	PROFESSION 1861 1872	комедиантка
+T69	PROFESSION 1969 1977	директор
+T70	WORK_OF_ART 2079 2103	Как я встретил вашу маму
+T71	WORK_OF_ART 2106 2127	How I Met Your Mother
+T72	PROFESSION 2217 2223	шоумен
+T3	EVENT 28 61	санкт-петербургский кинофестиваль
+T73	EVENT 16 27	бойкотирует
+T74	EVENT 125 145	отказался от участия
+T75	EVENT 575 589	подписал закон
+T64	PROFESSION 1296 1313	звезд шоу-бизнеса
+T76	EVENT 1325 1332	бойкоту
+T65	PROFESSION 1707 1713	звезды
+T32	WORK_OF_ART 2055 2074	Doogie Howser, M.D.
+T33	PROFESSION 2144 2149	звезд
+T38	DATE 2300 2311	В этом году
+T77	EVENT 2362 2375	бойкотировать
+T78	EVENT 48 61	кинофестиваль
+T79	EVENT 168 195	международном кинофестивале
+T80	EVENT 182 195	кинофестивале
+T58	DATE 1357 1368	в 2014 году
+T59	EVENT 1340 1356	Олимпиады в Сочи
+T66	EVENT 1340 1349	Олимпиады
+T81	CRIME 256 282	пропаганды гомосексуализма
+T57	CRIME 603 682	публичное проявление гомосексуальных отношений в присутствии несовершеннолетних
+T9	PERSON 2041 2052	Дуги Хаузер
+T82	PERSON 2055 2068	Doogie Howser
+R1	NEGATIVE_TO Arg1:T4 Arg2:T3	
+T1	EFFECT_NEG 28 61	санкт-петербургский кинофестиваль
+R2	NEG_EFFECT_FROM Arg1:T1 Arg2:T73	
+R3	NEGATIVE_TO Arg1:T6 Arg2:T7	
+T83	EFFECT_NEG 148 195	Санкт-Петербургском международном кинофестивале
+R4	NEG_EFFECT_FROM Arg1:T83 Arg2:T74	
+R5	NEGATIVE_TO Arg1:T6 Arg2:T49	
+T84	EMOTION_NEG 444 462	глубоко встревожен
+R6	STATE_BELONGS_TO Arg1:T84 Arg2:T11	
+R7	NEGATIVE_TO Arg1:T11 Arg2:T53	
+R8	POSITIVE_TO Arg1:T15 Arg2:T56	
+T85	EFFECT_POS 584 682	закон, запрещающий публичное проявление гомосексуальных отношений в присутствии несовершеннолетних
+R9	POS_EFFECT_FROM Arg1:T85 Arg2:T75	
+R10	POSITIVE_TO Arg1:T64 Arg2:T76	
+R11	NEGATIVE_TO Arg1:T64 Arg2:T56	
+R12	NEGATIVE_TO Arg1:T19 Arg2:T67	
+T86	EFFECT_POS 1653 1660	Миллера
+T87	STATE_POS 1653 1660	Миллера
+T88	EFFECT_POS 1764 1779	Вентворт Миллер
+T89	STATE_POS 1764 1779	Вентворт Миллер
+T90	EMOTION_POS 1747 1754	горжусь
+R13	STATE_BELONGS_TO Arg1:T90 Arg2:T26	
+R14	POSITIVE_TO Arg1:T26 Arg2:T89	
+T91	EFFECT_POS 1907 1922	Вентворт Миллер
+T92	STATE_POS 1907 1922	Вентворт Миллер
+T93	OPINION_WORD_POS 1925 1932	молодец
+R15	POSITIVE_TO Arg1:T30 Arg2:T92	
+R16	OPINION_BELONGS_TO Arg1:T93 Arg2:T30	
+R17	OPINION_RELATES_TO Arg1:T93 Arg2:T27	
+T94	OPINION_WORD_NEG 2182 2194	пресловутого
+T95	AUTHOR_NEG 2195 2201	закона
+R18	NEG_AUTHOR_FROM Arg1:T95 Arg2:T94	
+R19	POSITIVE_TO Arg1:T41 Arg2:T77	
+T96	ARGUMENT_NEG 2433 2459	дискриминационной политики
+R20	OPINION_BELONGS_TO Arg1:T96 Arg2:T36	
+T97	OPINION_WORD_NEG 2653 2664	неправильно
+R21	OPINION_BELONGS_TO Arg1:T97 Arg2:T44	

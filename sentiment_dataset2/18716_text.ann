@@ -1,0 +1,92 @@
+T1	EVENT 47 55	Apps4all
+T2	DATE 56 74	6 апреля 2012 года
+T3	CITY 77 83	Москве
+T4	EVENT 167 209	Международный форум разработчиков Apps4all
+T5	NATIONALITY 218 228	российские
+T6	ORGANIZATION 370 385	Digital October
+T7	PRODUCT 602 614	Call of Duty
+T9	PRODUCT 728 734	Тетрис
+T11	EVENT 878 884	Форуме
+T12	DATE 885 893	6 апреля
+T13	PERSON 925 942	Сергей Татарченко
+T14	PROFESSION 944 992	генеральный директор компании «Сотал-Интерактив»
+T15	ORGANIZATION 975 991	Сотал-Интерактив
+T16	PERSON 1056 1070	Бориса Наумова
+T17	PROFESSION 1072 1157	вице-президент фонда «Сколково» по взаимодействию с органами власти и общественностью
+T18	ORGANIZATION 1094 1102	Сколково
+T20	PERSON 1160 1179	Александра Доржиева
+T21	ORGANIZATION 1210 1218	AlterGeo
+T22	PERSON 1222 1234	Юрия Ветрова
+T23	PROFESSION 1236 1306	руководитель отдела проектирования и дизайна интерфейсов Mail.RU Group
+T24	ORGANIZATION 1293 1306	Mail.RU Group
+T25	PERSON 1309 1325	Елены Алексеевой
+T26	PROFESSION 1327 1397	директор по работе с институциональными инвесторами компании «Softline
+T27	ORGANIZATION 1389 1397	Softline
+T28	ORGANIZATION 1474 1480	Google
+T29	ORGANIZATION 1484 1507	Лаборатория Касперского
+T30	ORGANIZATION 1511 1524	Adobe Systems
+T31	ORGANIZATION 1528 1535	Роснано
+T32	ORGANIZATION 1538 1554	Сотал-Интерактив
+T34	ORGANIZATION 1579 1595	Microsoft Россия
+T35	ORGANIZATION 1617 1620	МТС
+T36	ORGANIZATION 1642 1647	Intel
+T37	COUNTRY 1738 1744	России
+T38	ORGANIZATION 1997 2003	Lexand
+T39	ORGANIZATION 2025 2033	Logitech
+T40	EVENT 2109 2117	Apps4all
+T41	ORGANIZATION 2120 2196	департамент науки, промышленной политики и предпринимательства города Москвы
+T43	ORGANIZATION 2199 2252	Фонд развития венчурного инвестирования города Москвы
+T44	COUNTRY 101 111	российское
+T45	PROFESSION 187 200	разработчиков
+T46	PROFESSION 229 241	разработчики
+T8	PRODUCT 824 835	Angry Birds
+T10	EVENT 1022 1028	форума
+T19	EVENT 1860 1866	Форума
+T33	CITY 2190 2196	Москвы
+T42	CITY 2246 2252	Москвы
+T47	EVENT 2277 2282	форум
+T48	EVENT 201 209	Apps4all
+T49	PROFESSION 1072 1086	вице-президент
+T50	ORGANIZATION 1087 1102	фонда «Сколково
+T51	EVENT 1715 1785	Мобильная разработка в России, тенденции и ожидания, перспективы рынка
+T52	EVENT 1789 1839	Монетизация мобильных приложений с помощью рекламы
+T53	PROFESSION 1589 1595	Россия
+T54	PRODUCT 2335 2356	www.forum.apps4all.ru
+T55	AUTHOR_POS 167 209	Международный форум разработчиков Apps4all
+T56	ARGUMENT_POS 624 659	могучие шутеры с большими бюджетами
+R1	OPINION_BELONGS_TO Arg1:T56 Arg2:T13	
+R2	POSITIVE_TO Arg1:T13 Arg2:T7	
+R3	OPINION_RELATES_TO Arg1:T56 Arg2:T7	
+T57	ARGUMENT_POS 664 694	притягательность маленьких игр
+R4	POSITIVE_TO Arg1:T13 Arg2:T9	
+R5	OPINION_RELATES_TO Arg1:T57 Arg2:T9	
+R6	OPINION_BELONGS_TO Arg1:T57 Arg2:T13	
+T60	AUTHOR_POS 1860 1866	Форума
+T61	ARGUMENT_POS 1959 2083	выиграть планшеты, электронные книги «Lexand», компьютерные мыши «Logitech» и много других ценных призов от партнеров форума
+R7	POS_AUTHOR_FROM Arg1:T60 Arg2:T61	
+T62	OPINION_WORD_POS 36 43	сюрприз
+R8	OPINION_BELONGS_TO Arg1:T62 Arg2:T1	
+T63	OPINION_WORD_POS 92 100	ключевое
+R9	OPINION_RELATES_TO Arg1:T63 Arg2:T4	
+R10	POS_AUTHOR_FROM Arg1:T55 Arg2:T63	
+T64	OPINION_WORD_POS 777 787	интересная
+T65	OPINION_WORD_POS 712 722	гениальных
+R11	OPINION_RELATES_TO Arg1:T65 Arg2:T9	
+R12	OPINION_BELONGS_TO Arg1:T65 Arg2:T13	
+R13	POSITIVE_TO Arg1:T13 Arg2:T9	
+R14	POSITIVE_TO Arg1:T13 Arg2:T8	
+R15	OPINION_BELONGS_TO Arg1:T64 Arg2:T13	
+R16	OPINION_RELATES_TO Arg1:T64 Arg2:T8	
+T66	OPINION_WORD_POS 1416 1428	авторитетных
+T67	AUTHOR_POS 1056 1070	Бориса Наумова
+T68	AUTHOR_POS 1160 1179	Александра Доржиева
+T69	AUTHOR_POS 1222 1234	Юрия Ветрова
+T70	AUTHOR_POS 1309 1325	Елены Алексеевой
+R17	POS_AUTHOR_FROM Arg1:T70 Arg2:T66	
+R18	POS_AUTHOR_FROM Arg1:T67 Arg2:T66	
+R19	POS_AUTHOR_FROM Arg1:T68 Arg2:T66	
+R20	POS_AUTHOR_FROM Arg1:T69 Arg2:T66	
+T71	ARGUMENT_POS 1897 1952	узнать о последних тенденциях мира мобильных приложений
+R21	POS_AUTHOR_FROM Arg1:T60 Arg2:T71	
+R22	OPINION_RELATES_TO Arg1:T71 Arg2:T19	
+T72	OPINION_WORD_POS 2050 2056	ценных

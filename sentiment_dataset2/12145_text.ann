@@ -1,0 +1,63 @@
+T3	CITY 44 54	Стокгольме
+T4	EVENT 88 149	церемония вручения премии «За целесообразное жизнеобеспечение
+T6	AWARD 179 212	Альтернативная Нобелевская премия
+T7	ORGANIZATION 223 233	NEWSru.com
+T8	DATE 235 246	В этом году
+T9	PROFESSION 264 272	активист
+T10	COUNTRY 290 297	Нигерии
+T11	ORGANIZATION 389 395	Сапрос
+T12	COUNTRY 400 406	Непала
+T13	PROFESSION 492 499	епископ
+T14	COUNTRY 517 525	Бразилии
+T15	ORGANIZATION 687 710	Врачи за права человека
+T16	COUNTRY 715 722	Израиля
+T17	COUNTRY 786 793	Израиля
+T18	COUNTRY 796 805	Палестины
+T19	PERSON 1107 1122	Альфреда Нобеля
+T20	DATE 1499 1510	в этом году
+T21	MONEY 1521 1531	2 млн крон
+T22	MONEY 1533 1546	200 тыс. евро
+T23	NUMBER 1579 1587	четырьмя
+T24	DATE 1603 1614	В 2010 году
+T25	NUMBER 1687 1690	120
+T26	NUMBER 1705 1707	51
+T1	AWARD 0 33	Альтернативная Нобелевская премия
+T2	AWARD 115 149	За целесообразное жизнеобеспечение
+T27	FACILITY 56 80	здании парламента Швеции
+T28	ORGANIZATION 63 80	парламента Швеции
+T29	ORGANIZATION 63 73	парламента
+T30	COUNTRY 74 80	Швеции
+T5	PERSON 273 286	Нниммо Бассей
+T31	PERSON 500 513	Эрвин Кретлер
+T32	LOCATION 640 648	Амазонки
+T33	PROFESSION 687 692	Врачи
+T34	AWARD 817 851	За целесообразное жизнеобеспечение
+T35	DATE 863 871	ежегодно
+T36	AWARD 1137 1171	За целесообразное жизнеобеспечение
+T37	RELIGION 1189 1200	буддистской
+T38	AWARD 1636 1670	За целесообразное жизнеобеспечение
+T39	EFFECT_POS 0 33	Альтернативная Нобелевская премия
+T40	EFFECT_POS 88 149	церемония вручения премии «За целесообразное жизнеобеспечение
+T41	EFFECT_POS 273 286	Нниммо Бассей
+T42	STATE_POS 273 286	Нниммо Бассей
+R1	POS_STATE_FROM Arg1:T42 Arg2:T6	
+R2	POSITIVE_TO Arg1:T5 Arg2:T6	
+R3	POS_EFFECT_FROM Arg1:T41 Arg2:T6	
+T43	EFFECT_POS 389 395	Сапрос
+T44	STATE_POS 389 395	Сапрос
+R4	POS_STATE_FROM Arg1:T44 Arg2:T6	
+R5	POSITIVE_TO Arg1:T11 Arg2:T6	
+R6	POS_EFFECT_FROM Arg1:T43 Arg2:T6	
+T45	EFFECT_POS 500 513	Эрвин Кретлер
+T46	STATE_POS 500 513	Эрвин Кретлер
+R7	POS_STATE_FROM Arg1:T46 Arg2:T6	
+R8	POSITIVE_TO Arg1:T31 Arg2:T6	
+R9	POS_EFFECT_FROM Arg1:T45 Arg2:T6	
+T47	EFFECT_POS 687 710	Врачи за права человека
+T48	STATE_POS 687 710	Врачи за права человека
+R10	POS_STATE_FROM Arg1:T48 Arg2:T6	
+R11	POSITIVE_TO Arg1:T15 Arg2:T6	
+R12	POS_EFFECT_FROM Arg1:T47 Arg2:T6	
+T49	AUTHOR_POS 817 851	За целесообразное жизнеобеспечение
+T50	ARGUMENT_POS 1013 1067	отмечает заслуги в важных сферах деятельности человека
+R13	POS_AUTHOR_FROM Arg1:T49 Arg2:T50	

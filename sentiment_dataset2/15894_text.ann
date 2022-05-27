@@ -1,0 +1,42 @@
+T1	ORGANIZATION 0 10	Уолл-стрит
+T4	EVENT 58 76	Занимай Уолл-стрит
+T5	ORGANIZATION 66 76	Уолл-стрит
+T6	PRODUCT 240 247	Twitter
+T7	PRODUCT 250 258	Facebook
+T8	EVENT 307 321	арабская весна
+T9	COUNTRY 386 398	американских
+T10	NUMBER 467 481	десятков тысяч
+T11	CITY 501 513	Лос-Анджелес
+T12	NUMBER 533 535	11
+T14	ORGANIZATION 610 625	Bank of America
+T15	FACILITY 654 665	Белого Дома
+T16	CITY 668 678	Вашингтоне
+T17	COUNTRY 719 722	США
+T18	PERCENT 873 885	99 процентов
+T19	COUNTRY 896 899	США
+T20	PERCENT 937 947	1 проценту
+T21	NATIONALITY 962 973	американцев
+T22	DATE 1104 1115	в 5 октября
+T23	EVENT 1119 1136	пресс-конференции
+T24	PROFESSION 1138 1147	президент
+T25	PERSON 1367 1378	Барак Обама
+T26	ORGANIZATION 1394 1404	Уолл-стрит
+T27	PERSON 1148 1159	Барак Обама
+T2	IDEOLOGY 32 50	Анти-корпоративная
+T3	COUNTRY 618 625	America
+T28	ORGANIZATION 514 521	полиция
+T13	PROFESSION 1055 1068	конгрессменов
+T29	PROFESSION 1034 1043	политиков
+T30	EVENT 522 532	арестовала
+T31	EVENT 562 582	сидячую демонстрацию
+T32	EFFECT_POS 58 76	Занимай Уолл-стрит
+T33	AUTHOR_NEG 58 76	Занимай Уолл-стрит
+T34	ARGUMENT_NEG 139 180	движение без лидеров и внятных требований
+R1	NEG_AUTHOR_FROM Arg1:T33 Arg2:T34	
+R2	NEGATIVE_TO Arg1:T28 Arg2:T31	
+T35	EFFECT_POS 562 582	сидячую демонстрацию
+R3	POSITIVE_TO Arg1:T13 Arg2:T4	
+T36	ARGUMENT_NEG 1190 1247	недовольством медленными темпами восстановления экономики
+T37	ARGUMENT_NEG 1250 1326	безответственностью виновных в возникновении глобального финансового кризиса
+R4	OPINION_BELONGS_TO Arg1:T36 Arg2:T27	
+R5	OPINION_BELONGS_TO Arg1:T37 Arg2:T27	

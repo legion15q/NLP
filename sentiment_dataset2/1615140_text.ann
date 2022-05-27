@@ -1,0 +1,53 @@
+T1	PERSON 0 6	Помпео
+T2	PROFESSION 48 67	главой МИД Словении
+T3	COUNTRY 59 67	Словении
+T4	PROFESSION 69 81	Госсекретарь
+T5	PERSON 82 93	Майк Помпео
+T6	PROFESSION 131 165	министром иностранных дел Словении
+T7	PERSON 166 179	Андже Логаром
+T8	ORGANIZATION 189 207	Госдепартамент США
+T9	PROFESSION 258 303	пресс-секретарь внешнеполитического ведомства
+T10	PERSON 304 318	Морган Ортагус
+T11	COUNTRY 365 368	США
+T12	COUNTRY 371 379	Словении
+T13	ORGANIZATION 395 399	НАТО
+T14	PERSON 519 525	Помпео
+T15	PERSON 528 533	Логар
+T16	DISEASE 642 649	COVID19
+T17	PROFESSION 652 700	Главы внешнеполитических ведомств США и Словении
+T18	COUNTRY 686 689	США
+T19	COUNTRY 692 700	Словении
+T20	ORGANIZATION 955 970	Госдепартамента
+T21	ORGANIZATION 55 67	МИД Словении
+T22	DATE 94 104	во вторник
+T23	COUNTRY 157 165	Словении
+T24	COUNTRY 204 207	США
+T25	IDEOLOGY 904 919	демократических
+T26	ORGANIZATION 55 58	МИД
+T27	PROFESSION 131 156	министром иностранных дел
+T28	EVENT 105 128	побеседовал по телефону
+T29	ORGANIZATION 274 303	внешнеполитического ведомства
+T30	ORGANIZATION 658 700	внешнеполитических ведомств США и Словении
+T31	EVENT 633 649	пандемии COVID19
+T32	ORGANIZATION 658 685	внешнеполитических ведомств
+T33	ORGANIZATION 189 203	Госдепартамент
+T34	EVENT 105 116	побеседовал
+T35	PROFESSION 131 140	министром
+R1	POSITIVE_TO Arg1:T1 Arg2:T2	
+R2	POSITIVE_TO Arg1:T2 Arg2:T1	
+R3	POSITIVE_TO Arg1:T5 Arg2:T7	
+R4	POSITIVE_TO Arg1:T7 Arg2:T5	
+T36	STATE_POS 166 179	Андже Логаром
+R5	POS_STATE_FROM Arg1:T36 Arg2:T28	
+T37	EFFECT_POS 82 93	Майк Помпео
+R6	POS_EFFECT_FROM Arg1:T37 Arg2:T28	
+T38	EFFECT_POS 166 179	Андже Логаром
+R7	POS_EFFECT_FROM Arg1:T38 Arg2:T28	
+T39	STATE_POS 82 93	Майк Помпео
+R8	POS_STATE_FROM Arg1:T39 Arg2:T28	
+R9	POSITIVE_TO Arg1:T7 Arg2:T28	
+R10	POSITIVE_TO Arg1:T5 Arg2:T28	
+R11	POSITIVE_TO Arg1:T11 Arg2:T12	
+R12	POSITIVE_TO Arg1:T12 Arg2:T11	
+R13	POSITIVE_TO Arg1:T14 Arg2:T15	
+R14	POSITIVE_TO Arg1:T15 Arg2:T14	

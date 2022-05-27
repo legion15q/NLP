@@ -1,0 +1,54 @@
+T1	COUNTRY 2 16	Новой Зеландии
+T2	NATIONALITY 37 48	австралийцы
+T3	PERSON 70 77	Джон Ки
+T4	PROFESSION 81 96	премьер-министр
+T5	ORGANIZATION 111 139	Правительство Новой Зеландии
+T6	COUNTRY 125 139	Новой Зеландии
+T7	NATIONALITY 202 214	новозеландцы
+T8	COUNTRY 243 252	Австралии
+T9	COUNTRY 266 275	Австралии
+T10	NUMBER 297 302	треть
+T11	COUNTRY 317 331	Новой Зеландии
+T12	NATIONALITY 364 376	новозеландцы
+T13	TIME 393 407	часов в неделю
+T14	PROFESSION 409 424	Премьер министр
+T15	PERSON 440 447	Джон Ки
+T17	PERSON 626 636	Дона Брэша
+T18	COUNTRY 734 748	Новой Зеландии
+T19	COUNTRY 751 760	Австралию
+T20	DATE 777 806	до 70-х годов двадцатого века
+T21	COUNTRY 870 879	Австралия
+T22	NATIONALITY 980 992	Новозеландцы
+T23	COUNTRY 1024 1038	Новой Зеландии
+T24	COUNTRY 1041 1050	Австралию
+T25	ORGANIZATION 1103 1116	правительства
+T26	PROFESSION 1128 1144	лидера оппозиции
+T27	PERSON 1145 1155	Фила Гоффа
+T28	MONEY 1263 1292	500 000 американских долларов
+T29	DATE 1293 1321	в течении следующих трёх лет
+T30	COUNTRY 97 108	Н. Зеландии
+T31	PROFESSION 81 108	премьер-министр Н. Зеландии
+T32	COUNTRY 425 439	Новой Зеландии
+T33	PROFESSION 409 439	Премьер министр Новой Зеландии
+T34	ORGANIZATION 606 625	Национальной партии
+T35	PROFESSION 599 625	лидера Национальной партии
+T36	STATE_OR_PROVINCE 658 666	Тасманию
+T37	NATIONALITY 932 943	австралийцы
+T38	IDEOLOGY 1135 1144	оппозиции
+T39	COUNTRY 1271 1283	американских
+T16	ORGANIZATION 1157 1170	правительство
+T40	ORGANIZATION 111 124	Правительство
+R1	POSITIVE_TO Arg1:T5 Arg2:T7	
+R2	POSITIVE_TO Arg1:T6 Arg2:T7	
+R3	NEGATIVE_TO Arg1:T27 Arg2:T16	
+T41	ARGUMENT_NEG 1185 1230	хочет протолкнуть свою программу приватизации
+R4	OPINION_BELONGS_TO Arg1:T41 Arg2:T27	
+R5	OPINION_RELATES_TO Arg1:T41 Arg2:T16	
+R6	NEGATIVE_TO Arg1:T22 Arg2:T37	
+R7	NEGATIVE_TO Arg1:T37 Arg2:T22	
+T42	ARGUMENT_NEG 276 331	люди зарабатывают на треть больше, чем в Новой Зеландии
+R8	OPINION_BELONGS_TO Arg1:T42 Arg2:T5	
+R9	OPINION_RELATES_TO Arg1:T42 Arg2:T9	
+T43	ARGUMENT_NEG 377 407	работают больше часов в неделю
+R10	OPINION_BELONGS_TO Arg1:T43 Arg2:T5	
+R11	OPINION_RELATES_TO Arg1:T43 Arg2:T12	

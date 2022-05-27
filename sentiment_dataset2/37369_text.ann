@@ -1,0 +1,60 @@
+﻿T1	COUNTRY 0 3	США
+T2	CITY 46 53	Бостона
+T3	COUNTRY 68 71	США
+T4	COUNTRY 79 82	США
+T5	CITY 247 254	Бостоне
+T7	COUNTRY 347 357	Казахстана
+T8	PERSON 358 375	Азамата Тажаякова
+T9	PERSON 495 511	Джохара Царнаева
+T11	ORGANIZATION 572 602	Университета штата Массачусетс
+T12	CITY 605 613	Дартмуте
+T13	COUNTRY 639 642	США
+T14	ORGANIZATION 695 722	Министерство внутренних дел
+T15	ORGANIZATION 736 754	пограничной службе
+T16	COUNTRY 889 892	США
+T17	DATE 1061 1076	3 мая 2013 года
+T18	PERSON 1150 1168	Тамерлана Царнаева
+T19	PERSON 1262 1274	Питер Стефан
+T20	ORGANIZATION 1303 1312	Уорчестер
+T21	AGE 1334 1344	26-летнего
+T22	NUMBER 1356 1359	Три
+T23	NUMBER 1379 1388	более 280
+T24	NUMBER 1407 1410	два
+T25	EVENT 1500 1520	Бостонского марафона
+T26	PROFESSION 54 65	Полицейские
+T29	EVENT 211 218	взрывов
+T30	EVENT 236 254	марафона в Бостоне
+T32	CRIME 429 442	сокрытии улик
+T33	PERSON 532 540	Тажаяков
+T34	STATE_OR_PROVINCE 591 602	Массачусетс
+T35	ORGANIZATION 695 726	Министерство внутренних дел США
+T36	COUNTRY 723 726	США
+T38	ORGANIZATION 809 821	Погранслужба
+T40	ORGANIZATION 980 992	погранслужбы
+T41	PROFESSION 970 992	сотрудник погранслужбы
+T43	EVENT 1104 1110	смерти
+T44	EVENT 1140 1147	теракта
+T45	EVENT 1191 1195	умер
+T47	PERSON 1345 1353	Царнаева
+T48	EVENT 1356 1375	Три человека погибл
+T49	EVENT 1379 1399	более 280 пострадали
+T50	EVENT 1468 1478	взорвались
+T51	CITY 1500 1511	Бостонского
+T52	DATE 1521 1540	15 апреля 2013 года
+T27	EVENT 236 244	марафона
+T6	DATE 255 270	в апреле 2013 г
+T53	ORGANIZATION 72 82	Власти США
+T10	DATE 513 531	В январе 2013 года
+T55	DISEASE 1199 1216	огнестрельных ран
+T56	EVENT 1512 1520	марафона
+T1	COUNTRY 0 3	США
+T28	STATE_NEG 358 375	Азамата Тажаякова
+T31	EFFECT_NEG 358 375	Азамата Тажаякова
+T37	EFFECT_NEG 495 511	Джохара Царнаева
+T39	STATE_NEG 495 511	Джохара Царнаева
+T42	ARGUMENT_NEG 429 442	сокрытии улик
+R1	OPINION_RELATES_TO Arg1:T42 Arg2:T8	
+T46	EFFECT_NEG 1150 1168	Тамерлана Царнаева
+R2	NEG_EFFECT_FROM Arg1:T46 Arg2:T43	
+R3	NEG_EFFECT_FROM Arg1:T46 Arg2:T55	
+R4	NEGATIVE_TO Arg1:T18 Arg2:T55	

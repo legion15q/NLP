@@ -1,0 +1,103 @@
+T1	DATE 25 45	24 февраля 2010 года
+T2	CITY 55 68	Северодвинске
+T3	WORK_OF_ART 112 135	Не будите спящую собаку
+T4	NATIONALITY 154 165	английского
+T5	PERSON 177 199	Джона Бойнтона Пристли
+T6	WORK_OF_ART 201 216	Опасный поворот
+T7	DATE 229 240	в 1932 году
+T8	ORGANIZATION 281 315	Государственного театра Киноактера
+T9	DATE 316 332	23 мая 2009 года
+T10	PERSON 371 385	Сергей Астахов
+T11	PERSON 387 393	Роберт
+T12	PERSON 398 412	Елена Корикова
+T13	PERSON 414 419	Фреда
+T14	PERSON 422 438	Светлана Иванова
+T15	PERSON 440 445	Бетти
+T16	PERSON 448 463	Андрей Чернышов
+T17	PERSON 465 472	Стэнтон
+T18	PERSON 475 488	Ольга Красько
+T19	PERSON 490 495	Олуэн
+T20	PERSON 498 509	Иван Жидков
+T21	PERSON 511 517	Гордон
+T22	PROFESSION 551 560	бизнесмен
+T23	PERSON 561 574	Роберт Кэплен
+T24	PERSON 590 596	Фредой
+T25	PERSON 659 674	Гордон Уайтхауз
+T26	PERSON 686 691	Бетти
+T27	PROFESSION 693 709	ведущий менеджер
+T28	PERSON 716 737	Чарльз Трэвор Стэнтон
+T29	PERSON 740 750	Олуэн Пиил
+T30	PERSON 1069 1075	Кеплен
+T31	DATE 1168 1178	в XIV веке
+T32	PERSON 1227 1240	Джеффри Чосер
+T33	PROFESSION 1334 1343	режиссёра
+T34	PERSON 1354 1368	Ольги Шевцовой
+T35	PERSON 1437 1450	Роберт Кэплен
+T36	PERSON 1548 1554	Роберт
+T37	PERSON 1729 1734	Бетти
+T38	PERSON 1744 1750	Роберт
+T39	PERSON 1816 1822	Кеплен
+T40	PERSON 1935 1941	Роберт
+T41	PERSON 2034 2039	Олуэн
+T42	PERSON 2104 2109	Олуэн
+T43	DATE 2246 2258	в этот вечер
+T44	PERSON 2329 2354	Сергей Виконтович Астахов
+T45	PERSON 2356 2362	Козлов
+T46	PERSON 2367 2380	Роберт Кэплен
+T47	PERSON 2385 2413	Эвелина Висвальдовна Блёданс
+T48	PERSON 2417 2422	Фреда
+T49	PERSON 2427 2455	Татьяна Альбертовна Абрамова
+T50	PERSON 2459 2469	Олуэн Пиил
+T51	PERSON 2474 2501	Ольга Альбертовна Арнтгольц
+T52	PERSON 2503 2508	Бетти
+T53	PERSON 2512 2537	Андрей Игоревич Харитонов
+T54	PERSON 2541 2562	Чарльз Трэвор Стэнтон
+T55	PERSON 2568 2594	Вахтанг Ираклиевич Беридзе
+T56	PERSON 2598 2613	Гордон Уайтхауз
+T57	COUNTRY 2652 2656	СССР
+T58	WORK_OF_ART 2673 2688	Опасный поворот
+T59	WORK_OF_ART 0 23	Не будите спящую собаку
+T60	PROFESSION 166 176	драматурга
+T61	EVENT 242 260	Премьера спектакля
+T62	PERSON 651 658	Роберта
+T63	COUNTRY 1201 1212	английского
+T65	PROFESSION 1196 1200	поэт
+T66	PERSON 810 814	Пиил
+T67	PERSON 991 998	Роберту
+T68	PERSON 1007 1014	Мартине
+T69	CITY 2292 2306	северодвинской
+T64	EVENT 91 110	состоялся спектакль
+T70	FACILITY 275 315	сцене Государственного театра Киноактера
+T71	PROFESSION 701 709	менеджер
+T72	DATE 1213 1226	Средневековья
+T73	EFFECT_POS 112 135	Не будите спящую собаку
+R1	POS_EFFECT_FROM Arg1:T73 Arg2:T64	
+T74	EFFECT_POS 659 674	Гордон Уайтхауз
+T75	STATE_POS 659 674	Гордон Уайтхауз
+R2	POSITIVE_TO Arg1:T62 Arg2:T25	
+R3	POSITIVE_TO Arg1:T25 Arg2:T62	
+T76	STATE_POS 686 691	Бетти
+T77	EFFECT_POS 686 691	Бетти
+R4	POSITIVE_TO Arg1:T26 Arg2:T25	
+R5	POSITIVE_TO Arg1:T25 Arg2:T26	
+R6	POSITIVE_TO Arg1:T26 Arg2:T62	
+R7	POSITIVE_TO Arg1:T62 Arg2:T26	
+T78	EFFECT_POS 716 737	Чарльз Трэвор Стэнтон
+T79	STATE_POS 716 737	Чарльз Трэвор Стэнтон
+T80	EFFECT_POS 740 750	Олуэн Пиил
+T81	STATE_POS 740 750	Олуэн Пиил
+R8	POSITIVE_TO Arg1:T28 Arg2:T62	
+R9	POSITIVE_TO Arg1:T62 Arg2:T28	
+R10	POSITIVE_TO Arg1:T29 Arg2:T62	
+R11	POSITIVE_TO Arg1:T62 Arg2:T29	
+R12	POSITIVE_TO Arg1:T67 Arg2:T68	
+T82	EFFECT_NEG 1007 1014	Мартине
+R13	NEGATIVE_TO Arg1:T38 Arg2:T37	
+T83	ARGUMENT_NEG 1690 1728	сбрасывает с пьедестала» светлый образ
+R14	OPINION_BELONGS_TO Arg1:T83 Arg2:T38	
+R15	OPINION_RELATES_TO Arg1:T83 Arg2:T37	
+T84	EFFECT_NEG 1548 1554	Роберт
+T85	STATE_NEG 1548 1554	Роберт
+T86	EFFECT_NEG 1935 1941	Роберт
+T87	EFFECT_NEG 2034 2039	Олуэн
+R16	POSITIVE_TO Arg1:T41 Arg2:T40	

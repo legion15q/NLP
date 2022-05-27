@@ -1,0 +1,81 @@
+T1	COUNTRY 0 3	США
+T2	COUNTRY 6 12	Грузия
+T3	ORGANIZATION 58 81	Вооружённые силы Грузии
+T5	COUNTRY 164 181	Соединенные Штаты
+T6	COUNTRY 184 190	Грузия
+T7	COUNTRY 341 351	российской
+T8	COUNTRY 362 372	грузинских
+T9	COUNTRY 442 451	американо
+T10	COUNTRY 452 462	грузинской
+T11	DATE 535 542	20 июля
+T12	DATE 579 588	4 августа
+T13	LOCATION 914 925	Черном море
+T14	COUNTRY 942 948	Грузии
+T15	COUNTRY 997 1000	США
+T16	COUNTRY 1010 1016	Грузию
+T17	COUNTRY 1184 1190	Грузии
+T18	ORGANIZATION 1217 1221	НАТО
+T19	COUNTRY 1253 1270	Соединенные Штаты
+T20	COUNTRY 1371 1377	Грузии
+T21	COUNTRY 1454 1460	Россию
+T22	COUNTRY 1484 1494	грузинских
+T23	COUNTRY 1504 1511	Абхазии
+T24	COUNTRY 1514 1526	Южной Осетии
+T25	DATE 1588 1599	в 2008 году
+T26	COUNTRY 1602 1614	Американскую
+T27	PROFESSION 1650 1713	заместитель помощника госсекретаря по военно-политическим делам
+T29	PERSON 1714 1728	Уильям Монахан
+T30	PROFESSION 1731 1769	заместитель помощника министра обороны
+T31	PERSON 1770 1785	Майкл Карпентер
+T32	COUNTRY 1807 1817	грузинской
+T33	PROFESSION 1832 1875	первый заместитель министра иностранных дел
+T34	PROFESSION 1851 1875	министра иностранных дел
+T35	PERSON 1876 1892	Давид Залкалиани
+T36	PROFESSION 1895 1920	советник министра обороны
+T37	PERSON 1921 1934	Шота Гвинерия
+T38	COUNTRY 75 81	Грузии
+T4	EVENT 352 361	оккупации
+T39	ORGANIZATION 99 161	двусторонняя рабочая группа по вопросам обороны и безопасности
+T40	ORGANIZATION 442 512	американо-грузинской рабочей группы по вопросам обороны и безопасности
+T28	PROFESSION 1662 1713	помощника госсекретаря по военно-политическим делам
+T41	PROFESSION 1672 1713	госсекретаря по военно-политическим делам
+T42	PROFESSION 1743 1769	помощника министра обороны
+T43	PROFESSION 1753 1769	министра обороны
+T44	PROFESSION 1904 1920	министра обороны
+T45	ORGANIZATION 1602 1624	Американскую делегацию
+T46	LAW 1544 1574	соглашением о прекращении огня
+T47	LOCATION 1520 1526	Осетии
+R1	POSITIVE_TO Arg1:T1 Arg2:T2	
+R2	POSITIVE_TO Arg1:T2 Arg2:T1	
+T48	EFFECT_POS 0 3	США
+T49	EFFECT_POS 6 12	Грузия
+T50	STATE_POS 6 12	Грузия
+T51	STATE_POS 0 3	США
+R3	POSITIVE_TO Arg1:T5 Arg2:T6	
+R4	POSITIVE_TO Arg1:T6 Arg2:T5	
+T52	EFFECT_POS 164 181	Соединенные Штаты
+T53	EFFECT_POS 184 190	Грузия
+T54	STATE_POS 164 181	Соединенные Штаты
+T55	STATE_POS 184 190	Грузия
+T56	EFFECT_NEG 362 372	грузинских
+R5	NEG_EFFECT_FROM Arg1:T56 Arg2:T4	
+R6	POSITIVE_TO Arg1:T15 Arg2:T16	
+R7	POSITIVE_TO Arg1:T16 Arg2:T15	
+T57	EFFECT_POS 1010 1016	Грузию
+T58	STATE_POS 1010 1016	Грузию
+T59	STATE_POS 1184 1190	Грузии
+T60	EFFECT_POS 1184 1190	Грузии
+R8	POSITIVE_TO Arg1:T19 Arg2:T20	
+T61	EFFECT_POS 1371 1377	Грузии
+T62	STATE_POS 1371 1377	Грузии
+R9	NEGATIVE_TO Arg1:T19 Arg2:T21	
+R10	NEGATIVE_TO Arg1:T20 Arg2:T21	
+T63	ARGUMENT_POS 1038 1091	стремление к интеграции в евроатлантические институты
+R11	OPINION_RELATES_TO Arg1:T63 Arg2:T16	
+R12	OPINION_BELONGS_TO Arg1:T63 Arg2:T15	
+R13	NEGATIVE_TO Arg1:T6 Arg2:T7	
+R14	NEGATIVE_TO Arg1:T5 Arg2:T7	
+R15	NEGATIVE_TO Arg1:T8 Arg2:T4	
+T64	ARGUMENT_POS 953 979	особого партнера в регионе
+R16	OPINION_RELATES_TO Arg1:T64 Arg2:T14	
+R17	OPINION_BELONGS_TO Arg1:T64 Arg2:T5	

@@ -1,0 +1,54 @@
+T1	PROFESSION 15 25	хореографа
+T2	WORK_OF_ART 42 55	Анна Каренина
+T3	DATE 57 69	13—14 января
+T4	ORGANIZATION 107 126	Московская оперетта
+T5	PERSON 150 164	Бориса Эйфмана
+T6	WORK_OF_ART 166 179	Анна Каренина
+T7	PERSON 334 347	Льва Толстого
+T8	PERSON 399 403	Анна
+T9	PERSON 406 413	Каренин
+T10	PERSON 416 424	Вронский
+T11	PERSON 517 524	Эйфмана
+T12	PERSON 657 671	Анны Карениной
+T13	PERSON 984 998	Бориса Эйфмана
+T14	WORK_OF_ART 1063 1076	Анна Каренина
+T15	PERSON 1117 1125	Толстого
+T16	COUNTRY 1251 1257	России
+T17	WORK_OF_ART 1269 1282	Анна Каренина
+T18	PERSON 1775 1783	Толстому
+T19	PERSON 1895 1907	Борис Эйфман
+T20	PERSON 26 40	Бориса Эйфмана
+T21	ORGANIZATION 70 126	Государственный академический театр «Московская оперетта
+T22	CITY 107 117	Московская
+T23	PROFESSION 349 358	хореограф
+T24	PROFESSION 441 450	хореограф
+T26	PROFESSION 758 767	Хореограф
+T28	PERSON 1045 1053	Толстого
+T25	AUTHOR_POS 166 179	Анна Каренина
+T27	ARGUMENT_POS 197 237	полна внутренней психологической энергии
+T29	OPINION_WORD_POS 240 251	удивительно
+T30	ARGUMENT_POS 240 294	удивительно точна по своему эмоциональному воздействию
+R1	POS_AUTHOR_FROM Arg1:T25 Arg2:T30	
+R2	POS_AUTHOR_FROM Arg1:T25 Arg2:T27	
+T31	OPINION_WORD_POS 892 917	не оставляют равнодушными
+R3	OPINION_BELONGS_TO Arg1:T31 Arg2:T26	
+R4	OPINION_RELATES_TO Arg1:T31 Arg2:T6	
+T32	AUTHOR_POS 984 998	Бориса Эйфмана
+T33	OPINION_WORD_POS 943 961	Высочайшего уровня
+T34	ARGUMENT_POS 943 983	Высочайшего уровня техника и хореография
+R5	POS_AUTHOR_FROM Arg1:T32 Arg2:T34	
+T35	ARGUMENT_POS 999 1053	передают все психологические перипетии романа Толстого
+R6	POS_AUTHOR_FROM Arg1:T32 Arg2:T35	
+R7	POSITIVE_TO Arg1:T19 Arg2:T14	
+R8	POSITIVE_TO Arg1:T19 Arg2:T15	
+T36	ARGUMENT_POS 1138 1257	невероятное понимание автором психологического мира его героев, удивительную чуткость и точность отражения жизни России
+T37	OPINION_WORD_POS 1138 1149	невероятное
+T38	OPINION_WORD_POS 1202 1214	удивительную
+R9	OPINION_RELATES_TO Arg1:T36 Arg2:T15	
+R10	OPINION_BELONGS_TO Arg1:T36 Arg2:T19	
+T39	ARGUMENT_POS 1449 1484	страстей, метаморфоз, фантасмагорий
+T40	ARGUMENT_POS 1289 1395	не только погружение в психологический мир героини, но и настоящее психоэротическое осмысление её личности
+R11	OPINION_RELATES_TO Arg1:T40 Arg2:T17	
+R12	OPINION_RELATES_TO Arg1:T39 Arg2:T17	
+R13	OPINION_BELONGS_TO Arg1:T40 Arg2:T19	
+R14	OPINION_BELONGS_TO Arg1:T39 Arg2:T19	

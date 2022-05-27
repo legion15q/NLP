@@ -1,0 +1,70 @@
+T2	WORK_OF_ART 22 54	Гордости и предубеждении и зомби
+T3	PROFESSION 56 66	священника
+T4	PERSON 67 76	Мэтт Смит
+T5	EVENT 80 113	San Diego Comic-Con International
+T7	ORGANIZATION 144 166	The Hollywood Reporter
+T8	DATE 167 193	в конце сентября 2014 года
+T9	COUNTRY 195 205	британский
+T10	PERSON 212 221	Мэтт Смит
+T11	PERSON 240 261	Одиннадцатого Доктора
+T12	COUNTRY 264 274	британском
+T13	WORK_OF_ART 288 298	Доктор Кто
+T14	COUNTRY 330 343	американского
+T15	PERSON 353 369	Сета Грэма-Смита
+T16	WORK_OF_ART 371 403	Гордость и предубеждение и зомби
+T17	NATIONALITY 473 483	англичанки
+T18	PERSON 484 495	Джейн Остин
+T19	PROFESSION 497 507	священника
+T20	PERSON 537 552	Элизабет Беннет
+T21	COUNTRY 602 608	Англии
+T22	PERSON 642 647	Дарси
+T23	ORDINAL 696 702	вторая
+T24	PERSON 759 764	Мэтта
+T25	PERSON 849 860	Лили Джеймс
+T26	PERSON 893 902	Сэм Райли
+T27	PERSON 905 917	Джек Хьюстон
+T28	PERSON 920 931	Джейн Остин
+T29	PERSON 933 944	Jane Austen
+T30	DATE 963 975	18 июля 1817
+T31	COUNTRY 979 989	английская
+T32	COUNTRY 1030 1040	британской
+T33	PERSON 1311 1322	Джейн Остин
+T34	COUNTRY 1463 1477	Великобритании
+T35	COUNTRY 1365 1375	английской
+T36	DATE 945 960	16 декабря 1775
+T38	PROFESSION 990 1002	писательница
+T39	PROFESSION 1053 1060	сатирик
+T40	COUNTRY 1291 1302	английского
+T6	CITY 80 89	San Diego
+T41	DATE 114 131	21 июля 2013 года
+T42	PROFESSION 206 211	актёр
+T43	ORDINAL 240 253	Одиннадцатого
+T44	PERSON 4 10	Доктор
+T45	PROFESSION 344 352	писателя
+T46	PERSON 516 524	Коллинза
+T47	DATE 609 619	XVIII века
+T48	PROFESSION 805 812	артисты
+R1	POSITIVE_TO Arg1:T4 Arg2:T2	
+R2	POSITIVE_TO Arg1:T4 Arg2:T5	
+R3	POSITIVE_TO Arg1:T10 Arg2:T16	
+R4	POSITIVE_TO Arg1:T10 Arg2:T46	
+R5	POSITIVE_TO Arg1:T34 Arg2:T33	
+R6	POSITIVE_TO Arg1:T15 Arg2:T18	
+T1	OPINION_WORD_POS 446 459	классического
+T37	OPINION_WORD_NEG 566 571	зомби
+T49	OPINION_WORD_POS 677 685	победить
+R8	POSITIVE_TO Arg1:T25 Arg2:T16	
+R7	POSITIVE_TO Arg1:T26 Arg2:T16	
+R9	POSITIVE_TO Arg1:T27 Arg2:T16	
+T50	ARGUMENT_POS 1099 1309	Её книги являются признанными w:шедеврами и покоряют безыскусной искренностью и простотой сюжета на фоне глубокого психологического проникновения в души героев и ироничного, мягкого, истинно «английского» юмора
+R10	OPINION_RELATES_TO Arg1:T50 Arg2:T28	
+T51	ARGUMENT_POS 1343 1386	считают «Первой леди» английской литературы
+R11	OPINION_RELATES_TO Arg1:T51 Arg2:T33	
+T52	ARGUMENT_POS 1388 1477	Её произведения обязательны для изучения во всех колледжах и университетах Великобритании
+R12	OPINION_RELATES_TO Arg1:T52 Arg2:T33	
+R13	POSITIVE_TO Arg1:T10 Arg2:T11	
+R14	POSITIVE_TO Arg1:T10 Arg2:T13	
+T53	OPINION_WORD_POS 1117 1128	признанными
+T54	OPINION_WORD_POS 1131 1140	шедеврами
+T55	OPINION_WORD_POS 1143 1151	покоряют
+T56	OPINION_WORD_POS 1164 1176	искренностью

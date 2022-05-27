@@ -1,0 +1,61 @@
+T1	PROFESSION 0 4	Папа
+T2	PERSON 33 45	Бенедикт XVI
+T3	FACILITY 47 66	Собор Святого Петра
+T5	EVENT 77 82	мессы
+T6	LOCATION 147 162	Ближнем Востоке
+T8	DATE 256 279	более 2 тысяч лет назад
+T9	DATE 282 306	В понедельник 24 декабря
+T10	FACILITY 351 371	соборе Святого Петра
+T12	COUNTRY 421 426	Сирии
+T13	COUNTRY 428 434	Ливане
+T14	COUNTRY 436 441	Ираке
+T15	NATIONALITY 501 512	израильтяне
+T16	NATIONALITY 515 525	палестинцы
+T17	CITY 596 603	Вифлеем
+T18	LOCATION 607 634	Западном берегу реки Иордан
+T19	PERSON 703 708	Иисус
+T20	DATE 711 722	В этом году
+T21	NATIONALITY 761 772	палестинцев
+T22	DATE 782 798	в прошлом месяце
+T23	ORGANIZATION 811 814	ООН
+T24	COUNTRY 839 864	палестинского государства
+T25	PROFESSION 914 921	епископ
+T26	PERSON 950 959	Фуад Твал
+T27	COUNTRY 983 996	палестинского
+T28	NATIONALITY 1041 1054	израильтянами
+T29	TIME 1162 1177	до поздней ночи
+T30	PERSON 5 17	Бенедикт XVI
+T31	PERSON 106 118	Бенедикт XVI
+T32	PERSON 220 233	Иисуса Христа
+T33	PERSON 358 371	Святого Петра
+T34	ORDINAL 14 17	XVI
+T35	ORDINAL 42 45	XVI
+T36	ORDINAL 115 118	XVI
+T4	PERSON 53 66	Святого Петра
+T37	DATE 83 100	в канун Рождества
+T38	EVENT 91 100	Рождества
+T39	PROFESSION 101 105	папа
+T40	RELIGION 166 175	христиане
+T41	EVENT 211 233	рождение Иисуса Христа
+T11	PROFESSION 373 381	понтифик
+T42	LOCATION 623 634	реки Иордан
+T44	EVENT 723 732	Рождество
+T45	EVENT 885 913	предрождественской проповеди
+T46	DATE 875 884	ежегодной
+T47	PROFESSION 914 949	епископ местной католической церкви
+T48	NATIONALITY 1014 1025	палестинцев
+T49	EVENT 1099 1107	конфликт
+T50	EVENT 1207 1215	праздник
+R1	POSITIVE_TO Arg1:T40 Arg2:T41	
+T7	EFFECT_POS 166 175	христиане
+T43	STATE_POS 166 175	христиане
+R2	POS_STATE_FROM Arg1:T43 Arg2:T41	
+R3	POS_EFFECT_FROM Arg1:T7 Arg2:T41	
+R4	POSITIVE_TO Arg1:T11 Arg2:T15	
+R5	POSITIVE_TO Arg1:T11 Arg2:T16	
+T51	EFFECT_POS 761 772	палестинцев
+T52	STATE_POS 761 772	палестинцев
+R6	POSITIVE_TO Arg1:T26 Arg2:T27	
+R7	NEGATIVE_TO Arg1:T26 Arg2:T49	
+T53	OPINION_WORD_POS 1216 1228	незабываемым
+R8	OPINION_RELATES_TO Arg1:T53 Arg2:T50	

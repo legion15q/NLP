@@ -1,0 +1,57 @@
+T3	PERSON 40 52	Микеланджело
+T4	PERSON 85 97	Микеланджело
+T5	ORGANIZATION 113 138	Академии изящных искусств
+T6	CITY 142 151	Флоренции
+T7	COUNTRY 153 159	Италия
+T8	MONEY 374 388	200 тысяч евро
+T9	COUNTRY 418 424	Италии
+T10	DATE 465 481	около десяти лет
+T12	PERSON 560 579	Алессандро Мартелли
+T15	WORK_OF_ART 756 762	Давида
+T16	PERSON 770 782	Микеланджело
+T19	DATE 835 854	в августе 2016 года
+T20	ORGANIZATION 898 922	Геологической службы США
+T21	NUMBER 957 970	10 километров
+T26	NUMBER 1039 1048	около 300
+T27	PERSON 1357 1363	Давида
+T28	PERSON 1389 1396	Голиафа
+T29	NATIONALITY 1428 1439	итальянским
+T30	PERSON 1451 1474	Микеланджело Буонарроти
+T31	DATE 1475 1497	между 1501—1504 годами
+T32	NUMBER 1565 1575	5,16 метра
+T1	WORK_OF_ART 0 13	Статуя Давида
+T2	WORK_OF_ART 25 38	Статуя Давида
+T33	PERSON 7 13	Давида
+T34	PERSON 32 38	Давида
+T35	WORK_OF_ART 64 77	статуе Давида
+T36	PERSON 71 77	Давида
+T37	ORGANIZATION 411 424	власти Италии
+T11	LOCATION 611 629	Центральной Италии
+T13	LOCATION 816 834	Центральной Италии
+T14	COUNTRY 919 922	США
+T17	NUMBER 998 1001	6,4
+T18	NUMBER 994 997	6,2
+T22	WORK_OF_ART 1164 1170	Давида
+T23	PROFESSION 1440 1450	художником
+T24	EVENT 630 643	землетрясений
+T25	EVENT 873 886	землетрясение
+T38	COUNTRY 623 629	Италии
+T39	COUNTRY 828 834	Италии
+T40	WORK_OF_ART 1346 1363	Скульптура Давида
+T41	EVENT 1032 1056	гибели около 300 человек
+T42	EVENT 1032 1038	гибели
+T43	EVENT 1003 1021	Природное бедствие
+T44	EFFECT_NEG 0 13	Статуя Давида
+T45	EFFECT_NEG 64 77	статуе Давида
+R1	NEGATIVE_TO Arg1:T12 Arg2:T37	
+T46	ARGUMENT_NEG 483 532	не уделяют должного внимания сохранению памятника
+R2	NEGATIVE_TO Arg1:T37 Arg2:T12	
+R3	OPINION_RELATES_TO Arg1:T46 Arg2:T37	
+R4	OPINION_BELONGS_TO Arg1:T46 Arg2:T12	
+T47	EFFECT_NEG 611 629	Центральной Италии
+R5	NEG_EFFECT_FROM Arg1:T47 Arg2:T24	
+T48	EFFECT_NEG 816 834	Центральной Италии
+R6	NEG_EFFECT_FROM Arg1:T48 Arg2:T25	
+T49	EFFECT_NEG 828 834	Италии
+R7	NEG_EFFECT_FROM Arg1:T49 Arg2:T25	
+T50	EFFECT_NEG 1164 1170	Давида

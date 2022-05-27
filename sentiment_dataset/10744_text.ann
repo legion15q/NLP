@@ -1,0 +1,78 @@
+﻿T1	LAW 45 74	Федеральный закон «О полиции»
+T2	DATE 101 110	6 августа
+T5	PROFESSION 240 250	президента
+T6	COUNTRY 251 253	РФ
+T7	COUNTRY 298 304	России
+T8	PROFESSION 440 457	глава государства
+T9	LAW 493 502	О милиции
+T10	DATE 521 532	Октябрьской
+T11	PERSON 706 714	Медведев
+T12	EVENT 936 957	Октябрьской революции
+T13	COUNTRY 1022 1040	Российской Империи
+T14	DATE 1075 1086	Февральской
+T15	EVENT 1075 1122	Февральской буржуазно-демократической революции
+T16	DATE 1150 1161	Октябрьской
+T17	EVENT 1150 1171	Октябрьской революции
+T18	DATE 1291 1299	февралём
+T19	DATE 1302 1310	октябрём
+T20	DATE 1315 1324	7 месяцев
+T21	ORGANIZATION 1487 1498	Фонтанка.ru
+T22	DATE 1576 1588	На 8 августа
+T23	NUMBER 1602 1606	3000
+T25	PERCENT 1620 1629	менее 3 %
+T26	PROFESSION 1737 1747	президента
+T28	ORGANIZATION 1790 1803	Единая Россия
+T29	PERSON 1827 1839	Д. Медведева
+T30	PROFESSION 1841 1846	лидер
+T31	ORGANIZATION 1847 1851	ЛДПР
+T32	PERSON 1852 1866	В. Жириновский
+T33	ORGANIZATION 1928 1932	КПРФ
+T34	ORGANIZATION 1940 1944	КПРФ
+T35	COUNTRY 2037 2043	Россия
+T40	COUNTRY 2358 2361	США
+T24	PROFESSION 240 253	президента РФ
+T3	LAW 150 163	ФЗ «О милиции
+T4	EVENT 521 542	Октябрьской революции
+T27	PROFESSION 1841 1851	лидер ЛДПР
+T36	LAW 2124 2138	ФЗ «О Полиции»
+T38	LAW 154 163	О милиции
+T39	DATE 936 947	Октябрьской
+T41	LAW 2128 2137	О Полиции
+T42	PROFESSION 1423 1441	работников милиции
+T43	ARGUMENT_NEG 1332 1476	Как переименование органов правопорядка повысит профессионализм, эффективность и честность работников милиции, не данном совещании не сообщается
+R2	NEGATIVE_TO Arg1:T24 Arg2:T38	
+T44	EVENT 1552 1574	переименованию милиции
+R3	POSITIVE_TO Arg1:T28 Arg2:T29	
+R4	NEGATIVE_TO Arg1:T33 Arg2:T29	
+R5	POSITIVE_TO Arg1:T32 Arg2:T29	
+T37	AUTHOR_NEG 1552 1574	переименованию милиции
+R1	NEG_AUTHOR_FROM Arg1:T37 Arg2:T43	
+R7	POSITIVE_TO Arg1:T28 Arg2:T44	
+T45	EVENT 1881 1895	переименование
+R6	NEGATIVE_TO Arg1:T33 Arg2:T45	
+R8	POSITIVE_TO Arg1:T32 Arg2:T45	
+T46	EVENT 2145 2235	дискутируется среди общественности только вопрос о целесообразности переименования милиции
+T47	ARGUMENT_NEG 2145 2235	дискутируется среди общественности только вопрос о целесообразности переименования милиции
+T48	OPINION_WORD_NEG 2073 2084	К сожалению
+R10	NEGATIVE_TO Arg1:T8 Arg2:T9	
+T50	OPINION_WORD_NEG 977 992	двусмысленность
+T52	ARGUMENT_NEG 1197 1217	ввести в заблуждение
+T49	LAW 45 74	Федеральный закон «О полиции»
+T1	ARGUMENT_NEG 330 374	пора вернуть милиции её прежнее наименование
+R11	OPINION_RELATES_TO Arg1:T1 Arg2:T9	
+R14	OPINION_BELONGS_TO Arg1:T1 Arg2:T8	
+T53	AUTHOR_NEG 706 714	Медведев
+R12	OPINION_RELATES_TO Arg1:T50 Arg2:T53	
+R13	NEG_AUTHOR_FROM Arg1:T53 Arg2:T50	
+R15	OPINION_RELATES_TO Arg1:T52 Arg2:T53	
+R16	NEG_AUTHOR_FROM Arg1:T53 Arg2:T52	
+R9	OPINION_RELATES_TO Arg1:T47 Arg2:T36	
+R17	OPINION_RELATES_TO Arg1:T48 Arg2:T36	
+T51	AUTHOR_NEG 2124 2138	ФЗ «О Полиции»
+R18	NEG_AUTHOR_FROM Arg1:T51 Arg2:T47	
+R19	NEG_AUTHOR_FROM Arg1:T51 Arg2:T48	
+R20	NEGATIVE_TO Arg1:T34 Arg2:T36	
+T54	OPINION_WORD_NEG 1998 2009	бесполезную
+T55	ARGUMENT_NEG 1998 2015	бесполезную «идею
+R21	OPINION_BELONGS_TO Arg1:T55 Arg2:T34	
+R22	OPINION_RELATES_TO Arg1:T55 Arg2:T45	

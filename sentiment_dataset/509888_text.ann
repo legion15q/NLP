@@ -1,0 +1,153 @@
+﻿T1	PROFESSION 37 52	премьер-министр
+T2	PERSON 61 75	Абий Ахмед Али
+T3	PERSON 76 90	Абий Ахмед Али
+T4	DATE 117 126	2019 году
+T5	PROFESSION 135 150	премьер-министр
+T6	PERSON 159 173	Абий Ахмед Али
+T7	TIME 185 216	в пятницу, 11 октября 2019 года
+T8	EVENT 221 230	церемонии
+T9	CITY 233 237	Осло
+T10	COUNTRY 239 247	Норвегия
+T11	PRODUCT 287 294	YouTube
+T12	COUNTRY 479 487	Эритреей
+T13	PERSON 491 505	Абий Ахмед Али
+T14	ORDINAL 508 514	первый
+T15	ORDINAL 570 576	первый
+T17	DATE 650 668	1 апреля 2018 года
+T18	COUNTRY 686 694	Эритреей
+T19	COUNTRY 697 705	Эфиопией
+T20	DATE 718 737	с 1998 по 2000 годы
+T21	NUMBER 829 842	десятки тысяч
+T24	DATE 852 863	В 2018 году
+T25	PROFESSION 890 899	президент
+T26	PERSON 908 923	Исайяс Афеверки
+T27	DATE 1028 1039	В этом году
+T29	NUMBER 1080 1089	более 200
+T30	NUMBER 1100 1102	85
+T31	PERSON 1215 1228	Ильвад Эльман
+T32	COUNTRY 1232 1238	Сомали
+T33	PERSON 1241 1253	Хаджер Шариф
+T34	COUNTRY 1257 1262	Ливии
+T35	PROFESSION 1272 1281	активиста
+T36	AGE 1294 1304	23-летнего
+T37	PERSON 1305 1315	Натана Лау
+T38	COUNTRY 1335 1341	Швеции
+T39	PERSON 1342 1355	Грету Тунберг
+T40	DATE 1358 1372	В прошлом году
+T41	PROFESSION 1393 1399	хирург
+T42	PERSON 1409 1422	Денис Муквеге
+T43	PROFESSION 1425 1439	правозащитница
+T44	COUNTRY 1450 1455	Ирака
+T45	PERSON 1456 1466	Надя Мурад
+T46	PERSON 1488 1503	Альфреда Нобеля
+T47	PERSON 1793 1808	Альфреда Нобеля
+T48	ORGANIZATION 1822 1851	Государственным банком Швеции
+T49	DATE 1852 1863	в 1968 году
+T50	DATE 1881 1891	14 октября
+T51	PERSON 1962 1977	Альфреда Нобеля
+T52	DATE 1978 1988	10 декабря
+T53	CITY 1991 2001	Стокгольме
+T54	PROFESSION 2003 2009	Король
+T55	PERSON 2010 2025	Карл XVI Густав
+T56	MONEY 2147 2166	9 млн шведских крон
+T57	MONEY 2168 2173	$0,91
+T58	MONEY 2176 2185	$1,02 млн
+T59	DATE 24 28	2019
+T60	COUNTRY 53 60	Эфиопии
+T61	PROFESSION 37 60	премьер-министр Эфиопии
+T67	DATE 196 216	11 октября 2019 года
+T68	PROFESSION 515 522	премьер
+T69	COUNTRY 523 530	Эфиопии
+T70	NATIONALITY 555 560	оромо
+T71	RELIGION 577 588	мусульманин
+T73	PROFESSION 623 649	председателя правительства
+T74	PROFESSION 864 879	премьер-министр
+T75	PROFESSION 864 887	премьер-министр Эфиопии
+T76	COUNTRY 880 887	Эфиопии
+T77	COUNTRY 900 907	Эритреи
+T78	PROFESSION 890 907	президент Эритреи
+T79	EVENT 924 948	заключили мирный договор
+T28	CITY 1285 1293	Гонконга
+T81	PROFESSION 1318 1331	экоактивистку
+T82	EVENT 1373 1392	награды удостоились
+T83	COUNTRY 1403 1408	Конго
+T84	RELIGION 1440 1446	езидки
+T86	COUNTRY 1845 1851	Швеции
+T87	DATE 1948 1961	в день смерти
+T88	EVENT 1906 1939	церемония вручения научных премий
+T89	ORDINAL 2015 2018	XVI
+T90	COUNTRY 2153 2161	шведских
+T91	PROFESSION 1204 1214	активисток
+T63	AWARD 0 18	Нобелевскую премию
+T92	AWARD 0 28	Нобелевскую премию мира 2019
+T64	AWARD 91 109	Нобелевскую премию
+T93	AWARD 91 114	Нобелевскую премию мира
+T80	AWARD 1043 1061	Нобелевскую премию
+T94	AWARD 1043 1066	Нобелевскую премию мира
+T85	AWARD 1505 1528	Нобелевская премия мира
+T95	AWARD 1505 1523	Нобелевская премия
+T62	COUNTRY 151 158	Эфиопии
+T65	PROFESSION 135 158	премьер-министр Эфиопии
+T66	PROFESSION 515 530	премьер Эфиопии
+T16	ORGANIZATION 636 649	правительства
+T22	AWARD 1766 1808	премии по экономике памяти Альфреда Нобеля
+T23	AWARD 0 23	Нобелевскую премию мира
+T72	EVENT 671 679	Конфликт
+T96	LAW 934 948	мирный договор
+T97	ORGANIZATION 1822 1844	Государственным банком
+T98	EVENT 2026 2042	вручит лауреатам
+T99	DATE 718 724	с 1998
+T100	DATE 725 737	по 2000 годы
+T101	PERSON 0 11	Нобелевскую
+T102	PERSON 91 102	Нобелевскую
+T103	PERSON 1043 1054	Нобелевскую
+T104	PERSON 1505 1516	Нобелевская
+R1	POSITIVE_TO Arg1:T2 Arg2:T92	
+T1	STATE_POS 61 75	Абий Ахмед Али
+T105	EFFECT_POS 61 75	Абий Ахмед Али
+T106	STATE_POS 159 173	Абий Ахмед Али
+T107	EFFECT_POS 159 173	Абий Ахмед Али
+R2	POSITIVE_TO Arg1:T6 Arg2:T93	
+R3	POS_STATE_FROM Arg1:T106 Arg2:T8	
+R4	POS_EFFECT_FROM Arg1:T107 Arg2:T8	
+T108	STATE_NEG 686 694	Эритреей
+T109	EFFECT_NEG 697 705	Эфиопией
+T110	STATE_NEG 697 705	Эфиопией
+T111	EFFECT_NEG 686 694	Эритреей
+R5	NEG_EFFECT_FROM Arg1:T111 Arg2:T72	
+R6	NEG_STATE_FROM Arg1:T108 Arg2:T72	
+R7	NEG_STATE_FROM Arg1:T110 Arg2:T72	
+R8	NEG_EFFECT_FROM Arg1:T109 Arg2:T72	
+R9	NEGATIVE_TO Arg1:T18 Arg2:T19	
+R10	NEGATIVE_TO Arg1:T19 Arg2:T18	
+R13	POSITIVE_TO Arg1:T75 Arg2:T26	
+R14	POSITIVE_TO Arg1:T26 Arg2:T75	
+T114	EFFECT_POS 864 887	премьер-министр Эфиопии
+T115	STATE_POS 864 887	премьер-министр Эфиопии
+T116	STATE_POS 890 923	президент Эритреи Исайяс Афеверки
+T117	EFFECT_POS 890 923	президент Эритреи Исайяс Афеверки
+R15	POS_STATE_FROM Arg1:T115 Arg2:T79	
+R16	POS_STATE_FROM Arg1:T116 Arg2:T79	
+R17	POS_EFFECT_FROM Arg1:T117 Arg2:T79	
+R18	POS_EFFECT_FROM Arg1:T114 Arg2:T79	
+T122	OPINION_WORD_POS 1183 1192	фаворитов
+R19	OPINION_RELATES_TO Arg1:T122 Arg2:T31	
+R20	OPINION_RELATES_TO Arg1:T122 Arg2:T33	
+R21	OPINION_RELATES_TO Arg1:T122 Arg2:T37	
+R22	OPINION_RELATES_TO Arg1:T122 Arg2:T39	
+T123	EFFECT_POS 1409 1422	Денис Муквеге
+T124	STATE_POS 1409 1422	Денис Муквеге
+T125	EFFECT_POS 1456 1466	Надя Мурад
+T126	STATE_POS 1456 1466	Надя Мурад
+R23	POS_STATE_FROM Arg1:T124 Arg2:T82	
+R24	POS_EFFECT_FROM Arg1:T123 Arg2:T82	
+R25	POSITIVE_TO Arg1:T42 Arg2:T94	
+R26	POSITIVE_TO Arg1:T45 Arg2:T94	
+R27	POS_STATE_FROM Arg1:T126 Arg2:T82	
+R28	POS_EFFECT_FROM Arg1:T125 Arg2:T82	
+R29	POSITIVE_TO Arg1:T46 Arg2:T85	
+T118	ARGUMENT_POS 331 487	за усилия в достижении мира и международного сотрудничества и, в частности, за его решительную инициативу завершить пограничный конфликт с соседней Эритреей
+R30	OPINION_RELATES_TO Arg1:T118 Arg2:T6	
+T112	ARGUMENT_POS 1543 1741	добившемуся наибольших успехов либо сделавшему больше других в деле сплочения народов и сокращения численности действующих армий, а также за проведение мирных конгрессов и привлечение к ним внимания
+R11	NEGATIVE_TO Arg1:T18 Arg2:T72	
+R12	NEGATIVE_TO Arg1:T19 Arg2:T72	

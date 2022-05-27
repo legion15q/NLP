@@ -1,0 +1,59 @@
+T1	EVENT 0 22	Всемирный день вязания
+T4	FACILITY 38 48	Шоко-Ладен
+T6	DISTRICT 52 59	Бенрате
+T7	EVENT 80 102	Всемирный день вязания
+T8	DATE 138 149	в 2005 году
+T9	DATE 151 162	За эти годы
+T10	COUNTRY 229 237	Германии
+T12	DISTRICT 330 337	Бенрате
+T13	CITY 345 357	Дюссельдорфа
+T14	DATE 426 449	В прошедшее воскресенье
+T15	NUMBER 580 587	шестеро
+T16	NUMBER 671 675	трое
+T17	PERSON 955 971	Михаэль Вайнрайх
+T19	CITY 1058 1070	Дюссельдорфе
+T20	CITY 1124 1136	Дюссельдорфе
+T21	PROFESSION 1185 1198	Владелец кафе
+T22	PERSON 1199 1209	Йохен Шарф
+T23	DATE 1425 1436	на весь год
+T24	DATE 1474 1506	каждое второе воскресенье месяца
+T2	DISTRICT 25 32	Бенрате
+T3	DATE 60 67	12 июня
+T5	EVENT 760 776	праздник вязания
+T11	EVENT 778 798	день открытых дверей
+T18	ORDINAL 106 113	впервые
+T25	EVENT 238 246	праздник
+T26	EVENT 119 127	праздник
+T27	DATE 289 298	недельное
+T29	DATE 1000 1013	в годы юности
+T31	ORDINAL 1481 1487	второе
+T28	PROFESSION 588 599	вязальщиков
+T30	EFFECT_POS 25 32	Бенрате
+R1	POS_EFFECT_FROM Arg1:T30 Arg2:T1	
+T32	EFFECT_POS 80 102	Всемирный день вязания
+T33	AUTHOR_POS 80 102	Всемирный день вязания
+T34	ARGUMENT_POS 171 224	массовым и любимым многими любителями ручного вязания
+R2	POS_AUTHOR_FROM Arg1:T33 Arg2:T34	
+T35	EFFECT_POS 238 246	праздник
+T36	OPINION_WORD_POS 602 610	прилежно
+T37	AUTHOR_POS 588 599	вязальщиков
+R3	POS_AUTHOR_FROM Arg1:T37 Arg2:T36	
+T38	ARGUMENT_POS 602 654	прилежно изучали методы правильной работы со спицами
+R4	POS_AUTHOR_FROM Arg1:T37 Arg2:T38	
+R5	POSITIVE_TO Arg1:T28 Arg2:T5	
+R6	POSITIVE_TO Arg1:T28 Arg2:T11	
+R7	POSITIVE_TO Arg1:T17 Arg2:T5	
+R8	POSITIVE_TO Arg1:T17 Arg2:T11	
+R9	POSITIVE_TO Arg1:T22 Arg2:T5	
+T39	ARGUMENT_POS 1220 1263	принял под своё крыло необычных посетителей
+T40	AUTHOR_POS 1270 1358	принял самое деятельное участие в процессе, снабжая занятых рукоделием горячим шоколадом
+T41	OPINION_WORD_POS 1362 1369	полезно
+T42	OPINION_WORD_POS 1373 1380	приятно
+T43	AUTHOR_POS 1199 1209	Йохен Шарф
+R10	POS_AUTHOR_FROM Arg1:T43 Arg2:T39	
+R11	POS_AUTHOR_FROM Arg1:T43 Arg2:T40	
+R12	POS_AUTHOR_FROM Arg1:T43 Arg2:T41	
+R13	POS_AUTHOR_FROM Arg1:T43 Arg2:T42	
+T44	OPINION_WORD_POS 182 189	любимым
+T45	OPINION_WORD_POS 171 179	массовым
+R14	POS_AUTHOR_FROM Arg1:T33 Arg2:T44	

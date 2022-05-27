@@ -1,0 +1,105 @@
+﻿T1	ORGANIZATION 21 46	Министерство финансов США
+T2	MONEY 50 67	200 тыс. долларов
+T3	COUNTRY 78 86	Беларуси
+T4	COUNTRY 102 105	США
+T5	DATE 120 129	41 месяцу
+T7	DATE 178 207	накануне, 23 2 июня 2011 года
+T8	ORGANIZATION 209 251	окружной федеральный суд штата Массачусетс
+T9	STATE_OR_PROVINCE 240 251	Массачусетс
+T10	DATE 265 275	41 месяцам
+T11	CITY 298 307	Нантакете
+T12	STATE_OR_PROVINCE 314 325	Массачусетс
+T13	COUNTRY 338 346	Беларуси
+T14	ORGANIZATION 451 475	федеральное казначейство
+T15	AGE 563 573	31-летнему
+T16	PERSON 574 592	Микалаю Мардахаеву
+T17	PROFESSION 605 611	судьей
+T18	ORGANIZATION 612 657	окружного федерального суда штата Массачусетс
+T19	PERSON 658 674	Джорджем О'Тулом
+T20	DATE 677 695	В январе 2011 года
+T21	PERSON 860 870	Мардахаева
+T22	MONEY 881 897	209 тыс долларов
+T23	DATE 970 1004	в период с 2006 до конца 2007 года
+T24	ORGANIZATION 1123 1156	Федеральной налоговой службой США
+T25	COUNTRY 1182 1194	американским
+T26	COUNTRY 1368 1378	Белоруссии
+T27	ORGANIZATION 1496 1520	федеральное казначейство
+T28	MONEY 1604 1636	более двухсот тысяч долларов США
+T29	PERSON 1700 1710	Мардахаеву
+T30	PENALTY 120 140	41 месяцу заключения
+T31	CRIME 144 176	участие в интернет-мошенничестве
+T6	PENALTY 265 282	41 месяцам тюрьмы
+T32	CRIME 374 405	соучастии в международной афере
+T33	PENALTY 873 897	выплате 209 тыс долларов
+T34	PERSON 696 705	Мардахаев
+T35	STATE_OR_PROVINCE 646 657	Массачусетс
+T36	CRIME 731 782	вступлении в сговор с целью совершения преступления
+T37	PERSON 1005 1014	Мардахаев
+T38	COUNTRY 1153 1156	США
+T39	COUNTRY 43 46	США
+T40	COUNTRY 1633 1636	США
+T41	ORGANIZATION 1123 1152	Федеральной налоговой службой
+T42	NATIONALITY 68 86	Гражданин Беларуси
+T43	NATIONALITY 327 346	гражданина Беларуси
+T44	EVENT 252 262	приговорил
+T45	CRIME 787 837	мошенничестве с использованием электронных средств
+T46	EVENT 554 562;597 604	Приговор вынесен
+T47	EVENT 706 727	признал себя виновным
+T48	EVENT 849 859	приговорил
+T49	CRIME 787 800	мошенничестве
+T50	PENALTY 130 140	заключения
+T51	PENALTY 276 282	тюрьмы
+R2	NEGATIVE_TO Arg1:T8 Arg2:T16	
+R3	NEGATIVE_TO Arg1:T19 Arg2:T16	
+R4	NEGATIVE_TO Arg1:T18 Arg2:T16	
+T53	ARGUMENT_NEG 0 11	Преступники
+T54	AUTHOR_NEG 68 86	Гражданин Беларуси
+R7	NEG_AUTHOR_FROM Arg1:T54 Arg2:T53	
+R8	NEGATIVE_TO Arg1:T8 Arg2:T43	
+T1	EFFECT_NEG 68 86	Гражданин Беларуси
+T52	STATE_NEG 68 86	Гражданин Беларуси
+T55	EFFECT_NEG 327 346	гражданина Беларуси
+T56	STATE_NEG 327 346	гражданина Беларуси
+R1	NEG_STATE_FROM Arg1:T56 Arg2:T44	
+R5	NEG_EFFECT_FROM Arg1:T55 Arg2:T44	
+T57	EFFECT_NEG 574 592	Микалаю Мардахаеву
+T58	STATE_NEG 574 592	Микалаю Мардахаеву
+R6	NEG_EFFECT_FROM Arg1:T57 Arg2:T46	
+R9	NEG_EFFECT_FROM Arg1:T57 Arg2:T46	
+T59	EFFECT_NEG 696 705	Мардахаев
+T60	STATE_NEG 696 705	Мардахаев
+T61	EFFECT_NEG 860 870	Мардахаева
+T62	STATE_NEG 860 870	Мардахаева
+R10	NEG_STATE_FROM Arg1:T60 Arg2:T47	
+R11	NEG_EFFECT_FROM Arg1:T59 Arg2:T47	
+R12	NEG_STATE_FROM Arg1:T62 Arg2:T48	
+R13	NEG_EFFECT_FROM Arg1:T61 Arg2:T48	
+T63	EFFECT_NEG 1123 1156	Федеральной налоговой службой США
+T64	EFFECT_NEG 1496 1520	федеральное казначейство
+T65	ARGUMENT_NEG 1031 1053	обманывали потерпевших
+T66	AUTHOR_NEG 1005 1014	Мардахаев
+R14	NEG_AUTHOR_FROM Arg1:T66 Arg2:T65	
+R15	OPINION_RELATES_TO Arg1:T65 Arg2:T66	
+T67	OPINION_WORD_NEG 1576 1586	мошенникам
+R16	OPINION_RELATES_TO Arg1:T67 Arg2:T29	
+T68	AUTHOR_NEG 1700 1710	Мардахаеву
+R17	NEG_AUTHOR_FROM Arg1:T68 Arg2:T67	
+T69	OPINION_WORD_NEG 1313 1323	мошенникам
+T70	OPINION_WORD_NEG 1159 1170	Преступники
+R18	OPINION_RELATES_TO Arg1:T70 Arg2:T37	
+R19	OPINION_RELATES_TO Arg1:T69 Arg2:T66	
+T71	ARGUMENT_NEG 144 176	участие в интернет-мошенничестве
+R20	NEG_STATE_FROM Arg1:T52 Arg2:T30	
+R21	NEG_EFFECT_FROM Arg1:T1 Arg2:T30	
+R22	NEGATIVE_TO Arg1:T42 Arg2:T30	
+R23	OPINION_RELATES_TO Arg1:T71 Arg2:T42	
+R24	NEGATIVE_TO Arg1:T43 Arg2:T44	
+R25	NEGATIVE_TO Arg1:T43 Arg2:T6	
+T72	ARGUMENT_NEG 374 405	соучастии в международной афере
+R26	OPINION_RELATES_TO Arg1:T72 Arg2:T43	
+R27	NEG_EFFECT_FROM Arg1:T63 Arg2:T45	
+T73	ARGUMENT_NEG 731 782	вступлении в сговор с целью совершения преступления
+T74	ARGUMENT_NEG 787 837	мошенничестве с использованием электронных средств
+R28	OPINION_RELATES_TO Arg1:T73 Arg2:T34	
+R29	OPINION_RELATES_TO Arg1:T74 Arg2:T34	
+R30	NEGATIVE_TO Arg1:T21 Arg2:T48	

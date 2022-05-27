@@ -1,0 +1,51 @@
+T1	COUNTRY 96 103	Русскую
+T2	COUNTRY 105 114	Греческую
+T3	COUNTRY 116 124	Сербскую
+T4	COUNTRY 127 139	Черногорскую
+T5	DATE 152 160	7 января
+T6	COUNTRY 302 308	Россия
+T7	DATE 330 337	40 дней
+T8	TIME 471 480	в полночь
+T9	EVENT 621 638	Пятничную Епифань
+T10	COUNTRY 710 718	Болгарии
+T11	COUNTRY 863 870	Румынии
+T12	COUNTRY 988 1006	Боснию-Герцеговину
+T13	COUNTRY 1009 1015	Сербию
+T14	TIME 1017 1057	вечером накануне православного Рождества
+T15	RELIGION 561 570	христиане
+T16	RELIGION 0 22	Православные христиане
+T17	RELIGION 52 64	православных
+T18	EVENT 32 41	Рождество
+T19	EVENT 161 170	Рождество
+T20	EVENT 353 362	Рождества
+T21	RELIGION 363 375	православные
+T22	LOCATION 571 595	южной и восточной Европы
+T24	EVENT 886 895	Рождество
+T25	EVENT 1048 1057	Рождества
+T26	RELIGION 1034 1047	православного
+T27	DATE 1025 1057	накануне православного Рождества
+T28	RELIGION 13 22	христиане
+T29	ORGANIZATION 52 72	православных церквей
+T30	LOCATION 589 595	Европы
+T23	PERSON 685 698	Бога-человека
+T31	EVENT 1034 1057	православного Рождества
+T32	EFFECT_POS 0 22	Православные христиане
+T33	STATE_POS 0 22	Православные христиане
+T34	EFFECT_POS 32 41	Рождество
+T35	EFFECT_POS 161 170	Рождество
+T36	EFFECT_POS 52 72	православных церквей
+R1	POS_STATE_FROM Arg1:T33 Arg2:T18	
+R2	POS_EFFECT_FROM Arg1:T32 Arg2:T18	
+T37	STATE_POS 52 72	православных церквей
+R3	POS_STATE_FROM Arg1:T37 Arg2:T19	
+R4	POS_EFFECT_FROM Arg1:T36 Arg2:T19	
+T38	EFFECT_POS 561 570	христиане
+T39	STATE_POS 561 570	христиане
+R5	POS_STATE_FROM Arg1:T39 Arg2:T9	
+R6	POSITIVE_TO Arg1:T15 Arg2:T9	
+R7	POSITIVE_TO Arg1:T16 Arg2:T18	
+R8	POSITIVE_TO Arg1:T29 Arg2:T19	
+R9	POS_EFFECT_FROM Arg1:T38 Arg2:T9	
+T40	ARGUMENT_POS 1158 1190	огонь приносит любовь и гармонию
+R10	OPINION_BELONGS_TO Arg1:T40 Arg2:T12	
+R11	OPINION_BELONGS_TO Arg1:T40 Arg2:T13	

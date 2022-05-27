@@ -1,0 +1,98 @@
+T1	PROFESSION 0 9	Президент
+T2	PERSON 79 92	Георге Иванов
+T3	PROFESSION 93 123	Президент Республики Македония
+T4	COUNTRY 103 123	Республики Македония
+T5	PERSON 124 137	Георге Иванов
+T7	COUNTRY 213 242	Республика Северная Македония
+T8	COUNTRY 307 313	Греции
+T9	PROFESSION 332 350	главой государства
+T10	PROFESSION 359 374	премьер-министр
+T11	PERSON 385 395	Зоран Заев
+T12	PROFESSION 398 421	министр иностранных дел
+T13	DATE 440 447	12 июня
+T14	CITY 456 462	Скопье
+T15	COUNTRY 527 536	Македонии
+T16	COUNTRY 538 544	Греция
+T18	COUNTRY 609 638	Республика Северная Македония
+T19	COUNTRY 659 668	Македонии
+T20	ORGANIZATION 698 807	Внутренней македонской революционной организации — Демократической партии македонского национального единства
+T21	COUNTRY 863 874	македонской
+T22	COUNTRY 909 918	греческая
+T24	PROFESSION 1230 1250	президенту Македонии
+T25	COUNTRY 1290 1299	Македония
+T26	DATE 1307 1318	в 1991 году
+T27	COUNTRY 1436 1442	Греции
+T28	STATE_OR_PROVINCE 1451 1460	Македония
+T29	CITY 1463 1468	Афины
+T30	COUNTRY 1514 1523	Македония
+T31	CITY 1544 1550	Скопье
+T32	COUNTRY 1597 1606	греческую
+T33	COUNTRY 1622 1631	греческой
+T34	COUNTRY 1661 1670	Македонии
+T35	ORGANIZATION 1673 1676	ООН
+T36	DATE 1677 1688	с 1993 года
+T37	COUNTRY 1699 1710	югославская
+T38	COUNTRY 1722 1731	Македония
+T39	COUNTRY 1736 1742	Греция
+T40	ORGANIZATION 1769 1777	Евросоюз
+T41	ORGANIZATION 1780 1784	НАТО
+T42	COUNTRY 1366 1377	югославской
+T43	EVENT 1325 1353	провозглашения независимости
+T44	COUNTRY 1241 1250	Македонии
+T45	PROFESSION 1068 1086	премьер-министрами
+T46	NUMBER 1087 1091	двух
+T47	ORGANIZATION 1103 1122	парламент Македонии
+T48	COUNTRY 1113 1122	Македонии
+T49	PERSON 1010 1026	Алексиса Ципраса
+T50	IDEOLOGY 683 696	оппозиционной
+T17	PERSON 422 437	Никола Димитров
+T51	COUNTRY 375 384	Македонии
+T52	PROFESSION 359 384	премьер-министр Македонии
+T53	COUNTRY 10 19	Македонии
+T54	PROFESSION 0 19	Президент Македонии
+T55	DATE 138 155	13 июня 2018 года
+T56	PROFESSION 93 102	Президент
+T6	COUNTRY 709 720	македонской
+T57	COUNTRY 772 784	македонского
+T58	CITY 448 453	Афины
+T59	PROFESSION 1230 1240	президенту
+T60	ORGANIZATION 909 928	греческая оппозиция
+T63	EVENT 322 329	встречу
+T64	PROFESSION 398 405	министр
+T65	IDEOLOGY 749 764	Демократической
+T66	ORGANIZATION 919 928	оппозиция
+T67	ORGANIZATION 1103 1112	парламент
+T68	ORGANIZATION 1169 1183	парламентского
+T69	EVENT 1253 1277	Спор вокруг наименования
+T70	COUNTRY 1692 1731	бывшая югославская республика Македония
+T61	LAW 40 78	соглашение о переименовании республики
+T62	LAW 176 242	соглашение о переименовании страны в Республика Северная Македония
+T23	EVENT 1253 1257	Спор
+R1	NEGATIVE_TO Arg1:T54 Arg2:T61	
+T71	EFFECT_NEG 40 78	соглашение о переименовании республики
+R2	NEGATIVE_TO Arg1:T5 Arg2:T62	
+T72	EFFECT_NEG 176 242	соглашение о переименовании страны в Республика Северная Македония
+R3	NEGATIVE_TO Arg1:T5 Arg2:T8	
+R4	POSITIVE_TO Arg1:T11 Arg2:T5	
+R5	POSITIVE_TO Arg1:T5 Arg2:T11	
+R6	POSITIVE_TO Arg1:T17 Arg2:T5	
+R7	POSITIVE_TO Arg1:T5 Arg2:T17	
+R8	POSITIVE_TO Arg1:T58 Arg2:T14	
+R9	POSITIVE_TO Arg1:T14 Arg2:T58	
+T73	EFFECT_POS 448 453	Афины
+T74	EFFECT_POS 456 462	Скопье
+T75	STATE_POS 456 462	Скопье
+T76	STATE_POS 448 453	Афины
+R10	POSITIVE_TO Arg1:T16 Arg2:T18	
+R11	NEGATIVE_TO Arg1:T20 Arg2:T19	
+T77	ARGUMENT_NEG 841 904	абсолютным поражением македонской дипломатии во всех отношениях
+R12	OPINION_RELATES_TO Arg1:T77 Arg2:T19	
+R13	OPINION_BELONGS_TO Arg1:T77 Arg2:T20	
+R14	NEGATIVE_TO Arg1:T60 Arg2:T49	
+T78	EFFECT_NEG 1010 1026	Алексиса Ципраса
+T79	STATE_NEG 1010 1026	Алексиса Ципраса
+T80	EFFECT_POS 1290 1299	Македония
+R15	POS_EFFECT_FROM Arg1:T80 Arg2:T43	
+T81	STATE_NEG 1463 1468	Афины
+R16	NEGATIVE_TO Arg1:T39 Arg2:T34	
+T82	EFFECT_NEG 1661 1670	Македонии

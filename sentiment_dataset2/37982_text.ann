@@ -1,0 +1,50 @@
+T1	WORK_OF_ART 1 21	Джанго освобождённый
+T2	COUNTRY 49 54	Китая
+T3	DATE 57 73	12 мая 2013 года
+T4	PERSON 80 98	Квентина Тарантино
+T5	WORK_OF_ART 102 122	Джанго освобождённый
+T6	COUNTRY 180 185	Китая
+T7	DATE 205 227	Месяц назад, 11 апреля
+T9	ORGANIZATION 256 284	China Film Group Corporation
+T10	DATE 390 398	К 12 мая
+T11	TIME 428 438	три минуты
+T12	TIME 459 470	одну минуту
+T14	COUNTRY 640 645	Китае
+T15	MONEY 703 730	около 600 тыс. долларов США
+T16	ORDINAL 754 759	пятое
+T17	WORK_OF_ART 803 821	Железный человек 3
+T18	WORK_OF_ART 823 831	Обливион
+T19	WORK_OF_ART 833 846	Семейка Крудс
+T20	COUNTRY 849 858	китайская
+T22	DATE 969 977	в апреле
+T23	DATE 1011 1027	в течение месяца
+T24	WORK_OF_ART 1040 1060	Джанго освобождённый
+T25	ORGANIZATION 1324 1345	The Weinstein Company
+T26	ORGANIZATION 1352 1369	Columbia Pictures
+T27	WORK_OF_ART 1389 1409	Джанго освобождённый
+T28	COUNTRY 1413 1416	США
+T29	PERSON 1466 1478	Джейми Фоксо
+T30	PERSON 1480 1498	Леонардо Ди Каприо
+T31	PERSON 1501 1514	Кристоф Вальц
+T32	DATE 1417 1437	25 декабря 2012 года
+T8	COUNTRY 256 261	China
+T33	COUNTRY 727 730	США
+T21	WORK_OF_ART 865 873	So Young
+T35	EVENT 318 326	премьеры
+T36	EVENT 285 295	остановила
+T37	EVENT 296 308	показ фильма
+T38	EVENT 356 365	запретила
+T34	PERSON 841 846	Крудс
+T13	DATE 609 629	В первое воскресенье
+T39	PERSON 1389 1395	Джанго
+T40	PERSON 1040 1046	Джанго
+T41	PERSON 102 108	Джанго
+T42	PERSON 1 7	Джанго
+T43	EFFECT_POS 1 21	Джанго освобождённый
+T44	EFFECT_POS 102 122	Джанго освобождённый
+R1	NEGATIVE_TO Arg1:T9 Arg2:T5	
+T45	EFFECT_POS 803 822	Железный человек 3,
+T46	EFFECT_POS 823 831	Обливион
+T47	EFFECT_POS 833 846	Семейка Крудс
+T48	EFFECT_POS 865 873	So Young
+T49	EFFECT_POS 1389 1409	Джанго освобождённый

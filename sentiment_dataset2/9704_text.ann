@@ -1,0 +1,125 @@
+T1	STATE_OR_PROVINCE 0 10	Татарстану
+T2	AGE 23 29	90 лет
+T3	STATE_OR_PROVINCE 33 43	Татарстане
+T4	AGE 83 91	90-летия
+T7	DATE 176 188	90 лет назад
+T10	DATE 190 201	в 1920 году
+T11	ORGANIZATION 215 241	Совета народных комиссаров
+T12	PERSON 242 256	Владимир Ленин
+T13	LAW 266 293	Декрет об образовании ТАССР
+T14	EVENT 313 322	заседании
+T15	PROFESSION 363 372	Президент
+T16	PERSON 384 401	Рустам Минниханов
+T17	PROFESSION 403 427	Государственный Советник
+T18	PERSON 431 447	Минтимер Шаймиев
+T20	PERSON 489 505	Фарид Мухаметшин
+T22	PERSON 563 575	Олег Морозов
+T23	PROFESSION 577 580	мэр
+T24	PERSON 588 601	Ильсур Метшин
+T26	ORGANIZATION 628 635	Госдумы
+T27	PROFESSION 640 648	депутаты
+T30	PROFESSION 798 807	Президент
+T31	PERSON 819 836	Рустем Минниханов
+T33	DATE 947 983	на протяжении нескольких десятилетий
+T34	STATE_OR_PROVINCE 1173 1193	Республика Татарстан
+T35	STATE_OR_PROVINCE 1215 1220	ТАССР
+T36	COUNTRY 1274 1280	России
+T37	AGE 1282 1293	1000-летнюю
+T38	CITY 1294 1300	Казань
+T39	PROFESSION 1501 1511	Президента
+T40	PERSON 1516 1532	Дмитрий Медведев
+T41	DATE 1670 1689	На протяжении веков
+T42	NUMBER 1754 1763	более ста
+T43	EVENT 1828 1837	заседании
+T45	PERSON 1878 1894	Фарид Мухаметшин
+T46	WORK_OF_ART 1967 1989	Государственному гимну
+T47	DATE 2011 2022	в 1993 году
+T48	AGE 2074 2082	90-летия
+T49	DATE 2153 2158	месяц
+T50	STATE_OR_PROVINCE 110 168	Татарской Автономной Советской Социалистической Республики
+T51	STATE_OR_PROVINCE 1990 2000	Татарстана
+T52	EVENT 55 74	юбилейные торжества
+T5	PROFESSION 202 241	председатель Совета народных комиссаров
+T6	STATE_OR_PROVINCE 288 293	ТАССР
+T8	ORGANIZATION 323 346	Государственного Совета
+T54	PROFESSION 363 383	Президент Татарстана
+T55	PROFESSION 403 430	Государственный Советник РТ
+T56	PROFESSION 449 488	Председатель Государственного Совета РТ
+T58	PROFESSION 507 562	первый заместитель Председателя Государственной Думы РФ
+T59	PROFESSION 526 562	Председателя Государственной Думы РФ
+T61	PROFESSION 577 587	мэр Казани
+T62	PROFESSION 603 638	члены Совета Федерации и Госдумы РФ
+T63	PROFESSION 603 625	члены Совета Федерации
+T64	PROFESSION 640 661	депутаты Госсовета РТ
+T65	PROFESSION 663 685	члены Правительства РТ
+T66	PROFESSION 687 717	главы муниципальных районов РТ
+T67	PROFESSION 798 818	Президент Татарстана
+T21	STATE_OR_PROVINCE 808 818	Татарстана
+T25	STATE_OR_PROVINCE 860 880	татарской республики
+T28	STATE_OR_PROVINCE 373 383	Татарстана
+T29	STATE_OR_PROVINCE 428 430	РТ
+T32	ORGANIZATION 462 488	Государственного Совета РТ
+T68	STATE_OR_PROVINCE 486 488	РТ
+T69	ORGANIZATION 462 485	Государственного Совета
+T70	ORDINAL 507 513	первый
+T71	ORGANIZATION 539 562	Государственной Думы РФ
+T72	ORGANIZATION 539 559	Государственной Думы
+T73	ORGANIZATION 609 625	Совета Федерации
+T74	ORGANIZATION 628 638	Госдумы РФ
+T75	ORGANIZATION 649 661	Госсовета РТ
+T76	ORGANIZATION 649 658	Госсовета
+T77	ORGANIZATION 669 685	Правительства РТ
+T78	ORGANIZATION 669 682	Правительства
+T79	COUNTRY 560 562	РФ
+T80	CITY 581 587	Казани
+T81	COUNTRY 636 638	РФ
+T82	STATE_OR_PROVINCE 659 661	РТ
+T83	STATE_OR_PROVINCE 683 685	РТ
+T84	STATE_OR_PROVINCE 715 717	РТ
+T85	EVENT 728 755	Великой Отечественной войны
+T86	PROFESSION 1501 1514	Президента РФ
+T87	COUNTRY 1512 1514	РФ
+T88	PROFESSION 1838 1877	Председатель Государственного Совета РТ
+T89	ORGANIZATION 1851 1877	Государственного Совета РТ
+T90	ORGANIZATION 1851 1874	Государственного Совета
+T91	STATE_OR_PROVINCE 1875 1877	РТ
+T92	WORK_OF_ART 1967 2000	Государственному гимну Татарстана
+T44	EVENT 2129 2138	Торжества
+T19	EVENT 99 109	учреждения
+T9	NATIONALITY 110 119	Татарской
+T53	EVENT 65 74	торжества
+T57	EVENT 299 322	торжественном заседании
+T60	NATIONALITY 860 869	татарской
+T93	EVENT 2106 2127	праздничным концертом
+T94	EFFECT_POS 110 168	Татарской Автономной Советской Социалистической Республики
+T95	EFFECT_POS 33 43	Татарстане
+R1	POS_EFFECT_FROM Arg1:T95 Arg2:T52	
+R2	POS_EFFECT_FROM Arg1:T94 Arg2:T19	
+R3	POSITIVE_TO Arg1:T31 Arg2:T25	
+R5	POSITIVE_TO Arg1:T12 Arg2:T6	
+T97	ARGUMENT_POS 1241 1280	динамично развивающихся регионов России
+T98	ARGUMENT_POS 881 908	вызвало общественный подъем
+T99	ARGUMENT_POS 922 983	важным фактором развития на протяжении нескольких десятилетий
+R8	OPINION_BELONGS_TO Arg1:T99 Arg2:T31	
+R7	OPINION_RELATES_TO Arg1:T98 Arg2:T19	
+R9	OPINION_RELATES_TO Arg1:T99 Arg2:T98	
+T100	ARGUMENT_POS 1326 1381	восточными воротами нашего многонационального Отечества
+T101	ARGUMENT_POS 1396 1441	особенно ощущается связь времен и цивилизаций
+R4	OPINION_BELONGS_TO Arg1:T97 Arg2:T31	
+R6	OPINION_BELONGS_TO Arg1:T100 Arg2:T31	
+R10	OPINION_BELONGS_TO Arg1:T101 Arg2:T31	
+R11	OPINION_RELATES_TO Arg1:T97 Arg2:T34	
+R12	OPINION_RELATES_TO Arg1:T100 Arg2:T38	
+R13	OPINION_RELATES_TO Arg1:T101 Arg2:T38	
+T96	ARGUMENT_POS 985 1023	Была создана многоотраслевая индустрия
+T102	ARGUMENT_POS 1025 1101	сформирована материально-техническая база сельскохозяйственного производства
+T103	ARGUMENT_POS 1103 1159	Особое значение уделялось развитию национальной культуры
+R14	OPINION_BELONGS_TO Arg1:T102 Arg2:T31	
+R15	OPINION_BELONGS_TO Arg1:T96 Arg2:T31	
+R16	OPINION_BELONGS_TO Arg1:T103 Arg2:T31	
+T104	ARGUMENT_POS 1594 1668	поддерживаются гармоничные межнациональные и межконфессиональные отношения
+R17	OPINION_BELONGS_TO Arg1:T104 Arg2:T40	
+R18	OPINION_RELATES_TO Arg1:T104 Arg2:T34	
+T105	ARGUMENT_POS 1696 1815	в согласии и во взаимном уважении проживают представители более ста народов и практически всех основных мировых религий
+R19	OPINION_BELONGS_TO Arg1:T105 Arg2:T40	
+R20	OPINION_RELATES_TO Arg1:T105 Arg2:T34	

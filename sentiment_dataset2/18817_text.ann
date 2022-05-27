@@ -1,0 +1,53 @@
+T1	EVENT 14 24	День Земли
+T2	DATE 25 38	В воскресенье
+T3	EVENT 100 109	Дня Земли
+T4	CITY 113 123	Вашингтоне
+T5	PERSON 470 482	Дэвид Долник
+T6	PROFESSION 485 507	мэнеджер по маркетингу
+T7	ORGANIZATION 535 544	SolarCity
+T8	PERSON 856 866	Кай Рейдел
+T9	EVENT 922 932	День Земли
+T10	PERSON 1114 1120	Рейдел
+T11	PERSON 1356 1367	Кэти Дэрроу
+T12	CITY 1379 1388	Вашингтон
+T13	STATE_OR_PROVINCE 1392 1399	Аризоны
+T14	NATIONALITY 1418 1428	американцы
+T15	PROFESSION 1764 1773	Президент
+T16	ORGANIZATION 1927 1940	правительство
+T17	COUNTRY 1941 1959	Соединенных Штатов
+T18	PERSON 1961 1967	Дэрроу
+T19	TIME 2109 2130	Несколько минут назад
+T20	EVENT 2233 2243	День Земли
+T21	COUNTRY 2262 2265	США
+T22	DATE 2266 2278	в 70-х годах
+T23	FACILITY 271 291	памятника Вашингтону
+T24	PERSON 281 291	Вашингтону
+T25	PROFESSION 485 493	мэнеджер
+T26	CITY 845 855	Вашингтона
+T27	PERSON 1774 1785	Барак Обама
+T28	ORGANIZATION 1927 1959	правительство Соединенных Штатов
+T29	STATE_OR_PROVINCE 511 525	калифорнийской
+T30	EFFECT_POS 14 24	День Земли
+T31	EFFECT_POS 2233 2243	День Земли
+T32	ARGUMENT_NEG 1418 1504	американцы получают противоречивую информацию о том, что касается экономики и экологии
+R1	OPINION_BELONGS_TO Arg1:T32 Arg2:T11	
+T33	ARGUMENT_NEG 1985 2049	инициативы не нашли должного отклика среди большинства населения
+R2	NEGATIVE_TO Arg1:T18 Arg2:T14	
+R3	OPINION_RELATES_TO Arg1:T33 Arg2:T14	
+R4	OPINION_BELONGS_TO Arg1:T33 Arg2:T18	
+R5	POSITIVE_TO Arg1:T8 Arg2:T9	
+T34	ARGUMENT_POS 978 1053	привлечь внимание к некоторым из экологических проблем, стоящих перед миром
+R6	OPINION_RELATES_TO Arg1:T34 Arg2:T9	
+R7	OPINION_BELONGS_TO Arg1:T34 Arg2:T8	
+T35	ARGUMENT_POS 616 646	сокращению потребления энергии
+T36	ARGUMENT_POS 659 711	сделать энергоснабжение людей максимально автономным
+R8	POSITIVE_TO Arg1:T5 Arg2:T7	
+R9	OPINION_RELATES_TO Arg1:T35 Arg2:T7	
+R10	OPINION_RELATES_TO Arg1:T36 Arg2:T7	
+R11	OPINION_BELONGS_TO Arg1:T35 Arg2:T5	
+R12	OPINION_BELONGS_TO Arg1:T36 Arg2:T5	
+T37	ARGUMENT_POS 1061 1076	люди задумались
+R13	OPINION_RELATES_TO Arg1:T37 Arg2:T9	
+R14	OPINION_BELONGS_TO Arg1:T37 Arg2:T8	
+T38	ARGUMENT_NEG 2062 2107	экологические проблемы не особо волнуют людей
+R15	OPINION_BELONGS_TO Arg1:T38 Arg2:T18	

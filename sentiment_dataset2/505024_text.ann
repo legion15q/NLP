@@ -1,0 +1,98 @@
+T2	EVENT 28 47	Волоколамский рубеж
+T3	WORK_OF_ART 56 71	Мальчик русский
+T5	LOCATION 84 89	Дуклу
+T6	PERSON 97 108	Гойко Митич
+T7	STATE_OR_PROVINCE 110 121	Подмосковье
+T8	EVENT 158 234	Международного фестиваля военно-патриотического фильма «Волоколамский рубеж»
+T10	ORGANIZATION 254 266	Музея Победы
+T11	COUNTRY 275 285	российский
+T12	PERSON 295 311	Григорий Илугдин
+T14	LOCATION 349 354	Дуклу
+T15	COUNTRY 448 457	словацкое
+T16	EVENT 492 512	Второй мировой войны
+T17	DATE 514 518	лето
+T18	DATE 521 536	осень 1944 года
+T19	WORK_OF_ART 597 612	Мальчик русский
+T20	PERSON 624 645	Александра Золотухина
+T21	COUNTRY 647 653	Россия
+T22	DATE 704 715	в 1916 году
+T23	WORK_OF_ART 840 858	Балканского рубежа
+T24	DATE 876 888	с 70-х годов
+T25	PERSON 889 900	Гойко Митич
+T26	PERSON 903 918	Равшана Куркова
+T27	PROFESSION 921 975	Ответственный секретарь Союза кинематографистов России
+T28	PERSON 976 990	Михаил Калинин
+T29	EVENT 1087 1148	Фестиваль военно-патриотического фильма «Волоколамский рубеж»
+T31	EVENT 1243 1264	Великой Отечественной
+T32	COUNTRY 1296 1307	российского
+T33	NATIONALITY 605 612	русский
+T34	PROFESSION 614 623	режиссёра
+T1	CITY 28 41	Волоколамский
+T35	PROFESSION 91 96	Актёр
+T36	DATE 122 132	28 августа
+T37	NATIONALITY 64 71	русский
+T4	WORK_OF_ART 76 89	Рейд на Дуклу
+T38	PROFESSION 286 294	режиссёр
+T13	WORK_OF_ART 341 354	Рейд на Дуклу
+T9	ORDINAL 154 157	XVI
+T39	CITY 214 227	Волоколамский
+T40	AWARD 237 266	Специальный приз Музея Победы
+T41	IDEOLOGY 458 472	антифашистское
+T42	AWARD 540 562	Лучшим игровым фильмом
+T44	PROFESSION 829 835	актёры
+T45	ORGANIZATION 945 975	Союза кинематографистов России
+T46	COUNTRY 969 975	России
+T47	PROFESSION 951 968	кинематографистов
+T30	CITY 1128 1141	Волоколамский
+T48	EVENT 473 482	восстание
+T49	EVENT 448 482	словацкое антифашистское восстание
+T50	EVENT 568 577	фестиваля
+T51	EVENT 732 737	войну
+T52	EVENT 750 753	бою
+T53	LOCATION 840 851	Балканского
+T43	AWARD 800 819	лучшую женскую роль
+T54	AWARD 783 797;815 819	лучшую мужскую роль
+T55	EVENT 754 772	потерявшего зрение
+T56	OPINION_WORD_POS 0 12	Победителями
+T57	OPINION_WORD_POS 142 153	победителей
+T58	OPINION_WORD_POS 249 253	приз
+T59	OPINION_WORD_POS 473 482	восстание
+T60	OPINION_WORD_POS 540 546	Лучшим
+T61	OPINION_WORD_NEG 754 765	потерявшего
+T62	OPINION_WORD_POS 774 779	Призы
+T63	OPINION_WORD_POS 783 789	лучшую
+T64	OPINION_WORD_POS 800 806	лучшую
+T65	OPINION_WORD_POS 861 871	знаменитый
+T66	OPINION_WORD_POS 1023 1036	ответственную
+T67	OPINION_WORD_POS 1044 1055	продвижения
+T68	OPINION_WORD_POS 1158 1166	знаковым
+T69	OPINION_WORD_POS 1277 1291	патриотический
+R1	POSITIVE_TO Arg1:T12 Arg2:T13	
+R2	POSITIVE_TO Arg1:T12 Arg2:T40	
+R3	POSITIVE_TO Arg1:T12 Arg2:T10	
+T70	STATE_POS 295 311	Григорий Илугдин
+R4	POS_STATE_FROM Arg1:T70 Arg2:T40	
+R5	POSITIVE_TO Arg1:T20 Arg2:T19	
+R6	POSITIVE_TO Arg1:T20 Arg2:T42	
+T71	STATE_POS 624 645	Александра Золотухина
+R7	POS_STATE_FROM Arg1:T71 Arg2:T42	
+T72	OPINION_WORD_NEG 732 737	войну
+T73	OPINION_WORD_NEG 750 753	бою
+R8	POSITIVE_TO Arg1:T25 Arg2:T54	
+R9	POSITIVE_TO Arg1:T26 Arg2:T43	
+R10	POSITIVE_TO Arg1:T25 Arg2:T23	
+R11	POSITIVE_TO Arg1:T26 Arg2:T23	
+T74	STATE_POS 889 900	Гойко Митич
+T75	STATE_POS 903 918	Равшана Куркова
+R12	POS_STATE_FROM Arg1:T74 Arg2:T54	
+R13	POS_STATE_FROM Arg1:T75 Arg2:T43	
+T76	ARGUMENT_POS 1013 1084	выполняет ответственную миссию продвижения отечественного кинематографа
+R14	POSITIVE_TO Arg1:T28 Arg2:T29	
+R15	OPINION_BELONGS_TO Arg1:T76 Arg2:T28	
+R16	OPINION_RELATES_TO Arg1:T76 Arg2:T29	
+T77	ARGUMENT_POS 1149 1193	является знаковым событием для киноиндустрии
+R17	OPINION_RELATES_TO Arg1:T77 Arg2:T29	
+R18	OPINION_BELONGS_TO Arg1:T77 Arg2:T28	
+T78	ARGUMENT_POS 1198 1316	позволяет в очередной раз вспомнить о героях Великой Отечественной и воспитать патриотический дух российского общества
+R19	OPINION_RELATES_TO Arg1:T78 Arg2:T29	
+R20	OPINION_BELONGS_TO Arg1:T78 Arg2:T28	

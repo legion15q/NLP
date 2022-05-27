@@ -1,0 +1,73 @@
+T1	ORGANIZATION 0 11	Полиция США
+T2	NUMBER 23 36	более семисот
+T5	CITY 55 64	Нью-Йорке
+T6	NUMBER 76 85	свыше 700
+T7	DATE 107 116	в субботу
+T8	FACILITY 117 133	Бруклинский мост
+T11	COUNTRY 282 285	США
+T13	EVENT 318 338	Оккупация Уолл-стрит
+T15	DATE 353 367	уже две недели
+T16	DATE 386 395	в субботу
+T17	TIME 409 427	на несколько часов
+T18	DISTRICT 449 466	Нижнем Манхэттене
+T19	DISTRICT 456 466	Манхэттене
+T20	PROFESSION 615 670	представитель городского управления охраны правопорядка
+T21	DATE 697 710	в тот же день
+T22	ORGANIZATION 844 858	Голосу Америки
+T23	PERSON 895 901	Джимом
+T24	DISTRICT 995 1005	Манхэттене
+T25	PROFESSION 1060 1079	президенты компаний
+T26	MONEY 1100 1116	Миллион долларов
+T27	COUNTRY 1164 1171	Америка
+T28	EVENT 1255 1273	Occupy Wall Street
+T30	CITY 1419 1428	Нью-Йорка
+T31	FACILITY 1446 1460	парке Зуккотти
+T32	CITY 1578 1587	Нью-Йорке
+T33	DATE 1599 1608	в субботу
+T34	CITY 1611 1618	Бостоне
+T35	CITY 1620 1633	Лос-Анджелесе
+T36	CITY 1636 1646	Альбукерки
+T37	STATE_OR_PROVINCE 1653 1664	Нью-Мексико
+T29	ORGANIZATION 1262 1273	Wall Street
+T38	ORGANIZATION 629 670	городского управления охраны правопорядка
+T39	CRIME 790 810	неподчинении властям
+T40	CRIME 813 829	буйном поведении
+T12	ORGANIZATION 328 338	Уолл-стрит
+T14	PROFESSION 565 576	полицейские
+T9	FACILITY 164 174	Уолл-стрит
+T10	DISTRICT 117 128	Бруклинский
+T41	ORGANIZATION 45 52	Полиция
+T42	COUNTRY 8 11	США
+T3	COUNTRY 851 858	Америки
+T4	ORGANIZATION 0 7	Полиция
+T43	EVENT 12 22	арестовала
+T44	EVENT 65 75	арестовала
+T45	EVENT 428 446	перекрыли движение
+T46	EVENT 1545 1575	Демонстрации в поддержку акций
+T47	EVENT 1570 1575	акций
+T48	EVENT 65 93	арестовала свыше 700 человек
+T49	ARGUMENT_NEG 207 226	алчности корпораций
+T50	ARGUMENT_NEG 229 253	нагрева земной атмосферы
+T51	ARGUMENT_NEG 256 279	социального неравенства
+R1	OPINION_RELATES_TO Arg1:T51 Arg2:T11	
+R2	OPINION_RELATES_TO Arg1:T50 Arg2:T11	
+R3	OPINION_RELATES_TO Arg1:T49 Arg2:T11	
+T52	EFFECT_POS 318 338	Оккупация Уолл-стрит
+T53	EFFECT_NEG 449 466	Нижнем Манхэттене
+R4	NEG_EFFECT_FROM Arg1:T53 Arg2:T45	
+R5	NEGATIVE_TO Arg1:T14 Arg2:T13	
+T54	ARGUMENT_NEG 790 810	неподчинении властям
+T55	ARGUMENT_NEG 813 829	буйном поведении
+R6	OPINION_BELONGS_TO Arg1:T54 Arg2:T38	
+R7	OPINION_BELONGS_TO Arg1:T55 Arg2:T38	
+T56	ARGUMENT_NEG 950 970	Экономика – в кусках
+T57	ARGUMENT_NEG 972 982	работы нет
+R8	OPINION_RELATES_TO Arg1:T56 Arg2:T27	
+R9	OPINION_RELATES_TO Arg1:T57 Arg2:T27	
+T58	ARGUMENT_NEG 984 1055	По углам в Манхэттене ютится больше бездомных, чем можно себе вообразит
+R10	OPINION_RELATES_TO Arg1:T58 Arg2:T27	
+T59	ARGUMENT_NEG 1060 1098	президенты компаний купаются в роскоши
+R11	OPINION_RELATES_TO Arg1:T59 Arg2:T27	
+T60	ARGUMENT_NEG 1080 1098	купаются в роскоши
+R12	OPINION_RELATES_TO Arg1:T60 Arg2:T25	
+T61	EFFECT_POS 1545 1575	Демонстрации в поддержку акций

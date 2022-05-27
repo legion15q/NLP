@@ -1,0 +1,37 @@
+T1	CITY 2 10	Брюсселе
+T2	EVENT 31 37	саммит
+T3	ORGANIZATION 38 47	Евросоюза
+T4	LOCATION 57 68	европейских
+T5	DATE 90 103	в понедельник
+T6	CITY 106 114	Брюсселе
+T7	LOCATION 255 266	европейских
+T8	LOCATION 301 312	Европейские
+T9	MONEY 417 421	евро
+T10	MONEY 466 483	661 млрд долларов
+T11	ORGANIZATION 505 542	Европейский стабилизационный механизм
+T12	DATE 565 571	в июле
+T13	ORGANIZATION 574 582	Евросоюз
+T14	EVENT 604 611	саммите
+T15	COUNTRY 702 708	Греция
+T16	MONEY 744 761	169 млрд долларов
+T17	PROFESSION 827 842	Премьер-министр
+T18	PERSON 850 865	Лукас Пападемос
+T19	DATE 873 886	в воскресенье
+T20	COUNTRY 1102 1108	Греции
+T21	ORGANIZATION 1161 1170	Евросоюза
+T22	ORGANIZATION 1173 1203	Международного валютного фонда
+T24	PROFESSION 827 849	Премьер-министр Греции
+T26	COUNTRY 843 849	Греции
+T27	LOCATION 505 516	Европейский
+T23	EFFECT_POS 31 37	саммит
+T25	EFFECT_POS 505 542	Европейский стабилизационный механизм
+R1	POSITIVE_TO Arg1:T3 Arg2:T2	
+R2	POSITIVE_TO Arg1:T13 Arg2:T14	
+T28	EFFECT_NEG 702 708	Греция
+T29	EFFECT_POS 850 865	Лукас Пападемос
+T30	STATE_POS 850 865	Лукас Пападемос
+T31	EFFECT_POS 1102 1108	Греции
+R3	POSITIVE_TO Arg1:T21 Arg2:T20	
+R4	POSITIVE_TO Arg1:T22 Arg2:T20	
+T32	STATE_POS 1102 1108	Греции
+R5	POSITIVE_TO Arg1:T20 Arg2:T21	

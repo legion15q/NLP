@@ -1,0 +1,125 @@
+﻿T1	PROFESSION 0 8	Художник
+T2	PERSON 9 24	Александр Шилов
+T3	DATE 41 61	29 октября 2012 года
+T4	PERSON 79 93	Владимир Путин
+T5	PROFESSION 103 112	художника
+T6	PERSON 113 130	Александра Шилова
+T7	PERSON 139 158	Александра Невского
+T8	DATE 159 189	В субботу, 6 октября 2018 года
+T9	COUNTRY 191 200	советский
+T10	COUNTRY 203 213	российский
+T11	PERSON 242 257	Александр Шилов
+T12	AGE 271 280	75-летний
+T13	PROFESSION 363 372	президент
+T14	COUNTRY 373 392	Республики Беларусь
+T15	PERSON 393 412	Александр Лукашенко
+T16	PROFESSION 415 418	Мэр
+T17	PERSON 426 440	Сергей Собянин
+T18	PROFESSION 443 452	Президент
+T19	PERSON 464 483	Александр Лукашенко
+T20	COUNTRY 662 670	Беларуси
+T21	PERSON 851 860	Лукашенко
+T22	NUMBER 1228 1233	двумя
+T24	PERSON 1302 1319	Александра Шилова
+T25	COUNTRY 1345 1355	Белоруссии
+T26	DATE 1357 1368	В 2003 году
+T27	COUNTRY 1409 1419	Белоруссии
+T28	PERSON 1475 1489	Сергей Собянин
+T29	PERSON 1534 1549	Александр Шилов
+T30	PROFESSION 1627 1636	художника
+T31	PERSON 1656 1673	Александра Шилова
+T32	PERSON 1763 1783	Александру Максовичу
+T33	EVENT 34 40	юбилей
+T34	PROFESSION 62 78	президент России
+T35	PROFESSION 62 71	президент
+T36	PROFESSION 214 222	художник
+T37	PROFESSION 235 241	график
+T38	PROFESSION 223 232	живописец
+T39	PROFESSION 214 232	художник-живописец
+T40	PROFESSION 363 392	президент Республики Беларусь
+T41	PROFESSION 415 425	Мэр Москвы
+T42	PROFESSION 443 463	Президент Белоруссии
+T43	PROFESSION 706 715	художника
+T44	PROFESSION 910 919	художника
+T45	PROFESSION 1287 1296	художника
+T46	PROFESSION 1450 1474	Столичный градоначальник
+T47	PROFESSION 1460 1474	градоначальник
+T48	COUNTRY 72 78	России
+T49	AWARD 131 158	орденом Александра Невского
+T51	CITY 419 425	Москвы
+T52	COUNTRY 453 463	Белоруссии
+T53	ORGANIZATION 627 657	пресс-службе главы государства
+T54	PROFESSION 640 657	главы государства
+T23	AWARD 1277 1301	Народного художника СССР
+T55	COUNTRY 1297 1301	СССР
+T57	AWARD 1422 1447	орденом Франциска Скорины
+T58	PERSON 1430 1447	Франциска Скорины
+T59	PRODUCT 1511 1518	Twitter
+T60	CITY 1647 1655	москвича
+T50	EVENT 94 102	наградил
+T1	STATE_POS 9 24	Александр Шилов
+T56	EFFECT_POS 9 24	Александр Шилов
+R1	POS_STATE_FROM Arg1:T1 Arg2:T33	
+R2	POS_EFFECT_FROM Arg1:T56 Arg2:T33	
+R3	POSITIVE_TO Arg1:T2 Arg2:T33	
+R4	POSITIVE_TO Arg1:T4 Arg2:T6	
+R5	POSITIVE_TO Arg1:T6 Arg2:T4	
+R6	POSITIVE_TO Arg1:T6 Arg2:T49	
+T61	EFFECT_POS 113 130	Александра Шилова
+T62	STATE_POS 113 130	Александра Шилова
+R7	POS_STATE_FROM Arg1:T62 Arg2:T50	
+R8	POS_EFFECT_FROM Arg1:T61 Arg2:T50	
+R9	POS_STATE_FROM Arg1:T62 Arg2:T49	
+R10	POS_EFFECT_FROM Arg1:T61 Arg2:T49	
+T63	EFFECT_POS 242 257	Александр Шилов
+T64	STATE_POS 242 257	Александр Шилов
+R11	POSITIVE_TO Arg1:T15 Arg2:T11	
+R12	POSITIVE_TO Arg1:T11 Arg2:T15	
+R13	POSITIVE_TO Arg1:T11 Arg2:T17	
+R14	POSITIVE_TO Arg1:T17 Arg2:T11	
+T65	ARGUMENT_POS 515 614	творчество юбиляра будет способствовать укреплению культурных связей между народами двух государств
+R15	OPINION_BELONGS_TO Arg1:T65 Arg2:T19	
+R16	OPINION_RELATES_TO Arg1:T65 Arg2:T11	
+T66	OPINION_WORD_POS 693 705	талантливого
+T67	OPINION_WORD_POS 732 742	одаренного
+T68	OPINION_WORD_POS 805 811	яркими
+T69	ARGUMENT_POS 675 751	знают и ценят как талантливого художника и разносторонне одаренного человека
+T70	ARGUMENT_POS 760 821	Ваши персональные выставки всегда становятся яркими событиями
+R17	OPINION_RELATES_TO Arg1:T69 Arg2:T11	
+R18	OPINION_RELATES_TO Arg1:T70 Arg2:T11	
+R19	OPINION_BELONGS_TO Arg1:T70 Arg2:T19	
+R20	OPINION_BELONGS_TO Arg1:T69 Arg2:T19	
+T71	ARGUMENT_POS 889 945	творчество народного художника прошло испытание временем
+T72	ARGUMENT_POS 948 1004	продолжает служить эталоном профессионального мастерства
+R21	OPINION_BELONGS_TO Arg1:T71 Arg2:T21	
+R22	OPINION_BELONGS_TO Arg1:T72 Arg2:T21	
+R23	OPINION_RELATES_TO Arg1:T72 Arg2:T24	
+R24	OPINION_RELATES_TO Arg1:T71 Arg2:T24	
+T73	ARGUMENT_POS 1026 1120	необычайно точно раскрываете индивидуальность человека его внутренний мир и духовное богатство
+T74	OPINION_WORD_POS 1026 1042	необычайно точно
+R25	OPINION_BELONGS_TO Arg1:T73 Arg2:T21	
+R26	OPINION_RELATES_TO Arg1:T73 Arg2:T24	
+T75	EMOTION_POS 1151 1159	радовать
+R27	STATE_BELONGS_TO Arg1:T75 Arg2:T21	
+T76	ARGUMENT_POS 1181 1252	способствуя укреплению культурных связей между двумя братскими народами
+R28	OPINION_BELONGS_TO Arg1:T76 Arg2:T21	
+R29	OPINION_RELATES_TO Arg1:T76 Arg2:T24	
+T77	EFFECT_POS 1302 1319	Александра Шилова
+T78	STATE_POS 1302 1319	Александра Шилова
+R30	POS_STATE_FROM Arg1:T78 Arg2:T57	
+R31	POS_EFFECT_FROM Arg1:T77 Arg2:T57	
+R32	POSITIVE_TO Arg1:T24 Arg2:T57	
+R33	POSITIVE_TO Arg1:T28 Arg2:T29	
+T79	ARGUMENT_POS 1550 1592	запечатлел эпоху через разные образы людей
+R34	OPINION_RELATES_TO Arg1:T79 Arg2:T29	
+R35	OPINION_BELONGS_TO Arg1:T79 Arg2:T28	
+R36	POSITIVE_TO Arg1:T31 Arg2:T28	
+T80	STATE_POS 1656 1673	Александра Шилова
+T81	EFFECT_POS 1656 1673	Александра Шилова
+T82	ARGUMENT_POS 1687 1704	мастером портрета
+T83	ARGUMENT_POS 1708 1756	запечатлел эпоху через яркие образы разных людей
+R37	OPINION_RELATES_TO Arg1:T82 Arg2:T31	
+R38	POSITIVE_TO Arg1:T28 Arg2:T31	
+R39	OPINION_RELATES_TO Arg1:T83 Arg2:T31	
+R40	OPINION_BELONGS_TO Arg1:T82 Arg2:T28	
+R41	OPINION_BELONGS_TO Arg1:T83 Arg2:T28	

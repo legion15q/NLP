@@ -1,0 +1,136 @@
+﻿T1	NATIONALITY 0 10	Пакистанец
+T2	COUNTRY 63 66	США
+T3	CITY 73 86	нью-йоркского
+T4	DATE 102 115	В понедельник
+T5	PERSON 116 126	Абид Насир
+T6	AGE 128 137	26-летний
+T7	NATIONALITY 138 148	пакистанец
+T8	ORGANIZATION 207 222	федеральный суд
+T9	CITY 230 239	Нью-Йорка
+T10	PERSON 241 246	Насир
+T11	ORGANIZATION 293 302	Аль-Кайды
+T12	CITY 346 358	нью-йоркском
+T13	TIME 418 428	минут пять
+T14	PROFESSION 430 435	судья
+T15	PERSON 451 463	Рэймонд Дири
+T16	PERSON 480 485	Насир
+T17	PROFESSION 555 562	Адвокат
+T18	PERSON 563 569	Насира
+T19	PERSON 625 631	Насира
+T20	CITY 707 719	нью-йоркском
+T21	COUNTRY 758 772	Великобритании
+T22	LOCATION 782 793	европейских
+T23	PERSON 801 806	Насир
+T24	PROFESSION 866 873	адвокат
+T25	PERSON 875 891	Стивен Брунстайн
+T26	COUNTRY 936 946	Британское
+T27	PERSON 976 982	Насира
+T28	DATE 983 1000	на прошлой неделе
+T29	COUNTRY 1033 1047	Великобритании
+T30	DATE 1048 1059	в 2010 году
+T31	NUMBER 1062 1066	Двое
+T32	COUNTRY 1103 1106	США
+T33	DATE 1182 1196	в прошлом году
+T35	DATE 1239 1250	в 2008 году
+T36	ORGANIZATION 1259 1268	Аль-Кайды
+T37	COUNTRY 1272 1281	Пакистане
+T38	NUMBER 1299 1303	трех
+T39	CITY 1344 1353	Нью-Йорке
+T40	PERSON 1590 1606	Стивен Бенджамин
+T41	PROFESSION 1608 1615	адвокат
+T42	CITY 1619 1627	Ричмонда
+T43	STATE_OR_PROVINCE 1634 1643	Вирджиния
+T44	PROFESSION 1655 1666	президентом
+T45	COUNTRY 2118 2132	Великобритании
+T46	PERSON 2134 2140	Насиру
+T47	ORGANIZATION 2236 2245	Аль-Кайде
+T48	CITY 2336 2346	Манчестере
+T49	PROFESSION 2348 2356	Прокурор
+T50	PERSON 2383 2388	Насир
+T52	PERSON 2472 2477	Насир
+T53	DATE 2502 2509	7 марта
+T54	CRIME 28 38	терроризме
+T55	CRIME 179 189	терроризме
+T56	ORGANIZATION 207 239	федеральный суд города Нью-Йорка
+T57	PROFESSION 430 450	судья окружного суда
+T58	ORGANIZATION 436 450	окружного суда
+T60	PROFESSION 923 933	репортеров
+T61	ORGANIZATION 936 960	Британское правительство
+T62	ORGANIZATION 947 960	правительство
+T63	EVENT 961 975	экстрадировало
+T64	EVENT 1009 1018	арестован
+T65	EVENT 1174 1181	осужден
+T66	PROFESSION 1251 1268	лидеры «Аль-Кайды
+T67	ORGANIZATION 1214 1237	федеральной прокуратуры
+T68	EVENT 1370 1377	взрывов
+T69	PROFESSION 1493 1502	Прокуроры
+T70	PROFESSION 1524 1533	адвокатам
+T71	PROFESSION 1655 1719	президентом Национальной ассоциации адвокатов по уголовным делам
+T72	ORGANIZATION 1667 1719	Национальной ассоциации адвокатов по уголовным делам
+T75	CRIME 2174 2245	содействия и вступлении в сговор с целью оказания содействия «Аль-Кайде
+T76	CRIME 2249 2314	вступлении в сговор с целью использования разрушающего устройства
+T77	PERSON 2357 2369	Лоретта Линч
+T51	FACILITY 73 100	нью-йоркского метрополитена
+T78	EVENT 40 60	предстал перед судом
+T79	EVENT 195 204	доставлен
+T80	FACILITY 346 364	нью-йоркском метро
+T82	EVENT 336 343	взрывов
+T59	CRIME 668 799	заговоре с целью организации взрывов в нью-йоркском метро и совершения терактов в городах Великобритании и других европейских стран
+T83	FACILITY 707 725	нью-йоркском метро
+T84	EVENT 739 747	терактов
+T85	EVENT 697 704	взрывов
+T34	EVENT 1282 1293	завербовали
+T86	PROFESSION 1691 1700	адвокатов
+T87	PROFESSION 1691 1719	адвокатов по уголовным делам
+T74	EVENT 150 162	арестованный
+T81	PENALTY 498 518	оставлен под стражей
+T1	NATIONALITY 0 10	Пакистанец
+T73	STATE_NEG 0 10	Пакистанец
+T88	EFFECT_NEG 0 10	Пакистанец
+R1	NEG_STATE_FROM Arg1:T73 Arg2:T78	
+R2	NEG_EFFECT_FROM Arg1:T88 Arg2:T78	
+R3	NEGATIVE_TO Arg1:T1 Arg2:T78	
+T89	ARGUMENT_NEG 28 38	терроризме
+R4	OPINION_RELATES_TO Arg1:T89 Arg2:T1	
+T90	EFFECT_NEG 116 126	Абид Насир
+T91	STATE_NEG 116 126	Абид Насир
+R5	NEG_STATE_FROM Arg1:T91 Arg2:T74	
+R6	NEG_EFFECT_FROM Arg1:T90 Arg2:T74	
+R7	NEGATIVE_TO Arg1:T5 Arg2:T74	
+T92	ARGUMENT_NEG 179 189	терроризме
+R8	OPINION_BELONGS_TO Arg1:T92 Arg2:T56	
+R9	OPINION_RELATES_TO Arg1:T92 Arg2:T5	
+R10	POSITIVE_TO Arg1:T11 Arg2:T82	
+R11	NEGATIVE_TO Arg1:T15 Arg2:T16	
+T93	EFFECT_NEG 451 463	Рэймонд Дири
+T94	STATE_NEG 451 463	Рэймонд Дири
+R12	NEG_STATE_FROM Arg1:T94 Arg2:T81	
+R13	NEG_EFFECT_FROM Arg1:T93 Arg2:T81	
+R14	NEGATIVE_TO Arg1:T16 Arg2:T15	
+T95	ARGUMENT_NEG 668 799	заговоре с целью организации взрывов в нью-йоркском метро и совершения терактов в городах Великобритании и других европейских стран
+R15	OPINION_RELATES_TO Arg1:T95 Arg2:T19	
+R16	OPINION_BELONGS_TO Arg1:T95 Arg2:T15	
+R17	NEGATIVE_TO Arg1:T25 Arg2:T60	
+T96	EFFECT_NEG 976 982	Насира
+T97	STATE_NEG 976 982	Насира
+R18	NEG_STATE_FROM Arg1:T97 Arg2:T63	
+R19	NEG_EFFECT_FROM Arg1:T96 Arg2:T63	
+R20	NEGATIVE_TO Arg1:T27 Arg2:T61	
+R21	NEGATIVE_TO Arg1:T61 Arg2:T27	
+R22	NEG_STATE_FROM Arg1:T97 Arg2:T64	
+R23	NEG_EFFECT_FROM Arg1:T96 Arg2:T64	
+R24	NEGATIVE_TO Arg1:T67 Arg2:T68	
+R25	NEGATIVE_TO Arg1:T67 Arg2:T66	
+T98	ARGUMENT_NEG 1359 1377	совершения взрывов
+R26	OPINION_RELATES_TO Arg1:T98 Arg2:T66	
+R27	OPINION_BELONGS_TO Arg1:T98 Arg2:T67	
+T99	EFFECT_NEG 2134 2140	Насиру
+T100	STATE_NEG 2134 2140	Насиру
+T101	ARGUMENT_NEG 2174 2246	содействия и вступлении в сговор с целью оказания содействия «Аль-Кайде»
+T102	ARGUMENT_NEG 2249 2314	вступлении в сговор с целью использования разрушающего устройства
+R28	OPINION_RELATES_TO Arg1:T101 Arg2:T46	
+R29	OPINION_RELATES_TO Arg1:T102 Arg2:T46	
+T103	ARGUMENT_NEG 2390 2452	участвовал в одной из составных частей международного заговора
+R30	OPINION_RELATES_TO Arg1:T103 Arg2:T50	
+R31	OPINION_BELONGS_TO Arg1:T103 Arg2:T77	
+R32	NEGATIVE_TO Arg1:T77 Arg2:T50	

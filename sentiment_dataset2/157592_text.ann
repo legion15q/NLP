@@ -1,0 +1,91 @@
+T1	COUNTRY 0 12	Американский
+T2	COUNTRY 27 38	Афганистане
+T3	COUNTRY 58 71	американского
+T4	COUNTRY 90 101	Афганистане
+T5	DATE 103 111	2011 год
+T6	NUMBER 112 116	Один
+T7	COUNTRY 117 129	американский
+T8	NUMBER 157 161	один
+T9	LOCATION 186 207	восточном Афганистане
+T10	DATE 269 288	30 апреля 2018 года
+T11	ORGANIZATION 316 320	НАТО
+T12	ORGANIZATION 322 343	Решительная поддержка
+T13	PROFESSION 347 354	Генерал
+T15	COUNTRY 407 418	Афганистане
+T16	PROFESSION 445 466	Представитель талибов
+T17	PERSON 467 484	Забиулла Муджахид
+T18	DATE 504 513	30 апреля
+T19	STATE_OR_PROVINCE 538 544	Каписа
+T20	NUMBER 551 552	2
+T21	COUNTRY 554 566	американских
+T22	NUMBER 581 582	3
+T23	ORGANIZATION 686 704	The New York Times
+T24	DATE 706 717	в 2017 году
+T25	COUNTRY 720 731	Афганистане
+T26	NUMBER 740 742	11
+T27	DATE 765 783	1 января 2018 года
+T28	COUNTRY 825 828	США
+T29	PROFESSION 13 19	солдат
+T30	EVENT 20 24	убит
+T32	EVENT 175 183	операции
+T34	EVENT 223 229	ранены
+T35	EVENT 162 167	ранен
+T36	EVENT 39 48	Эвакуация
+T37	PROFESSION 72 87	военнослужащего
+T38	PROFESSION 130 144	военнослужащий
+T39	COUNTRY 196 207	Афганистане
+T40	COUNTRY 240 249	афганских
+T41	PROFESSION 250 259	силовиков
+T42	ORGANIZATION 309 320	миссии НАТО
+T43	PERSON 355 368	Джон Николсон
+T14	COUNTRY 382 395	американскими
+T44	ORGANIZATION 382 404	американскими войсками
+T46	ORGANIZATION 459 466	талибов
+T47	PRODUCT 487 494	твиттер
+T48	EVENT 545 550	убито
+T49	PROFESSION 567 577	захватчика
+T50	COUNTRY 583 592	афганских
+T51	PROFESSION 593 601	силовика
+T52	EVENT 613 619	ранено
+T53	ORGANIZATION 627 633	талибы
+T54	EVENT 662 673	наступление
+T55	DATE 653 661	весеннее
+T57	EVENT 784 788	убит
+T58	EVENT 829 845	получили ранения
+T59	COUNTRY 743 755	американских
+T60	PROFESSION 756 763	военных
+T61	NUMBER 789 793	один
+T62	PROFESSION 810 824	военнослужащих
+T63	PROFESSION 810 828	военнослужащих США
+T64	PROFESSION 0 19	Американский солдат
+T65	PROFESSION 58 87	американского военнослужащего
+T66	PROFESSION 117 144	американский военнослужащий
+T67	PROFESSION 240 259	афганских силовиков
+T68	PROFESSION 554 577	американских захватчика
+T69	PROFESSION 583 601	афганских силовика
+T70	PROFESSION 743 763	американских военных
+T31	CITY 690 698	New York
+T33	EVENT 145 150	погиб
+T56	EVENT 215 220	убиты
+T45	PROFESSION 370 404	командующий американскими войсками
+T71	EFFECT_NEG 0 19	Американский солдат
+R1	NEG_EFFECT_FROM Arg1:T71 Arg2:T30	
+T72	EFFECT_NEG 58 87	американского военнослужащего
+T73	EFFECT_NEG 117 144	американский военнослужащий
+R2	NEG_EFFECT_FROM Arg1:T73 Arg2:T33	
+R3	NEG_EFFECT_FROM Arg1:T73 Arg2:T32	
+T74	EFFECT_NEG 240 259	афганских силовиков
+R4	NEG_EFFECT_FROM Arg1:T74 Arg2:T56	
+R5	NEG_EFFECT_FROM Arg1:T74 Arg2:T34	
+T75	STATE_NEG 355 368	Джон Николсон
+T76	EFFECT_NEG 554 577	американских захватчика
+R6	NEG_EFFECT_FROM Arg1:T76 Arg2:T48	
+T77	EFFECT_NEG 583 600	афганских силовик
+R7	NEG_EFFECT_FROM Arg1:T77 Arg2:T48	
+R8	NEG_EFFECT_FROM Arg1:T77 Arg2:T52	
+R9	NEG_EFFECT_FROM Arg1:T76 Arg2:T52	
+R10	POSITIVE_TO Arg1:T53 Arg2:T54	
+T78	EFFECT_POS 662 673	наступление
+T79	EFFECT_NEG 743 763	американских военных
+T80	EFFECT_NEG 810 828	военнослужащих США
+R11	NEG_EFFECT_FROM Arg1:T80 Arg2:T58	

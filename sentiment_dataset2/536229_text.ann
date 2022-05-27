@@ -1,0 +1,151 @@
+T1	ORGANIZATION 0 6	Google
+T2	MONEY 16 32	6.5 млн долларов
+T3	DATE 73 84	в 2019 году
+T4	ORGANIZATION 100 106	Google
+T5	PRODUCT 198 205	Android
+T6	DATE 267 278	в 2019 году
+T7	MONEY 304 320	6.5 млн долларов
+T8	MONEY 333 341	$2.1 млн
+T9	ORGANIZATION 377 383	Google
+T10	MONEY 385 393	$1.9 млн
+T11	PRODUCT 398 405	Android
+T12	MONEY 407 413	$1 млн
+T13	PRODUCT 418 424	Chrome
+T14	MONEY 427 437	$800 тысяч
+T16	PRODUCT 454 465	Google Play
+T17	DATE 533 544	в 2018 году
+T18	MONEY 568 584	3.4 млн долларов
+T19	DATE 588 594	в 2015
+T20	MONEY 597 611	2 млн долларов
+T21	DATE 613 621	За 9 лет
+T22	MONEY 655 670	21 млн долларов
+T23	NUMBER 697 700	461
+T24	MONEY 740 759	201 тысячу долларов
+T25	PROFESSION 768 781	исследователь
+T26	PERSON 782 792	Guang Gong
+T27	PRODUCT 865 872	Pixel 3
+T28	MONEY 874 893	161 тысяча долларов
+T29	PRODUCT 924 931	Android
+T30	MONEY 934 942	40 тысяч
+T31	PRODUCT 959 965	Chrome
+T32	DATE 969 980	В 2019 году
+T33	PRODUCT 1046 1053	Android
+T34	PRODUCT 1131 1138	Android
+T35	ORGANIZATION 1151 1157	Google
+T36	MONEY 1175 1192	20 тысяч долларов
+T37	MONEY 1253 1266	3000 долларов
+T38	PRODUCT 1319 1329	Chromebook
+T39	PRODUCT 1334 1343	Chromebox
+T40	MONEY 1384 1402	150 тысяч долларов
+T41	PRODUCT 1487 1493	Chrome
+T42	MONEY 1511 1528	30 тысяч долларов
+T43	MONEY 1596 1613	20 тысяч долларов
+T44	MONEY 1687 1690	7.5
+T45	MONEY 1694 1711	10 тысяч долларов
+T46	MONEY 1753 1772	5-20 тысяч долларов
+T47	MONEY 1836 1841	$7500
+T48	MONEY 1882 1887	$5000
+T49	MONEY 1934 1939	$5000
+T50	NUMBER 1942 1947	В два
+T51	MONEY 2061 2074	1000 долларов
+T52	PRODUCT 2137 2150	Chrome Fuzzer
+T53	DATE 2214 2225	в 2010 году
+T54	MONEY 2273 2280	$15 млн
+T55	PROFESSION 85 90	Хакер
+T15	ORGANIZATION 981 987	Google
+T56	MONEY 1245 1249	1000
+T57	MONEY 1170 1171	5
+T58	MONEY 1505 1507	15
+T59	MONEY 1589 1592	7.5
+T60	MONEY 1748 1749	4
+T61	NUMBER 871 872	3
+T62	ORGANIZATION 454 460	Google
+T63	EMOTION_NEG 61 72	уязвимостей
+T64	EMOTION_NEG 167 178	уязвимостей
+R1	POSITIVE_TO Arg1:T4 Arg2:T5	
+T65	EFFECT_NEG 355 365	уязвимости
+R2	POSITIVE_TO Arg1:T9 Arg2:T11	
+R3	POSITIVE_TO Arg1:T9 Arg2:T13	
+R4	POSITIVE_TO Arg1:T9 Arg2:T16	
+T66	EMOTION_POS 673 687	Вознаграждения
+T67	EMOTION_POS 33 47	вознаграждений
+T68	EMOTION_POS 139 153	вознаграждений
+T69	EMOTION_POS 279 293	вознаграждений
+T70	EMOTION_POS 503 516	пожертвования
+T71	EMOTION_NEG 804 814	уязвимость
+T72	EMOTION_NEG 911 921	уязвимости
+T73	EMOTION_NEG 946 956	уязвимости
+T74	EMOTION_POS 1001 1007	премия
+T75	EMOTION_NEG 1021 1032	уязвимостей
+T76	EMOTION_POS 1035 1045	популярных
+T77	EMOTION_NEG 1118 1128	уязвимости
+T78	EMOTION_NEG 1194 1200	утечке
+T79	EMOTION_NEG 1305 1318	компрометации
+T80	EMOTION_NEG 1445 1454	эксплоита
+T81	EMOTION_NEG 1726 1732	утечек
+T82	EMOTION_NEG 1800 1808	спуфинга
+T83	EMOTION_POS 1854 1864	привилегий
+T84	EMOTION_NEG 1921 1932	уязвимостей
+T85	EMOTION_NEG 2019 2029	уязвимости
+T86	EMOTION_NEG 2047 2056	эксплоита
+T87	EMOTION_POS 1985 1998	качественного
+T88	EMOTION_POS 2085 2093	бонусная
+T89	EMOTION_NEG 2115 2125	уязвимости
+T90	EMOTION_POS 2171 2185	вознаграждений
+T91	EMOTION_NEG 2189 2199	уязвимости
+T92	ARGUMENT_POS 7 47;73 84	выплатил 6.5 млн долларов вознаграждений в 2019 году
+T93	EMOTION_NEG 85 90	Хакер
+R5	OPINION_BELONGS_TO Arg1:T92 Arg2:T1	
+T94	ARGUMENT_POS 533 584	в 2018 году в сумме было выплачено 3.4 млн долларов
+T95	ARGUMENT_POS 588 611	в 2015 — 2 млн долларов
+R6	OPINION_BELONGS_TO Arg1:T94 Arg2:T9	
+R7	OPINION_BELONGS_TO Arg1:T95 Arg2:T9	
+T96	ARGUMENT_POS 613 670	За 9 лет суммарный размер выплат составил 21 млн долларов
+R8	OPINION_BELONGS_TO Arg1:T96 Arg2:T9	
+T97	ARGUMENT_POS 716 767	Самую большую выплату в 201 тысячу долларов получил
+R9	OPINION_RELATES_TO Arg1:T97 Arg2:T26	
+R11	POSITIVE_TO Arg1:T15 Arg2:T27	
+R12	POSITIVE_TO Arg1:T15 Arg2:T29	
+R13	POSITIVE_TO Arg1:T15 Arg2:T31	
+T98	ARGUMENT_POS 874 931	161 тысяча долларов была получена за уязвимости в Android
+R14	OPINION_RELATES_TO Arg1:T98 Arg2:T26	
+T99	ARGUMENT_POS 934 965	40 тысяч за уязвимости в Chrome
+R15	OPINION_RELATES_TO Arg1:T99 Arg2:T26	
+R10	OPINION_BELONGS_TO Arg1:T97 Arg2:T15	
+R16	OPINION_BELONGS_TO Arg1:T99 Arg2:T15	
+R17	OPINION_BELONGS_TO Arg1:T98 Arg2:T15	
+R18	POSITIVE_TO Arg1:T35 Arg2:T34	
+T100	ARGUMENT_POS 988 1065	была введена премия за выявление уязвимостей в популярных Android-приложениях
+R19	OPINION_BELONGS_TO Arg1:T100 Arg2:T15	
+T101	ARGUMENT_POS 1069 1192	стоимость информации об удалённо эксплуатируемой уязвимости в Android-приложениях Google увеличена с 5 до 20 тысяч долларов
+R20	OPINION_BELONGS_TO Arg1:T101 Arg2:T35	
+R21	POSITIVE_TO Arg1:T35 Arg2:T38	
+R22	POSITIVE_TO Arg1:T35 Arg2:T39	
+T102	EMOTION_POS 1275 1281	премии
+T103	EMOTION_NEG 1285 1293	эксплоит
+T104	ARGUMENT_POS 1268 1402	Размер премии за эксплоит для полной компрометации Chromebook или Chromebox из режима гостевого доступа увеличен до 150 тысяч долларов
+R23	OPINION_BELONGS_TO Arg1:T104 Arg2:T35	
+T105	ARGUMENT_POS 1194 1266	утечке данных и доступе к защищённым компонентам с 1000 до 3000 долларов
+R24	OPINION_BELONGS_TO Arg1:T105 Arg2:T35	
+T106	ARGUMENT_POS 1405 1528	Максимальный размер выплаты за создание эксплоита для выхода из sandbox-окружения Chrome увеличен с 15 до 30 тысяч долларов
+R25	OPINION_BELONGS_TO Arg1:T106 Arg2:T35	
+T107	ARGUMENT_POS 1530 1613	за метод обхода разграничения доступа в JavaScript (XSS) c 7.5 до 20 тысяч долларов
+R26	OPINION_BELONGS_TO Arg1:T107 Arg2:T35	
+T108	ARGUMENT_POS 1615 1711	за организацию удалённого выполнения кода на уровне системы отрисовки с 7.5 до 10 тысяч долларов
+R27	OPINION_BELONGS_TO Arg1:T108 Arg2:T35	
+T109	ARGUMENT_POS 1713 1772	за выявление утечек информации — с 4 до 5-20 тысяч долларов
+R28	OPINION_BELONGS_TO Arg1:T109 Arg2:T35	
+T110	ARGUMENT_POS 1774 1940	Введены выплаты за методы спуфинга в интерфейсе пользователя ($7500), повышения привилегий в web-платформе ($5000) и обхода защиты от эксплуатации уязвимостей ($5000)
+R29	OPINION_BELONGS_TO Arg1:T110 Arg2:T35	
+T111	ARGUMENT_POS 1942 2056	В два раза увеличены выплаты за подготовку качественного и базового описания уязвимости без демонстрации эксплоита
+R30	OPINION_BELONGS_TO Arg1:T111 Arg2:T35	
+T112	ARGUMENT_POS 2058 2150	До 1000 долларов увеличена бонусная выплата за выявления уязвимости при помощи Chrome Fuzzer
+T113	ARGUMENT_POS 2248 2280	выплатила исследователям $15 млн
+R31	OPINION_BELONGS_TO Arg1:T112 Arg2:T35	
+R32	OPINION_BELONGS_TO Arg1:T113 Arg2:T35	
+R33	POSITIVE_TO Arg1:T35 Arg2:T41	
+R34	POSITIVE_TO Arg1:T35 Arg2:T52	
+T114	EFFECT_POS 782 792	Guang Gong
+R35	POS_EFFECT_FROM Arg1:T114 Arg2:T97	
+T115	ARGUMENT_POS 2153 2225	Программа выплаты вознаграждений за уязвимости была запущена в 2010 году
+R36	OPINION_RELATES_TO Arg1:T115 Arg2:T35	

@@ -1,0 +1,136 @@
+T1	PRODUCT 19 27	Qualcomm
+T2	PRODUCT 48 55	Android
+T3	PRODUCT 73 78	Wi-Fi
+T4	ORGANIZATION 87 95	Qualcomm
+T5	PRODUCT 123 131	Qualcomm
+T6	NUMBER 141 144	три
+T7	PRODUCT 198 205	QualPwn
+T8	ORDINAL 209 215	Первая
+T10	PRODUCT 300 307	Android
+T11	PRODUCT 314 319	Wi-Fi
+T12	ORDINAL 321 327	Вторая
+T13	ORGANIZATION 397 405	Qualcomm
+T16	ORDINAL 470 476	Третья
+T18	PRODUCT 609 616	Android
+T19	PRODUCT 772 777	Wi-Fi
+T20	ORGANIZATION 922 928	Google
+T21	PRODUCT 929 935	Pixel2
+T22	PRODUCT 938 944	Pixel3
+T23	NUMBER 1006 1021	более 835 тысяч
+T24	PRODUCT 1040 1067	SoC Qualcomm Snapdragon 835
+T26	PRODUCT 1099 1113	Snapdragon 835
+T27	PRODUCT 1123 1127	WLAN
+T28	ORGANIZATION 1251 1259	Qualcomm
+T29	NUMBER 1282 1300	несколько десятков
+T30	DATE 1412 1421	8 августа
+T31	EVENT 1437 1446	Black Hat
+T32	ORGANIZATION 1457 1465	Qualcomm
+T33	ORGANIZATION 1468 1474	Google
+T34	DATE 1503 1510	в марте
+T35	ORGANIZATION 1547 1555	Qualcomm
+T36	DATE 1586 1594	июньском
+T37	ORGANIZATION 1605 1611	Google
+T38	DATE 1634 1646	августовском
+T39	PRODUCT 1668 1675	Android
+T40	ORGANIZATION 1716 1724	Qualcomm
+T41	ORGANIZATION 1807 1815	Qualcomm
+T42	DATE 1819 1831	августовском
+T43	PRODUCT 1853 1860	Android
+T47	PRODUCT 1919 1928	Bluetooth
+T48	PRODUCT 1935 1943	Broadcom
+T49	ORGANIZATION 2118 2125	Android
+T9	PRODUCT 510 515	icnss
+T14	NUMBER 2152 2156	2019
+T15	NUMBER 1905 1909	2019
+T17	NUMBER 521 525	2019
+T25	NUMBER 230 234	2019
+T44	NUMBER 457 461	2019
+T45	PRODUCT 226 240	CVE-2019-10539
+T46	PRODUCT 453 467	CVE-2019-10540
+T50	PRODUCT 517 531	CVE-2019-10538
+T53	NUMBER 1064 1067	835
+T54	NUMBER 1110 1113	835
+T55	PRODUCT 2148 2161	CVE-2019-2130
+T56	ORGANIZATION 1044 1052	Qualcomm
+T57	PRODUCT 1901 1915	CVE-2019-11516
+T58	NUMBER 235 240	10539
+T59	NUMBER 462 467	10540
+T60	NUMBER 526 531	10538
+T61	NUMBER 1910 1915	11516
+T62	NUMBER 2157 2161	2130
+T51	OPINION_WORD_NEG 0 10	Уязвимость
+T52	OPINION_WORD_NEG 38 47	атаковать
+T63	OPINION_WORD_NEG 145 155	уязвимости
+T64	OPINION_WORD_NEG 216 224	проблема
+T65	OPINION_WORD_NEG 261 270	атаковать
+T66	OPINION_WORD_NEG 328 336	проблема
+T67	OPINION_WORD_NEG 477 485	проблема
+T68	OPINION_WORD_POS 552 560	добиться
+T70	OPINION_WORD_NEG 669 680	уязвимостей
+T69	OPINION_WORD_NEG 681 690	атакующий
+T71	OPINION_WORD_NEG 783 788	атаки
+T72	OPINION_WORD_NEG 806 812	жертва
+T73	OPINION_WORD_NEG 815 824	атакующий
+T74	OPINION_WORD_NEG 882 887	атаки
+T75	OPINION_WORD_POS 627 635	успешной
+T76	OPINION_WORD_NEG 972 980	проблема
+T77	OPINION_WORD_NEG 1261 1269	проблема
+T78	OPINION_WORD_NEG 1369 1380	уязвимостях
+T79	OPINION_WORD_NEG 1493 1502	проблемах
+T80	OPINION_WORD_NEG 1574 1583	проблемах
+T81	OPINION_WORD_NEG 1621 1631	уязвимости
+T82	OPINION_WORD_POS 1534 1545	исправления
+T83	OPINION_WORD_POS 1725 1738	рекомендуется
+T84	OPINION_WORD_NEG 1779 1786	проблем
+T85	OPINION_WORD_NEG 1889 1899	уязвимость
+T86	OPINION_WORD_NEG 1957 1967	атакующему
+T87	OPINION_WORD_NEG 2136 2146	уязвимость
+T88	OPINION_WORD_POS 2215 2227	привилегиями
+T89	ARGUMENT_NEG 0 10;28 78	Уязвимость позволяет атаковать Android-устройство через Wi-Fi
+R1	OPINION_RELATES_TO Arg1:T89 Arg2:T1	
+T90	ARGUMENT_NEG 132 206	выявлены три уязвимости, которые преподнесены под кодовым именем «QualPwn»
+R2	OPINION_RELATES_TO Arg1:T90 Arg2:T5	
+T91	ARGUMENT_NEG 209 224;242 319	Первая проблема позволяет удалённо атаковать устройства на базе платформы Android через Wi-Fi
+R3	OPINION_RELATES_TO Arg1:T91 Arg2:T45	
+T92	ARGUMENT_NEG 321 451	Вторая проблема присутствует в проприетарной прошивке с беспроводным стеком Qualcomm и позволяет получить доступ к baseband-модему
+R4	OPINION_RELATES_TO Arg1:T92 Arg2:T46	
+T93	ARGUMENT_NEG 470 515;533 616	Третья проблема присутствует в драйвере icnss и даёт возможность добиться выполнения своего кода на уровне ядра платформы Android
+R5	OPINION_RELATES_TO Arg1:T93 Arg2:T50	
+T94	ARGUMENT_NEG 618 777	В случае успешной эксплуатации связки из указанных уязвимостей атакующий может удаленно получить контроль за устройством пользователя, на котором активен Wi-Fi
+R6	OPINION_RELATES_TO Arg1:T94 Arg2:T21	
+R7	OPINION_RELATES_TO Arg1:T94 Arg2:T22	
+T95	ARGUMENT_NEG 1128 1238	была интегрирована с подсистемой модема и выполнялась как изолированное приложение в пространстве пользователя
+R8	OPINION_RELATES_TO Arg1:T95 Arg2:T27	
+T96	ARGUMENT_NEG 972 1087	проблема потенциально затрагивает более 835 тысяч устройств на базе SoC Qualcomm Snapdragon 835 и более новых чипов
+T97	ARGUMENT_NEG 1261 1316	проблема затрагивает несколько десятков различных чипов
+R9	OPINION_BELONGS_TO Arg1:T97 Arg2:T28	
+T98	ARGUMENT_POS 1475 1510	были уведомлены о проблемах в марте
+R10	OPINION_RELATES_TO Arg1:T98 Arg2:T33	
+R11	OPINION_RELATES_TO Arg1:T98 Arg2:T32	
+T99	ARGUMENT_POS 1556 1601	проинформировал о проблемах в июньском отчёте
+R12	OPINION_RELATES_TO Arg1:T99 Arg2:T35	
+T100	ARGUMENT_POS 1612 1675	устранил уязвимости в августовском обновлении платформы Android
+R13	OPINION_RELATES_TO Arg1:T100 Arg2:T37	
+R14	POSITIVE_TO Arg1:T37 Arg2:T39	
+T101	ARGUMENT_POS 1817 1899	в августовском обновлении платформы Android также устранена критическая уязвимость
+T102	ARGUMENT_POS 1917 2092	в Bluetooth стеке Broadcom, позволяющая атакующему выполнить свой код в контексте привилегированного процесса через отправку специально оформленного запроса на передачу данных
+R15	OPINION_RELATES_TO Arg1:T102 Arg2:T57	
+T103	ARGUMENT_POS 2094 2146;2164 2275	В системных компонентах Android устранена уязвимость позволяющая добиться выполнения кода с повышенными привилегиями при обработке специально оформленных файлов PAC
+R16	OPINION_RELATES_TO Arg1:T103 Arg2:T55	
+R17	POSITIVE_TO Arg1:T20 Arg2:T21	
+R18	POSITIVE_TO Arg1:T20 Arg2:T22	
+T104	STATE_NEG 1040 1067	SoC Qualcomm Snapdragon 835
+T105	EFFECT_NEG 1040 1067	SoC Qualcomm Snapdragon 835
+R19	NEG_EFFECT_FROM Arg1:T105 Arg2:T96	
+R20	NEG_STATE_FROM Arg1:T104 Arg2:T96	
+T106	STATE_NEG 1251 1259	Qualcomm
+T107	EFFECT_NEG 1251 1259	Qualcomm
+R21	NEG_STATE_FROM Arg1:T106 Arg2:T97	
+R22	NEG_EFFECT_FROM Arg1:T107 Arg2:T97	
+T108	ARGUMENT_POS 1513 1533	уже успели выпустить
+R23	OPINION_RELATES_TO Arg1:T108 Arg2:T33	
+R24	OPINION_RELATES_TO Arg1:T108 Arg2:T32	
+T109	STATE_NEG 1457 1465	Qualcomm
+T110	STATE_NEG 1468 1474	Google
+R25	NEG_STATE_FROM Arg1:T110 Arg2:T98	
+R26	NEG_STATE_FROM Arg1:T109 Arg2:T98	

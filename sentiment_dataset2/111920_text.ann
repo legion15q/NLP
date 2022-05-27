@@ -1,0 +1,77 @@
+T1	COUNTRY 0 6	Россия
+T2	COUNTRY 45 53	Беларуси
+T3	PROFESSION 77 100	главы Россельхознадзора
+T4	PERSON 101 116	Сергей Данкверт
+T5	DATE 117 138	С 6 февраля 2017 года
+T6	COUNTRY 169 180	белорусской
+T7	STATE_OR_PROVINCE 193 208	Минской области
+T8	PROFESSION 217 260	официальный представитель Россельхознадзора
+T9	PERSON 261 272	Юлия Мелано
+T10	COUNTRY 326 337	белорусские
+T11	COUNTRY 363 369	Россию
+T12	COUNTRY 390 400	украинскую
+T13	LOCATION 403 414	европейскую
+T14	PROFESSION 484 504	президент Белоруссии
+T15	PERSON 505 524	Александр Лукашенко
+T16	PROFESSION 573 596	главы Россельхознадзора
+T17	PERSON 597 613	Сергея Данкверта
+T18	PERSON 780 789	Данкверту
+T19	ORGANIZATION 1085 1102	Россельхознадзоре
+T20	PROFESSION 1196 1211	главы ведомства
+T21	COUNTRY 1279 1285	России
+T22	COUNTRY 1359 1370	белорусской
+T23	PROFESSION 1389 1401	главу страны
+T24	ORGANIZATION 1455 1471	Россельхознадзор
+T25	PROFESSION 1490 1513	глава Россельхознадзора
+T26	COUNTRY 1580 1590	российской
+T27	DATE 1660 1679	на сегодняшний день
+T28	PERSON 1696 1711	Сергей Данкверт
+T29	PERSON 1745 1754	Лукашенко
+T30	ORGANIZATION 1757 1766	Газета.ру
+T31	PROFESSION 1782 1805	глава Россельхознадзора
+T32	COUNTRY 1868 1878	российский
+T33	PERSON 1905 1917	Баумгертнера
+T34	PERSON 1927 1936	Данкверта
+T35	COUNTRY 1970 1981	Белоруссией
+T36	COUNTRY 2022 2030	Беларуси
+T37	ORGANIZATION 83 100	Россельхознадзора
+T38	COUNTRY 139 145	Россия
+T39	ORGANIZATION 243 260	Россельхознадзора
+T40	COUNTRY 494 504	Белоруссии
+T41	ORGANIZATION 579 596	Россельхознадзора
+T43	PERSON 957 966	Данкверты
+T45	CITY 193 200	Минской
+T46	ORGANIZATION 1496 1513	Россельхознадзора
+T47	ORGANIZATION 1788 1805	Россельхознадзора
+T48	PROFESSION 1879 1887	чиновник
+T49	ORGANIZATION 1202 1211	ведомства
+T50	PROFESSION 484 493	президент
+T51	EVENT 7 20	вводит запрет
+T52	EVENT 146 159	запретит ввоз
+T44	CRIME 621 648	нанесения вреда государству
+R1	NEGATIVE_TO Arg1:T2 Arg2:T1	
+T42	EFFECT_NEG 45 53	Беларуси
+R2	NEG_EFFECT_FROM Arg1:T42 Arg2:T51	
+T53	EFFECT_NEG 77 100	главы Россельхознадзора
+T54	STATE_NEG 77 100	главы Россельхознадзора
+T55	EFFECT_NEG 169 180	белорусской
+R3	NEGATIVE_TO Arg1:T6 Arg2:T38	
+R4	NEG_EFFECT_FROM Arg1:T55 Arg2:T52	
+T56	ARGUMENT_NEG 350 424	поставляли в Россию запрещённую к ввозу украинскую и европейскую продукцию
+R5	OPINION_RELATES_TO Arg1:T56 Arg2:T10	
+R6	OPINION_BELONGS_TO Arg1:T56 Arg2:T38	
+R7	NEGATIVE_TO Arg1:T15 Arg2:T17	
+R8	NEGATIVE_TO Arg1:T17 Arg2:T15	
+T57	EFFECT_NEG 597 613	Сергея Данкверта
+T58	STATE_NEG 597 613	Сергея Данкверта
+T59	ARGUMENT_NEG 621 648	нанесения вреда государству
+R9	OPINION_RELATES_TO Arg1:T59 Arg2:T17	
+R10	OPINION_BELONGS_TO Arg1:T59 Arg2:T15	
+T60	ARGUMENT_NEG 658 681	коррупционных интересов
+R11	OPINION_RELATES_TO Arg1:T60 Arg2:T17	
+R12	OPINION_BELONGS_TO Arg1:T60 Arg2:T15	
+R13	NEGATIVE_TO Arg1:T28 Arg2:T29	
+R14	NEGATIVE_TO Arg1:T29 Arg2:T28	
+T61	ARGUMENT_NEG 1940 1967	очень сложно будет работать
+R15	OPINION_BELONGS_TO Arg1:T61 Arg2:T28	
+R16	OPINION_RELATES_TO Arg1:T61 Arg2:T35	

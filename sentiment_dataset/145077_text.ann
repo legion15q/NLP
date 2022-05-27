@@ -1,0 +1,51 @@
+﻿T1	COUNTRY 2 8	Косово
+T2	COUNTRY 22 30	сербский
+T3	PERSON 39 54	Оливер Иванович
+T4	COUNTRY 79 87	сербский
+T5	COUNTRY 98 104	Косово
+T6	DATE 126 157	во вторник, 16 января 2018 года
+T7	PROFESSION 265 272	адвокат
+T8	PROFESSION 275 295	представитель партии
+T9	CITY 331 338	Белград
+T10	CITY 341 349	Приштина
+T11	DATE 422 432	более года
+T12	CITY 520 538	Косовски-Митровицы
+T15	ORGANIZATION 590 593	AFP
+T16	PROFESSION 594 601	адвокат
+T17	PERSON 602 615	Небойша Влаич
+T18	PERSON 633 641	Иванович
+T19	NUMBER 650 654	пять
+T20	COUNTRY 799 805	Косово
+T21	AGE 860 869	64-летний
+T22	PROFESSION 870 927	лидер гражданской инициативы «Свобода, демократия, правда
+T23	ORGANIZATION 900 927	Свобода, демократия, правда
+T24	PERSON 930 938	Иванович
+T25	PROFESSION 31 38	политик
+T26	PROFESSION 88 95	политик
+T27	PERSON 105 120	Оливер Иванович
+T13	IDEOLOGY 948 957	умеренным
+T14	PROFESSION 958 967	политиком
+T28	PROFESSION 685 693	политика
+T29	CRIME 756 777	военных преступлениях
+T30	PERSON 55 70	Оливер Иванович
+T31	EVENT 298 306	Убийство
+T32	EVENT 9 13	убит
+T33	EVENT 121 125	убит
+T34	EVENT 787 805	конфликта в Косово
+T35	EVENT 470 479	застрелен
+T36	DISEASE 655 670	пулевых ранений
+T37	DISEASE 663 670	ранений
+T38	EVENT 357 367	переговоры
+T1	EFFECT_NEG 39 54	Оливер Иванович
+R1	NEG_EFFECT_FROM Arg1:T1 Arg2:T32	
+T39	EFFECT_NEG 105 120	Оливер Иванович
+R2	NEG_EFFECT_FROM Arg1:T39 Arg2:T33	
+R3	NEG_EFFECT_FROM Arg1:T39 Arg2:T31	
+R4	NEG_EFFECT_FROM Arg1:T39 Arg2:T35	
+T40	EFFECT_NEG 633 641	Иванович
+T41	STATE_NEG 633 641	Иванович
+R6	NEG_STATE_FROM Arg1:T41 Arg2:T36	
+R7	NEG_EFFECT_FROM Arg1:T40 Arg2:T36	
+R5	POSITIVE_TO Arg1:T17 Arg2:T27	
+T42	ARGUMENT_NEG 756 777	военных преступлениях
+R8	OPINION_RELATES_TO Arg1:T42 Arg2:T18	

@@ -1,0 +1,76 @@
+T1	PERSON 0 14	Ангела Меркель
+T2	PERSON 36 50	Ангела Меркель
+T3	DATE 51 71	29 октября 2013 года
+T4	PROFESSION 72 79	Канцлер
+T5	PERSON 89 103	Ангела Меркель
+T6	COUNTRY 156 159	США
+T7	NUMBER 218 222	двух
+T8	COUNTRY 317 326	немецкому
+T9	ORGANIZATION 338 341	ZDF
+T10	COUNTRY 387 404	Соединенные Штаты
+T11	DATE 512 540	В четверг, 10 июля 2014 года
+T12	COUNTRY 542 550	Германия
+T13	PROFESSION 570 601	глава резидентуры ЦРУ в Берлине
+T14	ORGANIZATION 588 591	ЦРУ
+T15	CITY 594 601	Берлине
+T16	NUMBER 673 676	два
+T17	COUNTRY 688 697	немецкого
+T18	ORGANIZATION 724 763	Центральное разведывательное управление
+T19	DATE 766 775	В пятницу
+T20	PROFESSION 776 801	представитель Белого дома
+T21	ORGANIZATION 790 801	Белого дома
+T22	PERSON 802 813	Джош Эрнест
+T23	COUNTRY 826 843	Соединенные Штаты
+T24	COUNTRY 869 878	Германией
+T25	PROFESSION 1010 1019	Президент
+T26	COUNTRY 1021 1024	США
+T27	PERSON 1025 1036	Барак Обама
+T28	ORGANIZATION 1039 1050	Викиновости
+T29	PROFESSION 1060 1068	Канцлера
+T30	ORDINAL 1190 1196	первое
+T31	COUNTRY 80 88	Германии
+T32	PROFESSION 72 88	Канцлер Германии
+T33	PERSON 342 349	Меркель
+T34	PERSON 1069 1076	Меркель
+T35	ORGANIZATION 688 711	немецкого правительства
+T36	PROFESSION 677 711	сотрудника немецкого правительства
+T37	EVENT 17 35	шпионском скандале
+T38	PROFESSION 1010 1024	Президент (США
+T39	ORGANIZATION 698 711	правительства
+T40	EMOTION_NEG 117 128	подорванное
+T41	EMOTION_POS 129 136	доверие
+T42	EMOTION_NEG 502 507	войны
+T43	EMOTION_NEG 602 609	покинул
+T44	EMOTION_POS 851 856	ценят
+T45	EMOTION_POS 906 926	высокотехнологичными
+T46	EMOTION_POS 895 903	союзники
+T47	EMOTION_POS 1083 1094	эффективным
+T48	EMOTION_NEG 27 35	скандале
+T49	ARGUMENT_NEG 117 303	подорванное доверие между ее страной и США в вопросе разведдеятельности свидетельствует о том, что у двух государств «фундаментально различные подходы» к работе разведывательных структур
+R1	OPINION_BELONGS_TO Arg1:T49 Arg2:T5	
+R2	OPINION_RELATES_TO Arg1:T49 Arg2:T37	
+R3	POSITIVE_TO Arg1:T5 Arg2:T37	
+R4	NEGATIVE_TO Arg1:T5 Arg2:T6	
+R5	NEGATIVE_TO Arg1:T33 Arg2:T10	
+R6	NEGATIVE_TO Arg1:T12 Arg2:T13	
+T50	ARGUMENT_NEG 551 616	потребовала, чтобы глава резидентуры ЦРУ в Берлине покинул страну
+R7	OPINION_BELONGS_TO Arg1:T50 Arg2:T12	
+R8	OPINION_RELATES_TO Arg1:T50 Arg2:T13	
+R9	NEGATIVE_TO Arg1:T12 Arg2:T18	
+R10	POSITIVE_TO Arg1:T13 Arg2:T18	
+R11	POSITIVE_TO Arg1:T22 Arg2:T23	
+R12	POSITIVE_TO Arg1:T22 Arg2:T24	
+T51	ARGUMENT_POS 826 878	Соединенные Штаты высоко ценят отношения с Германией
+T52	ARGUMENT_POS 1135 1202	может определить интересы своей страны, поставив их на первое место
+R13	OPINION_RELATES_TO Arg1:T52 Arg2:T34	
+T53	ARGUMENT_POS 1229 1310	может работать в духе сотрудничества над вопросами, которые в интересах ее страны
+R14	OPINION_RELATES_TO Arg1:T53 Arg2:T34	
+R15	OPINION_BELONGS_TO Arg1:T53 Arg2:T27	
+R16	OPINION_BELONGS_TO Arg1:T52 Arg2:T27	
+T54	ARGUMENT_NEG 367 509	надеется на то, что Соединенные Штаты изменят свое поведение в вопросе шпионажа, подчеркнув, что «мы больше не живем в эпоху „холодной войны“»
+R17	OPINION_RELATES_TO Arg1:T54 Arg2:T37	
+R18	OPINION_BELONGS_TO Arg1:T54 Arg2:T33	
+T55	ARGUMENT_NEG 673 763	два сотрудника немецкого правительства работали на Центральное разведывательное управление
+R19	OPINION_BELONGS_TO Arg1:T55 Arg2:T12	
+R20	OPINION_RELATES_TO Arg1:T55 Arg2:T37	
+R21	NEGATIVE_TO Arg1:T1 Arg2:T37	

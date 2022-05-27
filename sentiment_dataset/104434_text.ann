@@ -1,0 +1,89 @@
+﻿T1	NATIONALITY 0 10	Американец
+T2	STATE_OR_PROVINCE 14 31	Северной Каролины
+T3	ORGANIZATION 61 65	ИГИЛ
+T4	ORGANIZATION 71 75	ИГИЛ
+T5	ORGANIZATION 149 169	министерство юстиции
+T6	NATIONALITY 175 185	американец
+T7	STATE_OR_PROVINCE 195 212	Северная Каролина
+T8	DATE 227 236	в четверг
+T9	ORGANIZATION 331 352	Исламское государство
+T10	AGE 356 365	36-летний
+T11	PERSON 366 379	Эрик Хендрикс
+T12	COUNTRY 455 473	Соединенных Штатах
+T13	ORGANIZATION 483 487	ИГИЛ
+T14	DATE 511 522	в 2015 году
+T15	COUNTRY 815 833	Соединенных Штатах
+T16	PERSON 902 912	Хендриксом
+T17	EVENT 975 1000	Нарисуй пророка Мухаммада
+T18	PERSON 1023 1031	Хендрикс
+T19	PERSON 1055 1072	Элтоном Симпсоном
+T20	DATE 1082 1100	в апреле 2015 года
+T21	CITY 1190 1198	Гарленде
+T22	STATE_OR_PROVINCE 1205 1210	Техас
+T23	PERSON 1218 1226	Хендрикс
+T24	NUMBER 1265 1267	15
+T26	CRIME 94 133	попытка вербовки и обучения террористов
+T27	COUNTRY 170 173	США
+T28	ORGANIZATION 149 173	министерство юстиции США
+T29	CRIME 252 329	заговоре с целью оказания материальной поддержки террористической организации
+T30	PERSON 523 531	Хендрикс
+T31	CRIME 393 452	попытке вербовки людей для подготовки и проведения терактов
+T32	PROFESSION 918 932	военнослужащие
+T33	PERSON 991 1000	Мухаммада
+T25	PENALTY 1262 1287	до 15 лет лишения свободы
+T34	CRIME 45 65	оказании помощи ИГИЛ
+T35	EVENT 217 226	арестован
+T36	PENALTY 1272 1287	лишения свободы
+T37	EVENT 1143 1172	нападения на место проведения
+T1	EVENT 1179 1187	конкурса
+R4	NEGATIVE_TO Arg1:T16 Arg2:T32	
+R5	NEGATIVE_TO Arg1:T16 Arg2:T17	
+T40	EFFECT_NEG 1218 1226	Хендрикс
+T59	NATIONALITY 0 10	Американец
+T41	EVENT 380 390	обвиняется
+T42	EFFECT_NEG 366 379	Эрик Хендрикс
+R3	NEG_EFFECT_FROM Arg1:T42 Arg2:T41	
+T43	EFFECT_NEG 455 473	Соединенных Штатах
+R6	NEG_EFFECT_FROM Arg1:T43 Arg2:T31	
+T44	EFFECT_POS 483 487	ИГИЛ
+R8	POS_EFFECT_FROM Arg1:T44 Arg2:T31	
+R9	NEGATIVE_TO Arg1:T12 Arg2:T13	
+T45	STATE_NEG 455 473	Соединенных Штатах
+R10	NEG_STATE_FROM Arg1:T45 Arg2:T13	
+T46	EFFECT_POS 331 352	Исламское государство
+R11	POS_EFFECT_FROM Arg1:T46 Arg2:T29	
+R12	NEG_EFFECT_FROM Arg1:T42 Arg2:T35	
+R13	POSITIVE_TO Arg1:T11 Arg2:T31	
+R15	NEGATIVE_TO Arg1:T12 Arg2:T11	
+R16	POSITIVE_TO Arg1:T11 Arg2:T13	
+R17	NEGATIVE_TO Arg1:T30 Arg2:T15	
+T47	EFFECT_NEG 975 1000	Нарисуй пророка Мухаммада
+R7	NEG_EFFECT_FROM Arg1:T47 Arg2:T37	
+R14	POSITIVE_TO Arg1:T18 Arg2:T19	
+R18	NEG_EFFECT_FROM Arg1:T40 Arg2:T25	
+T48	EVENT 1126 1134	провалом
+T50	EFFECT_POS 1179 1187	конкурса
+R20	POS_EFFECT_FROM Arg1:T50 Arg2:T48	
+T51	AUTHOR_NEG 366 379	Эрик Хендрикс
+T53	AUTHOR_NEG 523 531	Хендрикс
+T54	AUTHOR_NEG 1055 1072	Элтоном Симпсоном
+T55	ARGUMENT_NEG 1143 1172	нападения на место проведения
+R23	NEG_AUTHOR_FROM Arg1:T54 Arg2:T55	
+T56	AUTHOR_NEG 1023 1031	Хендрикс
+R24	POSITIVE_TO Arg1:T19 Arg2:T37	
+R25	POSITIVE_TO Arg1:T18 Arg2:T37	
+T52	ARGUMENT_NEG 252 329	заговоре с целью оказания материальной поддержки террористической организации
+T57	AUTHOR_NEG 331 352	Исламское государство
+R22	NEG_AUTHOR_FROM Arg1:T57 Arg2:T29	
+T58	ARGUMENT_NEG 393 452	попытке вербовки людей для подготовки и проведения терактов
+R21	NEG_AUTHOR_FROM Arg1:T51 Arg2:T31	
+T60	ARGUMENT_NEG 45 65	оказании помощи ИГИЛ
+R26	OPINION_RELATES_TO Arg1:T60 Arg2:T59	
+T61	ARGUMENT_NEG 94 133	попытка вербовки и обучения террористов
+R27	OPINION_RELATES_TO Arg1:T61 Arg2:T59	
+R28	OPINION_RELATES_TO Arg1:T52 Arg2:T6	
+R29	OPINION_RELATES_TO Arg1:T58 Arg2:T11	
+R1	POSITIVE_TO Arg1:T59 Arg2:T3	
+R2	NEGATIVE_TO Arg1:T23 Arg2:T25	
+T38	STATE_NEG 1218 1226	Хендрикс
+R30	NEG_STATE_FROM Arg1:T38 Arg2:T25	
