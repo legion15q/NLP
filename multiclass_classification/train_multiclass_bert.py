@@ -15,7 +15,7 @@ from tqdm import tqdm
 import collections
 import glob
 from sklearn import metrics
-
+import configparser
 
 class CustomDataset(Dataset):
 
@@ -210,10 +210,7 @@ def predict(tokenizer, model, text, device=torch.device("cuda:0"), max_len=256):
     return prediction
 
 
-batch_size_ = 6
-LR = 1e-6
-save_model_path = os.getcwd() + '/sbert2'
-model_path = 'sberbank-ai/sbert_large_nlu_ru'
+save_model_path = os.getcwd() + '/sbert'
 
 
 # model_path = 'cointegrated/rubert-tiny2'
@@ -233,9 +230,9 @@ def main():
         model_path=model_path,
         tokenizer_path=model_path,
         n_classes=4,
-        epochs=5,
+        epochs=epochs_,
         model_save_path=save_model_path,
-        save_top_n=3
+        save_top_n=save_top_n_
     )
 
     classifier.preparation(
@@ -282,7 +279,21 @@ def test_model(model_name=None):
     accuracy_per_class(predictions, labels)
     return 1
 
+def parse_config():
+    config = configparser.ConfigParser()
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    config.read(BASE_DIR + "\config.ini")
+    global batch_size_, LR, model_path, epochs_, save_top_n_
+    batch_size_ = int(config["CONFIG"]["batch_size"])
+    LR = float(config["CONFIG"]["LR"])
+    model_path = str(config["CONFIG"]["model"])
+    epochs_ = int(config["CONFIG"]["epochs"])
+    save_top_n_ = int(config["CONFIG"]["save_top_n"])
+    return 1
 
 if __name__ == '__main__':
-    test_model('sbert epoch = 1-val_loss = 0.6856-LR = 1.0e-06')
+    parse_config()
+    main()
+    # test_model()
+    # test_model('sbert epoch = 1-val_loss = 0.6856-LR = 1.0e-06')
     # test_model('sbert_no_upsampling epoch = 2-val_loss = 0.1490-LR = 1.0e-05')

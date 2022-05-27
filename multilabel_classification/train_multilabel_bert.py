@@ -16,6 +16,10 @@ from tqdm import tqdm
 from torch.utils.data import TensorDataset
 from sklearn import metrics
 import glob
+import configparser
+import config
+
+
 
 
 class CustomDataset(Dataset):
@@ -201,10 +205,7 @@ def predict(tokenizer, model, text, device=torch.device("cuda:0"), max_len=256):
     return prediction
 
 
-batch_size_ = 6
-LR = 1e-5
 save_model_path = os.getcwd() + '/sbert_no_upsampling'
-model_path = 'sberbank-ai/sbert_large_nlu_ru'
 
 
 # model_path = 'cointegrated/rubert-tiny2'
@@ -265,6 +266,19 @@ def accuracy_per_class(predicted_labels, true_labels):
         print(f'Accuracy: {correct_preds_per_class}/{true_per_class}\n')
         k += 1
 
+def classify(pred_prob, thresh):
+    y_pred = []
+
+    for tag_label_row in pred_prob:
+        temp = []
+        for tag_label in tag_label_row:
+            if tag_label >= thresh:
+                temp.append(1)  # Infer tag value as 1 (present)
+            else:
+                temp.append(0)  # Infer tag value as 0 (absent)
+        y_pred.append(temp)
+
+    return y_pred
 
 def test_model(model_name=None, posteriori_opt_threshold_=None):
     test_data = pd.read_csv('test_dataset.csv')
@@ -272,7 +286,7 @@ def test_model(model_name=None, posteriori_opt_threshold_=None):
 
     df_tags = test_data[test_data.columns[1:]]
     y_test = np.array(df_tags.iloc[:])
-
+    print(y_test)
     labels = y_test
     if model_name == None:
         saved_model_path = glob.glob(os.getcwd() + '\\*.pt')[1]
@@ -349,24 +363,11 @@ def test_model(model_name=None, posteriori_opt_threshold_=None):
     threshold = np.arange(0.1, 0.51, 0.01)
 
     # convert probabilities into 0 or 1 based on a threshold value
-    def classify(pred_prob, thresh):
-        y_pred = []
 
-        for tag_label_row in pred_prob:
-            temp = []
-            for tag_label in tag_label_row:
-                if tag_label >= thresh:
-                    temp.append(1)  # Infer tag value as 1 (present)
-                else:
-                    temp.append(0)  # Infer tag value as 0 (absent)
-            y_pred.append(temp)
-
-        return y_pred
 
     # convert labels to 1D array
     y_true = flat_true_labels.ravel()
     scores = []
-
     opt_thresh = 0
     if posteriori_opt_threshold_ == None:
         for thresh in threshold:
@@ -381,7 +382,10 @@ def test_model(model_name=None, posteriori_opt_threshold_=None):
     else:
         opt_thresh = posteriori_opt_threshold_
     print(f'Optimal Threshold Value = {opt_thresh}')
-
+    file = open("Optimal_Threshold_Value_for_multilabel.txt","w+")
+    file.write("[TEMP]\n")
+    file.write("opt_thresh="+str(opt_thresh))
+    file.close()
     y_pred_labels = classify(flat_pred_outs, opt_thresh)
     print(y_true)
     ''''''
@@ -433,7 +437,21 @@ def convert_to_previous_class(array):
             previous_class_array.append(-2)
     return previous_class_array
 
+def parse_config():
+    config = configparser.ConfigParser()
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    config.read(BASE_DIR + "\config.ini")
+    global batch_size_, LR, model_path, epochs_, save_top_n_
+    batch_size_ = int(config["CONFIG"]["batch_size"])
+    LR = float(config["CONFIG"]["LR"])
+    model_path = str(config["CONFIG"]["model"])
+    epochs_ = int(config["CONFIG"]["epochs"])
+    save_top_n_ = int(config["CONFIG"]["save_top_n"])
+    return 1
 
 if __name__ == '__main__':
-    test_model('sbert epoch = 1-val_loss = 0.6308-LR = 1.0e-06')
+    parse_config()
+    #main()
+    test_model()
+    # test_model('sbert epoch = 1-val_loss = 0.6308-LR = 1.0e-06')
     # test_model('sbert_no_upsampling epoch = 1-val_loss = 0.3481-LR = 1.0e-05')
