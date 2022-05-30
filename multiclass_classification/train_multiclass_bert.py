@@ -17,6 +17,7 @@ import glob
 from sklearn import metrics
 import configparser
 
+
 class CustomDataset(Dataset):
 
     def __init__(self, texts, targets, tokenizer, max_len=256):
@@ -214,7 +215,7 @@ save_model_path = os.getcwd() + '/sbert'
 
 
 # model_path = 'cointegrated/rubert-tiny2'
-# save_model_path = os.getcwd() + '/test_tiny.pt'
+# save_model_path = os.getcwd() + '/tiny2'
 
 
 def main():
@@ -279,6 +280,7 @@ def test_model(model_name=None):
     accuracy_per_class(predictions, labels)
     return 1
 
+
 def parse_config():
     config = configparser.ConfigParser()
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -290,6 +292,7 @@ def parse_config():
     epochs_ = int(config["CONFIG"]["epochs"])
     save_top_n_ = int(config["CONFIG"]["save_top_n"])
     return 1
+
 
 if __name__ == '__main__':
     parse_config()

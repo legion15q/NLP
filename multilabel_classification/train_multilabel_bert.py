@@ -205,11 +205,11 @@ def predict(tokenizer, model, text, device=torch.device("cuda:0"), max_len=256):
     return prediction
 
 
-save_model_path = os.getcwd() + '/sbert_no_upsampling'
+save_model_path = os.getcwd() + '/sbert'
 
 
 # model_path = 'cointegrated/rubert-tiny2'
-# save_model_path = os.getcwd() + '/bert_tiny2'
+# save_model_path = os.getcwd() + '/tiny2'
 
 
 def main():
@@ -224,9 +224,9 @@ def main():
         model_path=model_path,
         tokenizer_path=model_path,
         n_classes=3,
-        epochs=5,
+        epochs=epochs_,
         model_save_path=save_model_path,
-        save_top_n=3,
+        save_top_n=save_top_n_,
     )
 
     df_tags = train_data[train_data.columns[1:]]
@@ -451,7 +451,7 @@ def parse_config():
 
 if __name__ == '__main__':
     parse_config()
-    #main()
-    test_model('sbert epoch = 1-val_loss = 0.6308-LR = 1.0e-06')
+    main()
+    # test_model('sbert epoch = 1-val_loss = 0.6308-LR = 1.0e-06')
     # test_model('sbert epoch = 1-val_loss = 0.6308-LR = 1.0e-06')
     # test_model('sbert_no_upsampling epoch = 1-val_loss = 0.3481-LR = 1.0e-05')

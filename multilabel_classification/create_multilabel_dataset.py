@@ -82,6 +82,7 @@ def main():
     test_df = pd.DataFrame({'sentence': X_test, 'tonality': y_test})
     val_df = pd.DataFrame({'sentence': X_val, 'tonality': y_val})
 
+
     # upsampling train и val датасета
     main_datasets = [train_df, val_df]
     low_class_labels = [1, -1, -2]
@@ -96,6 +97,7 @@ def main():
             df = pd.concat([df, df_temp]).sample(frac=1, random_state=42)
             main_datasets[i] = df
     train_df, val_df = main_datasets
+
     len_train_0 = len(train_df.loc[train_df['tonality'] == 0])
     len_val_0 = len(val_df.loc[val_df['tonality'] == 0])
 
