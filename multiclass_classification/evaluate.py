@@ -17,7 +17,6 @@ def convert_sentence_into_X_sentences(sentence_, entity) -> [str]:
 
 def evaluate(model_path, sentence, entity) -> [str]:
     config = configparser.ConfigParser()
-    config.read(os.getcwd() + "/Optimal_Threshold_Value_for_multilabel.txt")
     labels = ["neutral", "positive", "negative", "neg-pos"]
     model = torch.load(model_path)
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,7 +37,7 @@ def evaluate(model_path, sentence, entity) -> [str]:
         X_sentence = X_sentence.lower()
         pred = train_multiclass_bert.predict(tokenizer, model, X_sentence)
         result = labels[pred]
-        print(result)
+        # print(result)
 
         full_pred.append(result)
     return full_pred

@@ -427,7 +427,7 @@ def test_model(model_name=None, posteriori_opt_threshold_=None):
 def convert_to_previous_class(array):
     previous_class_array = []
     for i in array:
-        if np.all(i == [1, 0, 0]):
+        if np.all(i == [1, 0, 0]) or np.all(i == [0,0,0]):
             previous_class_array.append(0)
         if np.all(i == [0, 1, 0]):
             previous_class_array.append(1)
@@ -452,6 +452,6 @@ def parse_config():
 if __name__ == '__main__':
     parse_config()
     #main()
-    test_model()
+    test_model('sbert epoch = 1-val_loss = 0.6308-LR = 1.0e-06')
     # test_model('sbert epoch = 1-val_loss = 0.6308-LR = 1.0e-06')
     # test_model('sbert_no_upsampling epoch = 1-val_loss = 0.3481-LR = 1.0e-05')

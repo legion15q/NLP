@@ -73,42 +73,47 @@ def read_evaluation_words(rw='w', dir='/data.csv', h=70) -> pd.DataFrame:
                                                                     random_state=42,
                                                                     stratify=y_test)
         data = data.loc[indexes_test]
+        evaluate(data,h)
 
-        new_df = pd.DataFrame(columns=['sentence', 'evaluation_words', 'tonality', 'entity', 'entity_type'])
-        morph = pymorphy2.MorphAnalyzer()
-        for index, row in data.iterrows():
-            sentence = row['sentence']
-            entity_start_pos = int(row['entity_start_pos'])
-            entity_end_pos = int(row['entity_end_pos'])
-            if h != None:
-                s_h = entity_start_pos - h
-                if s_h < 0:
-                    s_h = 0
-                e_h = entity_end_pos + h
-                if e_h > len(sentence):
-                    e_h = len(sentence)
-            else:
-                s_h = 0
-                e_h = len(sentence)
-            evaluation_words = sentence[s_h: entity_start_pos] + sentence[entity_end_pos:e_h]
-            evaluation_words = re.sub("[^A-Za-zА-Яа-я{} ]", " ", evaluation_words)
-            evaluation_words = evaluation_words.lower()
-            while '  ' in evaluation_words:
-                evaluation_words = evaluation_words.replace('  ', ' ')
-            lemmas_evaluation_words = ''
-            for i in evaluation_words.split(' '):
-                lemmas_evaluation_words += morph.parse(i)[0].normal_form + ' '
-
-            new_df.loc[len(new_df.index)] = {'sentence': sentence, 'evaluation_words': lemmas_evaluation_words,
-                                             'tonality': row['tonality'],
-                                             'entity': row['entity'], 'entity_type': row['entity_type']}
-        write_to_csv(new_df, 'df_for_dict_method')
     elif rw == 'r':
         new_df = pd.read_csv(os.getcwd() + '/df_for_dict_method.csv')
     return new_df
 
 
-def Solve_ambiguity(thesaurus_df, eval_words_df, rw_mode='w'):
+def evaluate(data: pd.DataFrame, h=70):
+    new_df = pd.DataFrame(columns=['sentence', 'evaluation_words', 'tonality', 'entity', 'entity_type'])
+    morph = pymorphy2.MorphAnalyzer()
+    for index, row in data.iterrows():
+        sentence = row['sentence']
+        entity_start_pos = int(row['entity_start_pos'])
+        entity_end_pos = int(row['entity_end_pos'])
+        if h != None:
+            s_h = entity_start_pos - h
+            if s_h < 0:
+                s_h = 0
+            e_h = entity_end_pos + h
+            if e_h > len(sentence):
+                e_h = len(sentence)
+        else:
+            s_h = 0
+            e_h = len(sentence)
+        evaluation_words = sentence[s_h: entity_start_pos] + sentence[entity_end_pos:e_h]
+        evaluation_words = re.sub("[^A-Za-zА-Яа-я{} ]", " ", evaluation_words)
+        evaluation_words = evaluation_words.lower()
+        while '  ' in evaluation_words:
+            evaluation_words = evaluation_words.replace('  ', ' ')
+        lemmas_evaluation_words = ''
+        for i in evaluation_words.split(' '):
+            lemmas_evaluation_words += morph.parse(i)[0].normal_form + ' '
+
+        new_df.loc[len(new_df.index)] = {'sentence': sentence, 'evaluation_words': lemmas_evaluation_words,
+                                         'tonality': row['tonality'],
+                                         'entity': row['entity'], 'entity_type': row['entity_type']}
+    write_to_csv(new_df, 'df_for_dict_method')
+    return new_df
+
+
+def Solve_ambiguity(thesaurus_df, eval_words_df, rw_mode='w', predict = False):
     pred_tonality = []
     negative_particles = [' не ', ' ни ']
     if rw_mode == 'w':
@@ -152,14 +157,23 @@ def Solve_ambiguity(thesaurus_df, eval_words_df, rw_mode='w'):
                 ton = -1
             elif sum_ > 0:
                 ton = 1
+
+            if ton == 0:
+                print('neutral')
+            elif ton == -1:
+                print('negative')
+            elif ton == 1:
+                print('positive')
             pred_tonality.append(ton)
-        write_to_csv(pd.DataFrame(pred_tonality), 'predict_df')
+        if not predict:
+            write_to_csv(pd.DataFrame(pred_tonality), 'predict_df')
     elif rw_mode == 'r':
         pred_tonality = pd.read_csv('predict_df.csv').values
     true_tonality = list(eval_words_df['tonality'])
-    print(metrics.classification_report(true_tonality, pred_tonality,
+    if not predict:
+        print(metrics.classification_report(true_tonality, pred_tonality,
                                         target_names=["neg-pos", "negative", "neutral", "positive"]))
-    accuracy_per_class(pred_tonality, true_tonality)
+        accuracy_per_class(pred_tonality, true_tonality)
     return 1
 
 
@@ -191,10 +205,10 @@ def read_thesaurus(dir='/rusentilex_2019_clear.txt'):
 
 def main():
     thesaurus = read_thesaurus()
-    eval_words_df = read_evaluation_words('w')
+    eval_words_df = read_evaluation_words('r')
     print(thesaurus)
     print(eval_words_df)
-    Solve_ambiguity(thesaurus, eval_words_df, 'w')
+    Solve_ambiguity(thesaurus, eval_words_df, 'r')
     '''
     1) Как-то выделить оценочные слова. Самый простой вариант это считать что все слова, кроме целевого, являются
     оценочными
